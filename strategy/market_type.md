@@ -22,7 +22,7 @@ Re-segmentation of IT service management by buyer (MSPs) and by capability (self
 1. **By buyer.** The AI-ITSM field is aimed at internal IT: Ravenna and Atomicwork both pitch mid-market internal teams [S2][S12], and ServiceNow's own lead investor says the platform is "completely inappropriate" below enterprise [S3]. **MSPs are structurally different customers** — they onboard a new environment every few weeks rather than once, so deployment cost is recurring cost of goods rather than a one-time project. No AI-ITSM vendor is running an MSP-specific motion.
 2. **By capability.** Every competitor acquires environment knowledge by human configuration. Understudy acquires it by observation [research/competitors.md]. That is a different product category — discovery — grafted onto the service-desk category.
 
-**Corroborating signal that the segment feels the pain:** 26% of MSPs report lacking enough staff to service more clients and 22% cannot find skilled technicians [S33]. The constraint on MSP growth is engineer-hours, which is exactly what onboarding consumes at 40–80 hours per client [S21].
+**Corroborating signal that the segment feels the pain:** 26% of MSPs report lacking enough staff to service more clients and 22% cannot find skilled technicians [S33]. The constraint on MSP growth is engineer-hours, which is exactly what onboarding consumes at 25–40 hours for a median client, 40–80 for a complex one [S21].
 
 ## Strategic consequences of the hybrid
 

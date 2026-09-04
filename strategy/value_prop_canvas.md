@@ -10,7 +10,7 @@
 | Customer profile | Value map |
 |---|---|
 | **Jobs** — win clients he can staff; keep revenue/technician above $150k [S32]; protect margin on new logos | **Products** — discovery run on a new client environment, priced at **$1,500 against the ~25–40 engineer-hours it displaces** (D4); plus ~$6 per resolved ticket thereafter |
-| **Pains** — 40–80 unbilled engineer-hours per onboarding [S21]; turning away business (26% of MSPs [S33]); knowledge loss on attrition | **Pain relievers** — onboarding cost falls per client *and* falls further with each client as the global layer compounds (A8); knowledge captured as an asset the business owns rather than a person does |
+| **Pains** — 25–40 unbilled engineer-hours per median onboarding, 40–80 for complex ones [S21]; turning away business (26% of MSPs [S33]); knowledge loss on attrition | **Pain relievers** — onboarding cost falls per client *and* falls further with each client as the global layer compounds (A8); knowledge captured as an asset the business owns rather than a person does |
 | **Gains** — take the next client without hiring; a diligence-friendly asset if he ever sells | **Gain creators** — the skill library is transferable business value; time-to-first-skill becomes a number he can quote to prospects |
 
 **Top mapping (ranked):** 1. unbilled onboarding hours → discovery, priced directly against those hours. 2. staffing ceiling → per-client leverage. 3. attrition risk → library as owned asset.

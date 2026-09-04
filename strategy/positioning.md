@@ -12,7 +12,7 @@ Price × quality is not the map here. Every system in the teardown differs on tw
 **Axis 1 — How does the system acquire knowledge of the environment?** *Configured by a human* ⟷ *Observed from work being done.*
 **Axis 2 — What does it do with that knowledge?** *Produces an artifact a human must act on* ⟷ *Executes it directly.*
 
-These are the axes because they predict the buyer's actual cost. Axis 1 sets what onboarding costs — 40–80 engineer-hours per client today [S21], 3–5× licence at enterprise scale [S20]. Axis 2 sets whether that cost ever converts into resolved work or stops at a document.
+These are the axes because they predict the buyer's actual cost. Axis 1 sets what onboarding costs — 25–40 engineer-hours for a median client and 40–80 for a complex one [S21], 3–5× licence at enterprise scale [S20]. Axis 2 sets whether that cost ever converts into resolved work or stops at a document.
 
 ## The map
 

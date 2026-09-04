@@ -48,7 +48,7 @@ S21's "40–80 hours" is the typical-to-complex band ("2–3 weeks small, 8–12
 
 **Pricing headroom.** At $1,500 flat, the fee is 57–80% of the median client's displaced cost and **at or above 100% for the smallest clients** — where an MSP would rationally decline it. Two consequences the pack must carry: the fee should almost certainly be **banded by client size rather than flat**, and the flat-$1,500 model used throughout this build is therefore conservative for large clients and optimistic for small ones. **The blended figure survives; the flat structure does not.** `financials/pricing.md` owes the banded schedule.
 
-**The onboarding fee is not a second tariff bolted on — it is half the revenue and the half that arrives first.** Ticket revenue accrues only after an environment is live; the onboarding fee is billed at the moment of the work the buyer already pays 40–80 hours for.
+**The onboarding fee is not a second tariff bolted on — it is half the revenue and the half that arrives first.** Ticket revenue accrues only after an environment is live; the onboarding fee is billed at the moment of the work the buyer already pays 25–40 hours for on a median client.
 
 ## 3. The ramp — what a customer is actually worth in year 1
 
@@ -108,4 +108,4 @@ The band is **$173M–$287M**, and it is narrow because the onboarding fee — t
 
 **No sourced MSP ticket-category mix exists.** Row 8 is the second-most load-bearing number in the pack and it rests on a category argument, not data. Every free source found describes internal IT desks, whose mix excludes RMM-generated alert tickets, hardware and on-site work. **Two questions, both cheap to ask and both moving the SAM: the ticket-category mix, and specifically the RMM-alert share of volume. These are the single highest-value questions in the first ten discovery interviews**, and until it is answered the SAM carries a ±40% honest uncertainty that no sensitivity table can remove.
 
-**Recommended next 3 moves:** (1) get real ticket-category mix and per-client ticket volume from the first 5 MSP interviews — rows 6 and 8 are worth more than any other research; (2) test the $1,500 onboarding fee against the 40–80-hour incumbent cost in the same conversations; (3) size internal IT properly before the seed raise rather than carrying §5.3's assumption chain into a deck.
+**Recommended next 3 moves:** (1) get real ticket-category mix and per-client ticket volume from the first 5 MSP interviews — rows 6 and 8 are worth more than any other research; (2) test the banded onboarding fee against real per-client-size hour counts in the same conversations — the flat $1,500 is known not to survive at the small end; (3) size internal IT properly before the seed raise rather than carrying §5.3's assumption chain into a deck.

@@ -1,6 +1,6 @@
 # Go-to-market
 
-> **What this is** — the channel strategy by segment, the acquisition loop meant to compound, a CAC hypothesis per channel with payback logic, and the 90-day motion from first customer to first ten.
+> **What this is** — the channel strategy by segment, the acquisition loop meant to compound, a CAC hypothesis per channel with payback logic, and the eight-month motion from first conversation to first paid customer.
 > **Why it exists** — at ~$8,600 year-1 revenue per MSP and ~$17,900 at steady state [market_sizing.md](market_sizing.md), most enterprise go-to-market motions are arithmetically impossible: a $40k acquisition cost never pays back, and even the primary channel has no slack. This file exists to make that constraint explicit before the seed round is spent discovering it.
 > **How to read it** — the CAC ceiling in §2 is the governing constraint; every channel below is judged against it. A skeptic should attack the assumption that MSP peer communities convert at the rate claimed.
 > **Depends on / feeds** — cites [market_sizing.md](market_sizing.md), [petal_diagram.md](petal_diagram.md), [personas.md](personas.md); feeds [channel_plan.md](channel_plan.md), [sales_roadmap.md](sales_roadmap.md), `financials/unit_economics.md`, `validation/get_keep_grow.md`.
@@ -49,9 +49,9 @@
 
 **This loop is the company's only real distribution advantage**, and it is the same asset as the moat: the product literally gets faster to deploy with each customer, which is a referenceable claim rather than a marketing one. It compounds only if skill reuse across environments is real (A8, ⚠ in [lean_canvas.md](lean_canvas.md)). **If A8 fails, this loop degrades to ordinary word of mouth and the CAC assumptions above are optimistic.**
 
-## 4. The 90-day motion
+## 4. The motion — first eight months, not ninety days
 
-**Engineering precondition, stated because the first version omitted it.** BRIEF.md records stage as *design — nothing implemented*. Multi-surface capture, clustering, skill synthesis, a governed executor and tenant isolation do not exist. The 90 days below are therefore an **evidence motion, not a deployment motion**: no step requires running in a customer's production environment, and the paid pilot sits at day 120–180 behind a stated build milestone. A plan that puts a live client onboarding at day 31 is a plan written as if engineering capacity were free.
+**Engineering precondition, stated because the first version omitted it.** BRIEF.md records stage as *design — nothing implemented*. Multi-surface capture, clustering, skill synthesis, a governed executor and tenant isolation do not exist. The schedule below is therefore an **evidence motion, not a deployment motion**: no step requires running in a customer's production environment, and the paid pilot sits at day 180–240 behind a stated build milestone. A plan that puts a live client onboarding at day 31 is a plan written as if engineering capacity were free.
 
 **Access precondition, stated because the engineering one was not enough.** [channel_plan.md](channel_plan.md) §Entry cost establishes that peer communities take 3–9 months to enter and may not admit a vendor at all. **The first ten conversations therefore cannot come from that channel** — it is the channel being built, not the one being used. Day-1 sources are open ones: r/msp and the MSP Discord/Slack communities, LinkedIn outreach to owners of 10–100-person MSPs, MSP-podcast host audiences, and warm paths through any RMM/PSA vendor contact. Lower trust, higher volume, available immediately.
 
@@ -65,7 +65,7 @@ The test itself — three engineers × five procedures × two environments, per 
 
 **Days 180–240 — first paid pilot**, gated on a shipping capture-and-execute path and the tenant-isolation document Sonia's review opens with.
 
-**First 10 customers by type:** 3 design partners (converted), 4 from the peer group of those 3, 2 from newsletter/podcast attribution, 1 inbound from the published number. **First 100:** requires the marketplace channel. Two distinct partner events, conflated in the first version: an **intelligence call in month 2** to price the revenue share, and a **listing application** gated on a shipping integration, SOC 2 and reference customers — realistically month 18–24. First-100 is a two-year horizon, not a year-one one, and no artifact should imply otherwise.
+**First 10 customers by type** `(assumption: reached ~month 18, given first paid pilot at day 180–240 and a 6–9 month channel entry)`**:** 3 design partners (converted), 4 from the peer group of those 3, 2 from newsletter/podcast attribution, 1 inbound from the published number. **First 100:** requires the marketplace channel. Two distinct partner events, conflated in the first version: an **intelligence call in month 2** to price the revenue share, and a **listing application** gated on a shipping integration, SOC 2 and reference customers — realistically month 18–24. First-100 is a two-year horizon, not a year-one one, and no artifact should imply otherwise.
 
 ## 5. What would falsify this GTM
 

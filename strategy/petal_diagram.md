@@ -13,7 +13,7 @@
    Documentation & IT              |              Onboarding as
    knowledge mgmt                  |              billable project work
    (IT Glue, Hudu)          ┌──────┴──────┐       (own engineers)
-   $ per tech/mo    ────────┤ UNDERSTUDY  ├────── $ 40–80 hrs per client
+   $ per tech/mo    ────────┤ UNDERSTUDY  ├────── $ 25–40 hrs (median)
                             └──────┬──────┘
    Process discovery /             |              Headcount
    task mining                     |              (hire another technician)
@@ -24,7 +24,7 @@
 
 | Petal | Incumbents | What the customer spends there today | Why that budget moves to us | Difficulty |
 |---|---|---|---|---|
-| **1. Onboarding as project work** *(displaced internal cost, not a vendor market)* | The MSP's own engineers — **no incumbent vendor** | **40–80 engineer-hours per client** [S21] at `(assumption: $75/hr loaded)` = $3,000–6,000 per client; at ~6 new clients/yr that is **$18–36k/yr per MSP, ~$216–432M across the band** | The budget we are actually taking. Easiest sale because it is already being spent and already resented. Not a line item — a leak | **Lowest** |
+| **1. Onboarding as project work** *(displaced internal cost, not a vendor market)* | The MSP's own engineers — **no incumbent vendor** | **25–40 engineer-hours for the median client** (S21's 40–80 is the typical-to-complex band; see the size distribution in [market_sizing.md](market_sizing.md)) at `(assumption: $75/hr loaded)` = $1,875–3,000 per client; at ~6 new clients/yr that is **~$11–18k/yr per MSP, ~$135–216M across the band** | The budget we are actually taking. Easiest sale because it is already being spent and already resented. Not a line item — a leak | **Lowest** |
 | **2. Headcount** *(displaced internal cost, not a vendor market)* | The labour market — **no incumbent vendor** | `(assumption: a technician at ~$95–120k loaded)`; revenue/tech benchmark $150–200k [S32] | 26% of MSPs cannot staff clients they could win [S33]; we are a partial substitute for the hire they cannot make | Low — but framing matters enormously (see below) |
 | **3. Service desk / ITSM software** | ConnectWise, Ravenna, Atomicwork | `(assumption: $50–100/tech/mo → ~$20–40k/yr per MSP; ~$240–480M across the 12,000-MSP band)` | Only if we replace the desk, which we do not initially. Early on we sit beside it | Medium — displacement, not addition, is a later fight |
 | **4. Documentation & knowledge management** | IT Glue, Hudu | `(assumption: $30–50/tech/mo → ~$12–20k/yr per MSP; ~$144–240M across the band)` | Our library makes their documentation partly redundant — but the budgets are small and the switch is emotional (years of accumulated content) | Medium |
@@ -35,7 +35,7 @@
 
 Petals 1 and 2 have **no incumbent vendor** — they are displaced internal cost pools, not markets with a defender. Petal 5 has **no MSP budget at all** and is retained only as a considered-and-rejected row. Blank's petal asks which adjacent markets supply customers; for this company the honest answer is that the two largest pools are internal costs, which is unusual and worth stating plainly rather than dressing as markets.
 
-**Sized total of the genuinely addressable pools:** petals 1 + 3 + 4 ≈ **$600M–$1.15B/yr** across the 12,000-MSP serviceable band `(assumption-heavy — every figure above except the engineer-hours [S21] and the revenue/tech benchmark [S32] is an assumption)`. That is the ceiling on what could ever be redirected to us in this segment, and it brackets the $215M SAM in [market_sizing.md](market_sizing.md) sensibly: we are claiming roughly a fifth to a third of the displaceable pool, not all of it.
+**Sized total of the genuinely addressable pools:** petals 1 + 3 + 4 ≈ **$520M–$935M/yr** across the 12,000-MSP serviceable band `(assumption-heavy — every figure above except the engineer-hours [S21] and the revenue/tech benchmark [S32] is an assumption)`. That is the ceiling on what could ever be redirected to us in this segment, and it brackets the $215M SAM in [market_sizing.md](market_sizing.md) sensibly: we are claiming roughly a quarter to a half of the displaceable pool, not all of it.
 
 ## What the petal says that the 2×2 did not
 

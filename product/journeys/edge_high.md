@@ -27,7 +27,7 @@
 **Day 20 — the RPA objection, answered by mechanism.** He asks the question he has been saving: *"What happens when Okta redesigns their admin console? Because that's what killed the last two."*
 The answer he is shown is not a promise. It is the E2 result: skills executed against a deliberately altered UI — moved, renamed, re-ordered elements plus a version upgrade that changed selectors — beside a **selector-based** RPA baseline on the identical alteration.
 → *Component:* **N8 evaluation harness**, **X11 re-grounding on change** (`P3 P4`, D5).
-→ *The mechanism, stated as he would state it:* an RPA step is a contract against a specific build with no success criterion, so a break halts or proceeds wrongly. A skill carries a goal and a verification step, so a break becomes a re-grounding search against an intact criterion.
+→ *The mechanism, stated as he would state it:* RPA does have success checks — Verify App State, Wait stages — but they assert things about **the interface**, so when a selector breaks they can tell you something is wrong and cannot tell you what you were trying to achieve. The run halts loudly or proceeds wrongly, and neither recovers. A skill's criterion is a **goal state**, which a re-grounding search can aim at. *(He knows about Verify App State. Claiming RPA has no success criterion at all would have lost the room.)*
 **He is not convinced by the argument. He is convinced that the argument is testable, and that the baseline was not rigged.**
 
 ## The stretch
@@ -37,10 +37,12 @@ The answer he is shown is not a promise. It is the E2 result: skills executed ag
 → *Record:* his interruption count and its composition — the metric he judges the product on.
 
 **Week 7 — he starts using it as an instrument.** A client's intermittent authentication failure. Ray asks the library a question it was not designed for: *which of my 41 environments have this conditional-access pattern?*
-→ *Component:* **X17** + **N9 variance envelope** queried across environments — patterns only, no client data crossing boundaries (D6).
+→ *Component:* **X17** + **N9 variance envelope**, queried across his own 41 environments **entirely inside his MSP's node** — this is his data about his own clients, and it never touches the global layer (D6).
 → *Record:* a cross-environment query. **This is Ray using the variance envelope as a diagnostic, which is not a feature anyone specified.** It is what having the distribution rather than the modal path makes possible (`P7`).
 
-**Week 9 — he authors deliberately.** He performs a gnarly Exchange hybrid migration procedure *knowing* it will be captured, and narrates as he goes. He is no longer a subject; he is writing the manual by doing his job.
+**Week 9 — he authors deliberately.** He works a **broken AD-to-Entra Connect group sync** — a failure he has diagnosed at eleven different clients, each time slightly differently — *knowing* it will be captured, and narrates as he goes. He is no longer a subject; he is writing the manual by doing his job.
+
+*The first version used an Exchange hybrid migration here. That was the wrong choice on two counts a practitioner would catch: a hybrid migration is a multi-week project rather than a session, and it happens once per client, so there is nothing for cross-session clustering to operate on. A sync break is genuinely gnarly, recurs across the book, and varies per tenant — which is what makes it clusterable and what makes its variance envelope worth having.*
 → *Component:* **N1**, **N10**, **N6**, **N13**.
 → *Record:* the most valuable skill in the library, attributed to him.
 **`P8` has flipped.** Capture stopped being surveillance and became authorship, and the mechanism was attribution plus the ability to correct — not messaging.
@@ -56,10 +58,10 @@ The answer he is shown is not a promise. It is the E2 result: skills executed ag
 
 | | Ray | The company |
 |---|---|---|
-| Week 1 | verified it could not harm him | nothing — correctly |
-| Week 3 | his reasoning captured in 9-second increments | the rationale screen capture cannot recover (`P1`) |
-| Week 12 | a skill he corrected and owns | the endorsement that makes capture sustainable (`P8`) |
-| Week 20 | an evidence-backed answer to his RPA objection | the argument that survives diligence (D5) |
+| Day 1 | verified it could not harm him | nothing — correctly |
+| Day 3 | his reasoning captured in 9-second increments | the rationale screen capture cannot recover (`P1`) |
+| Day 12 | a skill he corrected and owns | the endorsement that makes capture sustainable (`P8`) |
+| Day 20 | an evidence-backed answer to his RPA objection | the argument that survives diligence (D5) |
 | Week 5–14 | fewer, better interruptions; a cross-environment diagnostic | the highest-value skills in the library, and the variance envelope proven useful to a human |
 
 ## The failure mode this journey exists to prevent

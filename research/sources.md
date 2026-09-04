@@ -5,7 +5,7 @@
 > **How to read it** — follow the `[Sn]` tag from wherever you met the claim. Note the authority column: vendor marketing and analyst benchmarks are not equal evidence, and several key numbers here are the former.
 > **Depends on / feeds** — produced by `startup-research`; every artifact in this pack cites it.
 
-All accessed **2026-09-04** unless noted. Authority: **P** primary (company/press release/paper) · **A** analyst/benchmark · **V** vendor marketing · **J** journalism.
+All accessed **2026-09-04** unless noted. S35–S36 are cited from the standing human-factors literature rather than from a 2026 web search. Authority: **P** primary (company/press release/paper) · **A** analyst/benchmark · **V** vendor marketing · **J** journalism.
 
 | ID | Source | Auth | Supports |
 |---|---|---|---|
@@ -43,6 +43,8 @@ All accessed **2026-09-04** unless noted. Authority: **P** primary (company/pres
 | S32 | [LTVplus, MSP revenue per technician](https://www.ltvplus.com/msp/msp-revenue-per-technician/) · [Pharallax, MSP revenue benchmarks 2026](https://pharallax.ai/guides/msp-revenue-benchmarks-2026/) | A | Revenue per technician **$150–200k**; revenue per employee **$142k** average, $200k+ top quartile; healthy 5–10 person MSP = $800k–1.5M revenue |
 | S33 | ScalePad 2026 MSP Trends Report, reported in [S32](https://www.ltvplus.com/msp/msp-revenue-per-technician/) | A | **26% of MSPs lack enough staff to service more clients; 22% cannot find skilled technical talent to expand** |
 | S34 | [ScreenMeet IT help desk metrics 2026](https://www.screenmeet.com/blog/it-help-desk-metrics-you-should-be-tracking) · [MetricNet, tickets per user per month](https://www.metricnet.com/tickets-per-user-per-month/) | A | IT support teams handle **~492 tickets/month** on average; agent utilization ~48%; tickets-per-user-per-month is the standard volume normaliser |
+| S35 | Lee, J.D. & See, K.A. (2004), "Trust in Automation: Designing for Appropriate Reliance", *Human Factors* 46(1) | P | Calibrated trust rather than maximal trust; transparency about capability *and limits* as the calibration mechanism; over- and under-trust both as failures |
+| S36 | Parasuraman, R. & Riley, V. (1997), "Humans and Automation: Use, Misuse, Disuse, Abuse", *Human Factors* 39(2) | P | The taxonomy of automation failure modes — misuse (over-reliance), disuse (rejection of useful automation), abuse (deployment ignoring the human's resulting role) |
 
 ## Marked gaps — searched, not found
 

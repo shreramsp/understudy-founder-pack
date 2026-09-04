@@ -31,7 +31,7 @@
 
 **F10 · Deviation report** · *Mechanism:* every divergence is routed to the authoring engineer as a specific question, not a metric. · `P2 P6` · **Moment:** "On ticket 8812 I would have reset the token; you rebuilt the profile. Which is right?" — and the answer becomes part of the skill.
 
-**F11 · Promotion ladder** · *Mechanism:* a skill moves shadow → gated → supervised-autonomous only on evidence thresholds declared in advance, per action class. · `P5 P9` · **Moment:** Dana sees a skill at "gated — 2 more clean weeks to promote", and can hold it there indefinitely.
+**F11 · Promotion ladder** · *Mechanism:* a skill moves shadow → gated → **supervised** only on evidence thresholds declared in advance, per action class. Naming matters: there is no autonomous rung, per the binding claim boundary (D1). · `P5 P9` · **Moment:** Dana sees a skill at "gated — 2 more clean weeks to promote", and can hold it there indefinitely.
 
 ## Gate and Act — do the work, safely
 
@@ -53,7 +53,7 @@
 
 **F19 · Envelope widening** · *Mechanism:* every deviation, escalation and correction updates the variance envelope, so the library gets more robust rather than merely larger. · `P4 P7` · **Moment:** a skill's variant count goes from 3 to 4 after an unusual tenant, and the fourth is credited to the engineer who handled it.
 
-**F20 · Onboarding meter** · *Mechanism:* measures engineer-hours consumed and time-to-first-verified-skill for each new environment, against the 40–80-hour baseline [S21]. · — · **Moment:** Marcus opens one screen: "Client 42: 11 hours to first verified skill. Your average was 60." **The number the entire go-to-market is built on** [strategy/gtm.md](../strategy/gtm.md).
+**F20 · Onboarding meter** · *Mechanism:* measures engineer-hours consumed and time-to-first-verified-skill per environment, compared against **that client's own size band** (15–25 / 25–40 / 40–80 hours, D7) rather than a book average. · `P4` — the metric exists because a library's value decays and has to be re-evidenced · **Moment:** Marcus opens one screen: *"Client 42 (median band, baseline 25–40): 14 hours to a maintained runbook."* `(illustrative: target, not measured — no pilot exists)` **The number the entire go-to-market is built on** [strategy/gtm.md](../strategy/gtm.md).
 
 ## Why the power is the loop, not any feature
 

@@ -1,4 +1,4 @@
-# UX specification — the twelve screens that carry the product
+# UX specification — the thirteen screens that carry the product
 
 > **What this is** — the key screens: purpose, primary action, information hierarchy, empty/loading/error states, and the micro-interactions that carry the product's feel. Text spec only; visual collages belong to `visuals/`.
 > **Why it exists** — this product asks people to be recorded, and asks a sceptical expert to endorse what was learned from them. Those are interface problems before they are model problems: S4 and S5 decide whether capture keeps flowing, and no amount of clustering quality compensates if they are wrong. The spec exists so the consent and inspection surfaces get designed rather than inherited from an admin template.
@@ -70,6 +70,7 @@
 ## S9 · Onboarding progress — what the fee is charged for
 
 **Purpose.** Track a new environment from capture to live skills. **Primary action:** none; it reports.
+**Honesty requirement:** environment 1 costs *more* engineer-hours than baseline [journeys/beachhead.md](journeys/beachhead.md). This screen must show that as an overrun rather than suppressing it — the compression begins at environment 2, and a meter that hides the first-environment cost gets caught by the first design partner's timesheet.
 **Hierarchy:** engineer-hours consumed → time-to-first-verified-skill → skills by stage → **hours against this client's size band** (D7).
 **States.** *Week 1:* explicitly "watching — no skills yet by design", so silence is not read as failure.
 **Micro-interactions.** The baseline comparison uses *this client's size band*, not the book average — the pricing correction that critic round 2 forced applies to the UI too.
@@ -92,6 +93,14 @@
 **Purpose.** Surface a skill whose verification is degrading, before it acts wrongly. **Primary action:** review and pause, or accept the change.
 **Hierarchy:** what changed → since when → which environments → what has been paused already.
 **Micro-interactions.** The system pauses first and asks second. **This is the screen that converts a sceptic into a user** — it told Ray about a production change before a user did [journeys/edge_high.md](journeys/edge_high.md) — so it must never fire spuriously; a false drift alert costs more trust than a missed one.
+
+## S13 · Node fleet health — the screen we operate, not the customer
+
+**Purpose.** One view of every stage-1 distillation node across every MSP tenant. **Primary action:** intervene before an MSP notices.
+**Hierarchy:** nodes unreachable → nodes on stale versions → nodes whose distillation queue is backing up → capacity.
+**States.** *Degraded egress filtering:* the loudest state in the product — distillation halts rather than continuing, because a filter that is not working turns D6's guarantee into a claim.
+**Micro-interactions.** Each node shows its MSP, its version, and time since last successful distillation. Upgrades are staged and reversible; an MSP's own patching window is respected rather than overridden.
+**This screen exists because D6 has an operational cost that no customer-facing surface shows.** One node per MSP is tractable; the same architecture at one node per *client* would have been ~123 nodes for three design partners, and this screen is where that would have become visible far too late.
 
 ---
 

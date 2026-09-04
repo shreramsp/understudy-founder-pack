@@ -1,4 +1,4 @@
-# Prioritized feature list — 50 features, Now / Next / Later
+# Prioritized feature list — 58 features, Now / Next / Later
 
 > **What this is** — fifty features in strict priority order across three tiers, each with its mechanism, the user value it produces, its dependencies, and a size.
 > **Why it exists** — [features_flagship.md](features_flagship.md) argues what matters; this file decides what gets built first and what is deliberately deferred. Priority here is **risk-ordered, not chronological**: the earliest items are the ones that retire the assumption that kills the company, not the ones a user sees first.
@@ -13,29 +13,46 @@ Nothing in this tier is user-facing polish. It exists to answer whether recorded
 
 **D6 binds this tier.** In-boundary distillation was previously an L-tier item; it is now an architecture constraint on N6 and N9, because retrofitting a boundary into a pipeline built without one is far more expensive than assuming it. The N-tier is therefore designed edge-first from the start.
 
-| # | Feature | Mechanism | User value | Depends on | Effort |
-|---|---|---|---|---|---|
-| N1 | Screen + input capture agent | OS-level capture of screen, input events, window/app context | Nothing yet — the substrate | — | M |
-| N2 | Session segmentation | Split a shift into discrete task episodes by idle gaps, app focus and ticket context | Recordings become units that can be compared | N1 | M |
-| N3 | Action extraction | Convert raw capture into a typed action stream (clicked X in app Y, entered value class Z) | The representation clustering operates on | N2 | L |
-| N4 | Sensitive-value redaction | Detect and drop credentials, tokens, PII at capture time, before storage | The precondition for any security conversation | N1 | M |
-| N5 | Failure/abort labelling | Retain and mark sessions ending in escalation or rollback | Recovery behaviour becomes learnable (`P2`) | N2 | S |
-| N6 | Cross-session clustering, **in-boundary** | Group episodes of the same procedure across engineers and environments — **executing inside the client perimeter (D6)** | **The core bet** (`P1 P7`) | N3 | L |
-| N7 | Skill synthesis to `SKILL.md` | Emit goal, preconditions, steps, **success criterion**, escalation envelope | A readable, executable artifact (`P3 P6`) | N6 | L |
-| N8 | Evaluation harness | Run a synthesized skill against a held-out environment and score it | **The only way to know if N6 works**; also the E2/A8 instrument | N7 | M |
-| N9 | Variance envelope extraction **+ boundary egress filter** | Keep the distribution of how a procedure differed; the envelope is the **only** artifact permitted to cross the client boundary, and the filter is what enforces it (D6) | The moat, made into data — and the security answer, made structural (`P7`) | N6 | M |
-| N10 | Decision-point narration | Prompt for ~10s of voice at detected branch points | Attacks demonstration underdetermination (`P1`) | N2 | M |
-| N11 | Engineer capture controls | Indicator, pause, post-session review before distillation | Consent is structural, not promised (`P8`) | N1 | S |
-| N12 | Skill viewer | Read a skill as text, with the sessions and authors it came from | Ray's "show me what it learned" — the demo that converts | N7 | S |
-| N13 | Authorship attribution | Name the contributing engineers on every skill | `P8`; the capture programme survives | N6 | S |
-| N14 | Onboarding meter | Engineer-hours and time-to-first-verified-skill per environment | **The GTM number** [strategy/gtm.md](../strategy/gtm.md) | N8 | S |
+| # | Feature | Mechanism | User value | Depends on | Effort | Principle |
+|---|---|---|---|---|---|---|
+| N1 | Screen + input capture agent | OS-level capture of screen, input events, window/app context | Nothing yet — the substrate | — | M | `P1` |
+| N2 | Session segmentation | Split a shift into task episodes by idle gaps, app focus and ticket context | Recordings become comparable units | N1 | M | `P1` |
+| N3 | Action extraction | Convert raw capture into a typed action stream (clicked X in app Y, entered value class Z) | The representation clustering operates on | N2 | L | `P1` |
+| N4 | Sensitive-value redaction | Detect and drop credentials, tokens, PII at capture time, before storage | Precondition for any security conversation; D6's boundary is worthless if the capture holds secrets | N1 | M | `P8 P9` |
+| N6 | Cross-session clustering, **in-boundary** | Group episodes of the same procedure across engineers and environments, executing inside the client perimeter (D6) | **The core bet** | N3 | L | `P1 P7` |
+| N7 | Skill synthesis to `SKILL.md` | Emit goal, preconditions, steps, **success criterion**, escalation envelope | A readable, executable artifact | N6 | L | `P3 P6` |
+| N0 | **Stub executor** | Minimal step execution against a lab tenant — read plus reversible write, no gating, no identity, no tenant isolation | **Without it N8 cannot score anything.** Pulled up from X1, deliberately crippled: this is a test fixture, not the product's executor | N7 | M | `P3` |
+| N15 | **In-boundary node lifecycle** | Provision, patch, upgrade, roll back and health-monitor the stage-1 distillation node inside an MSP's tenant | **D6 has no delivery vehicle without this.** One node per MSP (not per client, per the corrected boundary), but it is a distributed component inside someone else's infrastructure, operated by whoever runs this company | N6 | L | `P4` |
+| N8 | Evaluation harness | Run a synthesized skill against a held-out environment and score it | **The only way to know whether N6 works**; the E2 and A8 instrument | N7 N0 | M | `P3 P7` |
+
+### Build math — stated because the first version's arithmetic did not close
+
+At the file's own effort key (**S** ≤2wk · **M** 2–6wk · **L** >6wk, solo founder), this chain is strictly sequential and its **floor is 34 weeks**: 2+2+6+2+6+6+2+2+6 (including N15). Midpoints put it past 50. The original Now tier held 14 items including three L's and was implicitly promised inside [gtm.md](../strategy/gtm.md) §4's 89-day slot — **that was not achievable and the file now says so.**
+
+Two consequences, both propagated rather than absorbed:
+
+1. **gtm.md §4 has been re-baselined** to a build window ending around month 8, the transfer test at months 8–9, and the first paid pilot near month 12 — which finally agrees with `strategy/market_type.md`'s "~12 months runway to first revenue" instead of contradicting it.
+2. **Seven features moved out of Now into Next** (N5, N9, N10, N11, N12, N13, N14). They keep their identifiers so every reference elsewhere in the pack still resolves; only their tier changed. **N0 moved *in*, because the original tier had a circular dependency**: N8 scores a skill by running it, X1 was the only executor, and X1 sat in a tier gated on N8 completing.
+
+**On N15's cost, since it is the item most likely to be underestimated.** A distributed node inside customer infrastructure is a support burden before it is a feature: version skew, an MSP's own patching windows, resource contention, and a failure mode where the node is down and nobody notices until skills go stale. The corrected D6 boundary is what makes this survivable — **three design partners means three nodes, not ~123** — but it is still the first operational obligation this company takes on, and it lands on one person.
+
+**What Now buys:** an answer to whether recorded sessions cluster into skills that execute correctly in an environment they were not recorded in. Nothing else. No gating, no identity, no tenant isolation, no UI beyond what the harness needs — those are Next, and they are only worth building if this answer is yes.
 
 ## NEXT — earn the right to act
 
 Only after N6–N8 show cross-environment transfer. Shadow before gate, gate before act — no exceptions.
 
+The seven N-rows at the top of this tier were demoted from Now (see Build math above). They keep their identifiers, so references from [PRD.md](PRD.md), [features_flagship.md](features_flagship.md), [journeys/](journeys/) and [ux_spec.md](ux_spec.md) still resolve.
+
 | # | Feature | Mechanism | User value | Depends on | Effort |
 |---|---|---|---|---|---|
+| N5 | Failure/abort labelling | Retain and mark sessions ending in escalation or rollback | Recovery behaviour becomes learnable | N2 | S | `P2` |
+| N9 | Variance envelope extraction **+ boundary egress filter** | Keep the distribution of how a procedure differed; the envelope is the **only** artifact permitted to cross the client boundary (D6) | The moat as data, and the security answer as structure | N6 | M | `P7` |
+| N10 | Decision-point narration | Prompt for ~10s of voice at detected branch points | Attacks demonstration underdetermination | N2 | M | `P1 P8` |
+| N11 | Engineer capture controls | Indicator, pause, post-session review before distillation | Consent is structural, not promised | N1 | S | `P8` |
+| N12 | Skill viewer | Read a skill as text, with its sessions and authors | Ray's "show me what it learned" — the demo that converts | N7 | S | `P6 P8` |
+| N13 | Authorship attribution | Name contributing engineers on every skill | The capture programme survives | N6 | S | `P8` |
+| N14 | Onboarding meter | Engineer-hours and time-to-first-verified-skill per environment | **The GTM number** [strategy/gtm.md](../strategy/gtm.md) | N8 | S | — *(a measurement surface, not a mechanism — the one row with no principle, deliberately)* |
 | X1 | Read-only executor | Execute non-mutating steps against a real environment | The first live action, with nothing at risk | N7 | L |
 | X2 | Shadow mode | Skill runs against live tickets without acting; outcomes compared to the human's | Trust bought before risk taken (`P5`) | X1 | M |
 | X3 | Deviation report | Route each divergence to the authoring engineer as a question | Corrections flow back (`P2 P6`) | X2 | M |
@@ -56,6 +73,8 @@ Only after N6–N8 show cross-environment transfer. Shadow before gate, gate bef
 | X18 | Test-account self-exploration | Bounded read-only discovery beyond what was recorded | Coverage without more recording (`P1 P4`) | X1 | M |
 | X19 | Skill correction UI | Engineer edits a skill; the edit is versioned and credited | `P6 P8`; the library stays theirs | N12 | M |
 | X20 | Environment dashboard | Per-client view: skills live, coverage, hours saved | What Dana opens each morning | N14 | S |
+| X23 | **Billable-resolution ledger** | Record, per ticket: skill version, verification result, and whether a human reversed the action within the ticket's life. A resolution bills only when the criterion passed **and** nothing was reversed | **Outcome pricing dies in month three without this** — the 14:20 case in [journeys/day_in_life.md](journeys/day_in_life.md) is an action that verified correctly and was undone. `strategy/sales_roadmap.md` step 6b names it as the clause to settle before the first invoice | X4 X8 | M | `P3 P9` |
+| X24 | **Incident disclosure pack** | One-click same-day export of what an agent did in a client environment, under which principal, with the revert state and the skill change that followed | A veto-holder who hears about an agent's mistake secondhand reopens a six-week review. The product cannot make the call; it can make the disclosure complete in four minutes | X21 | S | `P8 P9` |
 | X21 | Audit export | Action log with skill version and verification result | Sonia's recurring review, answered with a file | X7 X4 | S |
 | X22 | Retention policy engine | Raw sessions expire on schedule; skills persist | The highest-sensitivity artifact has the shortest life | N4 | S |
 
@@ -81,7 +100,7 @@ Only after N6–N8 show cross-environment transfer. Shadow before gate, gate bef
 | L17 | Cost/usage analytics | Inference cost per skill and per resolved ticket | Protects gross margin as volume grows | X4 | S |
 | L18 | Skill deprecation workflow | Retire skills whose environment is gone | The library stays true rather than accumulating | X12 | S |
 | L19 | Multi-language capture | Non-English narration | International, post-US | N10 | M |
-| L20 | On-prem/air-gapped deployment | For clients that will not permit cloud processing | Unlocks regulated MSP clients | L8 | L |
+| L20 | On-prem/air-gapped deployment | For clients permitting no outbound connectivity at all | Unlocks regulated MSP clients. **Note D6 already puts distillation inside the boundary**, so this is the narrower case of blocking even envelope egress | N6 X16 | L |
 
 ## What is deliberately not on this list
 

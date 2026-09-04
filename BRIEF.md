@@ -39,7 +39,9 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 
 **Supporting design:** the agent holds its own identity for attribution, and self-explores with a test account to learn the environment beyond what was recorded.
 
-**Architecture constraint (D6, binding).** Clustering runs **inside the client boundary**. Raw session recordings never leave it; the only thing that crosses is the **abstracted variance envelope** — procedure shapes and deviation patterns carrying no client data. This is what makes the compounding half defensible by construction rather than by policy, and it is the structural answer to the question that gates every deal: *what leaves my environment?*
+**Architecture constraint (D6, binding — corrected 2026-09-04).** Distillation is **two-stage**: clustering and abstraction run **inside the MSP's own tenant**, on that MSP's sessions across all its client environments; only **abstracted variance envelopes** — procedure shapes and deviation patterns carrying no tenant identity — cross to the central global layer. Raw session recordings never leave the MSP's control and never reach us.
+
+*The first framing said "inside the client boundary"; that is not implementable, because capture originates on MSP engineer workstations covering 41 clients, cross-environment clustering needs more than one environment co-located, and a 22-person client on SaaS has no perimeter to host a node in. The corrected design preserves the intent, makes cross-environment compounding possible, and reduces the fleet from one node per client to one per MSP. See `product/PRD.md` §7.*
 
 **Moat — hybrid library.** Global skills for the stacks every client shares (Okta, M365, Active Directory, Jira) compound across every deployment, so each new environment starts warmer than the last; environment-specific skills stay in a private tenant layer that never crosses the boundary. The compounding half never touches customer data — which is what makes the flywheel survive security review. Secondary moat: workflow lock-in once the library is the runbook of record.
 

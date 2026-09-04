@@ -59,10 +59,24 @@ Three arrivals define the window: computer-use agents moving 12% → 85% on OSWo
 5. **No published evidence of cross-environment transfer** — the single most load-bearing commercial assumption (A8) has no support in the literature either way.
 6. **The historical analogue was absorbed.** FortressIQ's outcome was a $ ​trade sale into an RPA vendor and product invisibility [S5][S6], not an independent category win.
 
+## 6b. Human–automation trust — the literature the adoption argument rests on
+
+The product's adoption case (readable skills, correction rights, gated actions) is a **trust-calibration** argument, and that field has forty years of results the pack must not reinvent:
+
+- **Lee & See (2004), "Trust in Automation: Designing for Appropriate Reliance."** The goal is not maximal trust but *calibrated* trust — reliance matched to actual capability. Both over-trust and under-trust are failures. Transparency about how a system works, and about its limits, is the primary calibration mechanism. [S35]
+- **Parasuraman & Riley (1997), "Humans and Automation: Use, Misuse, Disuse, Abuse."** Names the failure modes directly: **misuse** (over-reliance on an unreliable system), **disuse** (rejecting a system that would have helped — which is what Ray does if beat 12 goes wrong), and **abuse** (deploying automation without regard to the human's resulting role). [S36]
+- **Automation bias and complacency.** Operators under-verify automated recommendations, especially when the system is usually right — which is precisely the condition a skill library with a high success rate creates. Verification that a human performs *because the system asked* degrades over time.
+
+**What this implies for the product, beyond what the pack already says:**
+
+1. **A high success rate is a hazard as well as an asset.** The 14:20-class error (verified action, wrong decision) is exactly where automation bias bites: an approver who has clicked through 200 correct proposals reads the 201st less carefully. Approval-surface design must fight the habituation it creates.
+2. **Disuse is the more likely failure here than misuse**, because the expert whose cooperation the capture programme needs is the one most equipped to reject it (`P8`).
+3. **Calibration, not confidence.** This is the research reason the product shows an envelope ("seen in 6 tenants, 3 variants") rather than a confidence score: a number invites reliance it cannot justify.
+
 ## 7. Risks the science implies
 
 - **Happy-path capture.** A recording captures what one engineer did once; failure branches, aborted attempts and recovery behaviour are exactly what is *not* demonstrated, and exactly what production requires.
-- **Silent wrongness.** A skill that executes cleanly and does the wrong thing is worse than one that fails loudly. IT actions are frequently destructive and often irreversible.
+- **Silent wrongness.** A skill that executes cleanly and does the wrong thing is worse than one that fails loudly. IT actions are frequently destructive and often irreversible. **Automation bias makes this worse over time**, not better: the more reliable the system, the less carefully each approval is read [S35][S36].
 - **Drift.** Client environments change continuously; a skill library is a maintenance liability from the day it is written — the precise mechanism that made RPA maintenance 60% of cost [S11].
 - **Regulatory.** Continuous screen recording of employees is treated as disproportionate under EU data-protection practice, consent is a weak legal basis given the employer–employee power imbalance, and works councils hold co-determination rights in Germany, the Netherlands, Austria and Sweden [S29]. This constrains the capture step in the EU specifically and belongs in the risk matrix, not in a footnote.
 

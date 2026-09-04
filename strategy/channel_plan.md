@@ -1,7 +1,7 @@
 # Channel plan and channel economics
 
 > **What this is** — the channel map by segment **with the economics computed**: the discount and margin stack from list price to net, cost to acquire through each channel, time to first revenue, and a viability verdict at our price point.
-> **Why it exists** — a GTM narrative that names channels without computing their margins is asserting distribution rather than planning it. At $28.3k annual revenue per customer, two of the six channels below are arithmetically impossible, and one of the attractive-looking ones destroys the unit economics after its cut. Better to know now.
+> **Why it exists** — a GTM narrative that names channels without computing its margins is asserting distribution rather than planning it. At ~$8,600 year-1 revenue per customer, **two of the six channels below are impossible, three carry warnings, and none has slack** — and the one that looks most attractive is 18–24 months away. Better to know now.
 > **How to read it** — the Verdict column. A skeptic should attack the marketplace revenue-share assumption, which is a placeholder until partner conversations happen.
 > **Depends on / feeds** — cites [gtm.md](gtm.md), [market_sizing.md](market_sizing.md); feeds `financials/unit_economics.md`, `financials/revenue_build.md`, [sales_roadmap.md](sales_roadmap.md).
 

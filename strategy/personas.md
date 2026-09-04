@@ -72,4 +72,4 @@
 
 No "lite" fork and no separate product tier: the same skill library serves all three, differing only in whether a person is consuming a skill or authoring one by working.
 
-**Recommended next 3 moves:** (1) validate Priya's and Ray's objections in discovery interviews before writing a line of product copy — both are adoption-fatal and neither is a buyer objection; (2) build Sonia's security one-pager before the first pilot, not after her review starts; (3) make Ray's "show me what it learned" the core demo, since it converts the hardest persona.
+**Recommended next 3 moves:** (1) validate Priya's and Ray's objections in discovery interviews before writing a line of product copy — both are adoption-fatal and neither is a buyer objection; (2) build Sonia's tenant-isolation architecture document before the first pilot — and note it *opens* her review rather than ending it, per [sales_roadmap.md](sales_roadmap.md); the full evidence pack behind it is a 6–12 month programme; (3) make Ray's "show me what it learned" the core demo, since it converts the hardest persona.

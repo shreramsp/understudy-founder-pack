@@ -1,7 +1,7 @@
 # Go-to-market
 
 > **What this is** — the channel strategy by segment, the acquisition loop meant to compound, a CAC hypothesis per channel with payback logic, and the 90-day motion from first customer to first ten.
-> **Why it exists** — at ~$28.3k annual revenue per MSP [market_sizing.md](market_sizing.md), most enterprise go-to-market motions are arithmetically impossible: a $40k enterprise-style acquisition cost never pays back. This file exists to make that constraint explicit before the seed round is spent discovering it.
+> **Why it exists** — at ~$8,600 year-1 revenue per MSP and ~$17,900 at steady state [market_sizing.md](market_sizing.md), most enterprise go-to-market motions are arithmetically impossible: a $40k acquisition cost never pays back, and even the primary channel has no slack. This file exists to make that constraint explicit before the seed round is spent discovering it.
 > **How to read it** — the CAC ceiling in §2 is the governing constraint; every channel below is judged against it. A skeptic should attack the assumption that MSP peer communities convert at the rate claimed.
 > **Depends on / feeds** — cites [market_sizing.md](market_sizing.md), [petal_diagram.md](petal_diagram.md), [personas.md](personas.md); feeds [channel_plan.md](channel_plan.md), [sales_roadmap.md](sales_roadmap.md), `financials/unit_economics.md`, `validation/get_keep_grow.md`.
 
@@ -26,7 +26,7 @@
 
 **Beachhead — US MSPs, 10–100 employees.**
 
-1. **MSP peer communities and mastermind groups** *(primary)*. MSP owners buy what other MSP owners run, and these groups exist specifically to exchange that. Trust is inherited, so the sales cycle collapses. Estimated CAC **$2,000–5,000** `(assumption: based on time cost of community participation rather than media spend)`. Slow to start, compounds hard.
+1. **MSP peer communities and mastermind groups** *(primary)*. MSP owners buy what other MSP owners run, and these groups exist specifically to exchange that. Trust is inherited, so the sales cycle collapses once you are inside. **CAC, entry cost and time-to-first-close are computed in [channel_plan.md](channel_plan.md) and are not restated here** — the two files drifted apart once already. Summary: not cheap ($4,000–9,000) and not fast (6–9 months to first close, including membership approval).
 2. **MSP-focused newsletters and podcasts** *(secondary)*. Narrow, cheap, and read by exactly Marcus. Works only with a concrete artifact — the engineer-hours ROI calculator, not a brand ad. CAC **$4,000–8,000** `(assumption)`.
 3. **RMM/PSA marketplace listing** *(scale channel, year 2)*. Where MSPs already shop. Requires a partner relationship and carries a margin stack — see [channel_plan.md](channel_plan.md).
 4. **Direct outbound** *(disqualifying test, not a channel)*. Run 100 cold emails once to measure the floor. If it converts below 5% to a call, it is confirmation the trust-inherited channels are the only viable ones, which is itself worth knowing cheaply.
@@ -53,20 +53,25 @@
 
 **Engineering precondition, stated because the first version omitted it.** BRIEF.md records stage as *design — nothing implemented*. Multi-surface capture, clustering, skill synthesis, a governed executor and tenant isolation do not exist. The 90 days below are therefore an **evidence motion, not a deployment motion**: no step requires running in a customer's production environment, and the paid pilot sits at day 120–180 behind a stated build milestone. A plan that puts a live client onboarding at day 31 is a plan written as if engineering capacity were free.
 
-**Days 1–30 — ten conversations, no product pitch.** Marcus-profile owners from peer communities. Ask what onboarding costs in hours; do not describe the product until the pain is stated unprompted. Simultaneously tests four business-model-canvas blocks. **Exit:** ≥6 of 10 rank onboarding in their top 3 pains.
+**Access precondition, stated because the engineering one was not enough.** [channel_plan.md](channel_plan.md) §Entry cost establishes that peer communities take 3–9 months to enter and may not admit a vendor at all. **The first ten conversations therefore cannot come from that channel** — it is the channel being built, not the one being used. Day-1 sources are open ones: r/msp and the MSP Discord/Slack communities, LinkedIn outreach to owners of 10–100-person MSPs, MSP-podcast host audiences, and warm paths through any RMM/PSA vendor contact. Lower trust, higher volume, available immediately.
 
-**Days 31–60 — the A8 transfer test, on our own lab environments.** Three engineers × five procedures × two environments, per BRIEF's decisive test. Run in lab tenants we control, not in a client's admin plane — this needs no security review, no pilot agreement and no product, and it answers the assumption that decides the shape of the company. **Exit:** a measured cross-environment skill success rate.
+**Days 1–30 — ten conversations, no product pitch, plus the access test in parallel.** Marcus-profile owners from the open sources above. Ask what onboarding costs in hours; do not describe the product until the pain is stated unprompted. **Run channel_plan.md's fortnight admissibility test alongside it:** name three specific peer/buying groups, establish membership rules, vendor terms and whether the founder can join at all. **Exit:** ≥6 of 10 rank onboarding in their top 3 pains, *and* a yes/no on admissibility to three named groups.
 
-**Days 61–90 — recorded walkthrough to three design partners, and publish the *method*.** Show a synthesized skill executing against a lab environment; secure design-partner commitments contingent on a build milestone. Publish the evaluation method and the first data point — not a yardstick claim, which needs ≥3 environments across ≥2 MSPs before it means anything. **Exit:** three signed design-partner LOIs and one published method.
+**Days 31–60 — build the minimum pipeline; days 61–120 — the A8 transfer test.** Correcting the first revision, which said the lab test needed "no product". It does not need security review, a pilot agreement or tenant isolation; it *does* need capture, clustering, skill synthesis, an executor and an evaluation harness — the core loop minus governance. Name that as a build window rather than hiding it inside a 30-day slot.
 
-**Days 120–180 — first paid pilot**, gated on a shipping capture-and-execute path and the tenant-isolation document Sonia's review opens with.
+The test itself — three engineers × five procedures × two environments, per BRIEF's decisive test — also needs **three engineers who can perform real Okta/M365/AD procedures competently**, which a solo founder does not have on hand. Sources, in order of preference: a design partner lending two engineers for a day, paid contract MSP technicians `(assumption: ~$100/hr, ~16 hours total, ~$1,600)`, or moonlighting tier-2 techs. **The honest schedule is days 31–120, not 31–60**, and the plan already accepts that discipline for the paid pilot. **Exit:** a measured cross-environment skill success rate.
+
+**Days 121–150 — recorded walkthrough to three design partners, and publish the *method*.** Show a synthesized skill executing against a lab environment; secure design-partner commitments contingent on a build milestone. Publish the evaluation method and the first data point — not a yardstick claim, which needs ≥3 environments across ≥2 MSPs before it means anything. **Exit:** three signed design-partner LOIs and one published method.
+
+**Days 180–240 — first paid pilot**, gated on a shipping capture-and-execute path and the tenant-isolation document Sonia's review opens with.
 
 **First 10 customers by type:** 3 design partners (converted), 4 from the peer group of those 3, 2 from newsletter/podcast attribution, 1 inbound from the published number. **First 100:** requires the marketplace channel. Two distinct partner events, conflated in the first version: an **intelligence call in month 2** to price the revenue share, and a **listing application** gated on a shipping integration, SOC 2 and reference customers — realistically month 18–24. First-100 is a two-year horizon, not a year-one one, and no artifact should imply otherwise.
 
 ## 5. What would falsify this GTM
 
+- The founder is not admissible to peer or buying groups as a vendor → the primary and best-economics channels are both closed, and the plan reshapes around the marketplace at 18–24 months. **This is the fastest and cheapest thing to find out, and it is now a day 1–30 exit criterion.**
 - Peer-community introductions convert below 20% to a booked call → trust is not inheritable here, and CAC assumptions collapse.
-- Design partners will not permit publication of their numbers → the compounding loop has no fuel and this becomes a conventional, more expensive motion.
+- Design partners will not permit even **anonymised** publication ("a 34-person Midwest MSP") → the compounding loop has no fuel and this becomes a conventional, more expensive motion. Note the pilot agreement no longer asks for named-client numbers [sales_roadmap.md](sales_roadmap.md) step 6.
 - Environment #2 at the same MSP requires a sales conversation → land-and-expand is false, and revenue per MSP is capped at the single-environment figure.
 
 **Recommended next 3 moves:** (1) join two MSP peer communities as a participant before selling anything — the channel is the relationship; (2) build the engineer-hours ROI calculator as the first marketing artifact, per [petal_diagram.md](petal_diagram.md); (3) run the 100-email cold test once, early, to price the floor honestly.

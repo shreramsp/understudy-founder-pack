@@ -52,7 +52,9 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 
 ## Business model
 
-**Per resolved ticket** — outcome pricing, directly comparable to the $5–13/ticket figures the category publishes. Recurring, expands per client environment onboarded. Signed by the MSP owner/COO.
+**Two-part tariff** (founder-confirmed, D4): **~$6 per resolved ticket** — outcome pricing, comparable to the $5–13/ticket figures the category publishes and well under the buyer's own $22.50 blended cost [S27] — **plus $1,500 per environment onboarded**, priced against the 40–80 engineer-hours that onboarding costs today [S21].
+
+The onboarding fee is not a second-order add-on: it is roughly 87% of year-1 revenue, it arrives at the moment of the work the buyer already resents paying for, and without it no acquisition channel is economically viable [strategy/channel_plan.md](strategy/channel_plan.md). Signed by the MSP owner/COO.
 
 ## Founder edge
 

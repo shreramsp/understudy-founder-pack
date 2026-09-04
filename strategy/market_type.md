@@ -13,7 +13,7 @@ Re-segmentation of IT service management by buyer (MSPs) and by capability (self
 
 ## Evidence
 
-**It is not a new market.** MSPs already buy service-desk software, already run ticket queues, and already have a budget line for it. Nobody has to be convinced that AI ticket resolution is a category: Moveworks sold for $2.85B [S26], Aisera has raised $164.5M [S13], and ServiceNow is a ~$160B company [S3]. Demand exists and is funded.
+**It is not a new market *for service-desk software*.** MSPs already buy it, already run ticket queues, and already have a budget line for it. **It is a new market for onboarding automation**, which has no budget line at all — that distinction is what makes the declaration a hybrid rather than a hedge. Nobody has to be convinced that AI ticket resolution is a category: Moveworks sold for $2.85B [S26], Aisera has raised $164.5M [S13], and ServiceNow is a ~$160B company [S3]. Demand exists and is funded.
 
 **It is not a straight existing-market play either.** Winning an existing market means beating incumbents on the axis they already compete on — resolution quality — against companies with $164.5M and a $2.85B exit behind them. That is a losing fight for a pre-seed company, and it is not where the evidence says the pain is.
 
@@ -24,13 +24,13 @@ Re-segmentation of IT service management by buyer (MSPs) and by capability (self
 
 **Corroborating signal that the segment feels the pain:** 26% of MSPs report lacking enough staff to service more clients and 22% cannot find skilled technicians [S33]. The constraint on MSP growth is engineer-hours, which is exactly what onboarding consumes at 40–80 hours per client [S21].
 
-## Strategic consequences of re-segmentation
+## Strategic consequences of the hybrid
 
 | Dimension | Consequence for Understudy |
 |---|---|
 | **Positioning approach** | Must make the *segment* the story, not the feature. "The service desk for MSPs that learns each client environment" beats "better AI resolution". The buyer must recognise themselves in the first sentence |
-| **Sales cycle** | Shorter than enterprise ITSM (owner-operator buyers, 70% of US MSPs have <50 employees [S31]) but requires proving a new claim rather than a better number — expect 30–90 days with a pilot, not a 6–12 month enterprise cycle [S20] |
-| **Capital needs** | Moderate. Re-segmentation does not require market creation spend, but does require enough runway to prove the discovery claim before competing on resolution. The evidence burden, not the demand generation, is the cost centre |
+| **Sales cycle** | **Two very different numbers, and the pack should quote the first.** Through a *cold* channel: **6–9 months to first close**, dominated by peer-community entry [channel_plan.md](channel_plan.md), with the first paid pilot at day 180–240 [gtm.md](gtm.md). Through an *established* relationship: 30–90 days. Add a **recurring ~6-week client-side security review per environment** [sales_roadmap.md](sales_roadmap.md). Still far shorter than the 6–12 month enterprise ITSM cycle [S20], but not the fast SMB motion the first version implied |
+| **Capital needs** | **Higher than the first version claimed, and driven by clocks rather than by spend.** The new-market half *does* require market-creation spend: buyer education on a cost nobody currently measures, with the engineer-hours ROI calculator as its instrument. On top of that sit **two non-compressible clocks that money does not shorten** — SOC 2 at 6–12 months (gating enterprise-adjacent clients and the marketplace) and channel entry at 3–9 months. **Runway to first revenue is ~12 months**, and the seed must fund the evidence burden *and* both clocks |
 | **Dominant risk** | **Market risk, in two forms.** (a) *Re-segmentation risk:* buyers reject the new segment boundary and default to comparing us with the category leader on the category's existing axis — resolution rate — where we lose. (b) *New-market risk:* the sale has to create a budget line that does not exist, which is slower and costlier than a switch. **Technical risk (clustering, A8) is real but lives in `validation/riskiest_assumptions.md`, not in this cell** — the first version wrote execution risk here and thereby hid the market risk this declaration exists to surface |
 | **What the new-market half costs** | Buyer education on a cost they do not currently measure. The engineer-hours ROI calculator is not a marketing nicety — it is the instrument that turns an unmeasured leak into a number, and without it there is no budget to move |
 | **Competitive response** | Incumbents can add discovery as a feature. ServiceNow is structurally inhibited (implementation is 3–5× licence revenue [S20]); Ravenna and Atomicwork are not. Speed to a defensible skill library matters more than speed to first customer |

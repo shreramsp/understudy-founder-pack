@@ -27,6 +27,14 @@ Confirmed by the founder in the grill (**not** assumptions): MSP beachhead · hy
 - **New, promoted to pack-killing — A11:** the brief's phase-4 autonomy is not supportable by current long-horizon agent performance (20.6% on OSWorld 2.0 [S16]). The pack will claim discovery + governed execution and treat full autonomy as direction, not deliverable.
 - **New — A12:** EU deployments face a real constraint on the capture step: continuous screen recording is generally treated as disproportionate, consent is a weak legal basis, and works councils hold co-determination rights in DE/NL/AT/SE [S29]. US-first is now an implicit assumption.
 
+## Founder decisions taken during the run
+
+| # | Decision | Date | Consequence |
+|---|---|---|---|
+| D1 | **A11 accepted.** Scope is discovery + governed supervised execution; autonomy is direction, not deliverable | 2026-09-04 | Binding claim boundary in [BRIEF.md](BRIEF.md). No artifact may imply unattended autonomy; the revenue build may not price it |
+| D2 | **RPA differentiation is a required argument**, not an optional one — narrated skills degrade gracefully under UI change where scripted bots break | 2026-09-04 | Mandatory explicit section in `tech/whitepaper.md` and `narrative/vc_memo.md`; tested as **E2** in `validation/experiment_board.md` against a deliberately altered UI, with an RPA-style scripted baseline |
+| D3 | **A12 stands. US-first** | 2026-09-04 | EU is a later-market question with a named legal constraint, not a launch geography. `strategy/market_sizing.md` sizes US SAM |
+
 ## Open questions for the founder
 
 1. Is there any existing recording corpus, design partner MSP, or prior pilot — or is this genuinely zero-evidence today?

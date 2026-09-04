@@ -1,0 +1,28 @@
+# Lean canvas
+
+> **What this is** — Maurya's lean canvas for Understudy, one table, each cell at most three bullets, with the riskiest cell marked ⚠.
+> **Why it exists** — the canvas forces the whole business onto one page so inconsistencies become visible: a channel that cannot reach the customer segment, or a revenue stream that does not match the cost structure. It is the compression test the longer strategy artifacts must survive.
+> **How to read it** — read the ⚠ cell first, then Unfair Advantage, which is the cell most businesses fake. A skeptic should attack whether the unfair advantage is genuinely non-copyable in a quarter.
+> **Depends on / feeds** — cites [positioning.md](positioning.md), [market_sizing.md](market_sizing.md), [personas.md](personas.md); feeds [business_model_canvas.md](business_model_canvas.md) (Blank's 9-block variant, deliberately kept alongside this one), `validation/riskiest_assumptions.md`.
+
+| Block | Content |
+|---|---|
+| **Problem** | 1. Onboarding a client environment costs an MSP 40–80 engineer-hours before a ticket is billed [S21]<br>2. Environment knowledge lives in 3 engineers' heads and leaves when they do<br>3. 26% of MSPs cannot staff the clients they could win [S33] |
+| **Customer segments** | 1. **Beachhead:** US MSPs, 10–100 employees, multi-client, no automation staff (~12,000 [S31])<br>2. **Expansion:** internal IT at mid-market companies (the segment every competitor already fights over)<br>3. User ≠ payer: engineers use, owner/COO signs |
+| **Unique value proposition** | **The service desk that learns each client environment by watching your engineers work — so client three onboards faster than client one.**<br>Mechanism: a recorded session becomes an executable skill, not a diagram someone still has to implement |
+| **Solution** | 1. Passive capture of engineer sessions (screen, actions, optional narration)<br>2. Clustering into a readable `SKILL.md` library — global stack layer + private tenant layer<br>3. Governed execution with approval gates and human escalation (never unattended — D1) |
+| **Key metrics** | 1. **Time-to-first-autonomously-resolved-ticket in a new environment** — the category yardstick nobody publishes<br>2. Skill reuse rate across environments (**the A8 moat, measured**)<br>3. Engineer-hours per client onboarded, before vs. after |
+| ⚠ **Unfair advantage** | 1. **The variance envelope, not the procedure.** The happy-path skill for Okta or M365 is authorable from vendor documentation — that half is copyable. What is not: the observed *distribution* of how the same procedure differs across 41 real environments, the failure branches seen in escalations, the verification steps engineers actually use, and the mapping from how a client phrases a ticket to which procedure it is. That accrues only from deployments<br>2. Time to parity: a competitor starting today needs comparable environment coverage, not a quarter of engineering — estimated 6–8 quarters `(assumption)`<br>3. MSP-specific motion nobody else is running<br>4. *Not* the idea — ALLOY published it [S22] |
+| **Channels** | 1. MSP peer communities and mastermind groups (owner-to-owner)<br>2. MSP-focused podcasts/newsletters and the two big conferences<br>3. RMM/PSA marketplace integration as the eventual scale channel — see [channel_plan.md](channel_plan.md) for the economics |
+| **Cost structure** | 1. Inference for clustering and execution (falling ~10×/yr for fixed capability [S30])<br>2. Engineering: clustering quality is the product, not a feature<br>3. Security review and compliance work per enterprise-adjacent client (Sonia's gate) |
+| **Revenue streams** | 1. **Per resolved ticket** at ~$6, against a buyer cost of $22.50 blended / $45 agent-handled [S27][S28]<br>2. **Per environment onboarded** — the two-part tariff [market_sizing.md](market_sizing.md) recommends testing<br>3. Expansion: additional client environments per MSP, which is the natural land-and-expand |
+
+## Why ⚠ moved to Unfair advantage
+
+The first version marked Key metrics as riskiest, which put the warning on the thermometer rather than the fever. **The cell that can be empty is Unfair advantage**, and critic round 1 was right that the original claim cancelled itself: a global layer covering Okta, M365, Active Directory and Jira describes the four most publicly documented admin surfaces in IT. A competitor can author those happy-path skills from vendor docs without a single deployment. If that were the whole moat, the answer to "why won't Ravenna do this in a quarter?" would be *they can*.
+
+**The defensible claim is narrower and survives that attack:** what compounds is not the procedure but the **variance envelope around it** — how the same operation differs across dozens of real environments, what it looks like when it fails, and how it is verified. None of that is in a vendor's documentation, because vendors document the intended path, not the forty ways a real tenant deviates from it. It accrues only from observed deployments, which is why time-to-parity is measured in deployment coverage rather than engineering quarters.
+
+**This is still an assumption (A8), not a finding** — `research/capability_table.md` row 4 records no published evidence of cross-environment transfer either way. **Skill reuse rate across environments** is how it becomes measurable, from the second environment onward, and it is the primary gate in `validation/riskiest_assumptions.md`.
+
+**Recommended next:** instrument skill reuse rate and the variance-envelope claim together — reuse rate alone could be satisfied by copyable happy-path skills and would tell you nothing about defensibility.

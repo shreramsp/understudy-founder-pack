@@ -1,0 +1,33 @@
+# Channel plan and channel economics
+
+> **What this is** — the channel map by segment **with the economics computed**: the discount and margin stack from list price to net, cost to acquire through each channel, time to first revenue, and a viability verdict at our price point.
+> **Why it exists** — a GTM narrative that names channels without computing their margins is asserting distribution rather than planning it. At $28.3k annual revenue per customer, two of the six channels below are arithmetically impossible, and one of the attractive-looking ones destroys the unit economics after its cut. Better to know now.
+> **How to read it** — the Verdict column. A skeptic should attack the marketplace revenue-share assumption, which is a placeholder until partner conversations happen.
+> **Depends on / feeds** — cites [gtm.md](gtm.md), [market_sizing.md](market_sizing.md); feeds `financials/unit_economics.md`, `financials/revenue_build.md`, [sales_roadmap.md](sales_roadmap.md).
+
+**Reference figures (corrected after critic round 1):** list $6/resolved ticket + $1,500/environment onboarded · **year-1 revenue per MSP ~$8,600** · 3-year gross profit ~$39,100 · **CAC ceiling ~$13,000 at 3:1, target ≤$5,000** [gtm.md](gtm.md).
+
+The first version judged these channels against a $21,000 ceiling derived from full-book penetration. Two verdicts change below, and the primary channel's costing was wrong in a way that mattered.
+
+| Channel | Margin stack (list → net) | CAC | Time to first revenue | Viable at this price? |
+|---|---|---|---|---|
+| **MSP peer communities** | No intermediary — **100% net** | **$4,000–9,000** `(assumption: entry cost + participation, amortised — see §Entry cost below — plus 15–25 hrs per close at ~$100/hr founder time)` | **6–9 months to first close** (membership approval, then participation before any pitch) | ⚠️ **Primary, but not cheap and not fast.** The first version costed only the marginal selling hours and ignored entry entirely. At the top of the range it brushes the ≤$5,000 target |
+| **Newsletters / podcasts (MSP-focused)** | Sponsorship is a fixed cost, not a cut — **100% net** | $4,000–8,000 `(assumption: $3–8k placements, 1–2 customers each)` | 30–90 days | ⚠️ **Secondary.** At the top of the range it exceeds the ≤$5,000 target and only clears the $13,000 ceiling. Viable only with the hours ROI calculator attached; brand advertising is not affordable at this ACV |
+| **RMM/PSA marketplace** | **15–25% revenue share** `(assumption: typical marketplace band; unverified — no partner conversation has happened)` → net ~$13,400–15,200/yr steady state | $1,000–3,000 `(assumption: marketplace demand, low touch)` | **18–24 months** — listing requires a shipping integration, SOC 2 and reference customers, none of which exist at a design-stage company | ⚠️ **Still the only path to 100 customers, and further away than the first version implied.** The rev-share is survivable; the timeline is the real cost and it puts first-100 in year two |
+| **MSP franchise / buying groups** | **10–20% referral fee** `(assumption: unverified)`, often plus a member discount → net ~$14,300–16,100/yr | $500–2,000 `(assumption)` | 3–6 months to get approved | ✅ **Best economics available.** Access is the constraint, not the margin — apply now, since approval time is the binding cost |
+| **VAR / channel resellers** | **30–40% reseller margin** `(assumption: unverified)` → net ~$10,700–12,500/yr | Low direct, high enablement cost | 9–18 months | ❌ **Not viable.** A 35% cut on a $17,900 steady-state ACV leaves too little to fund support, and resellers will not carry a pre-revenue product without enablement we cannot staff |
+| **Direct outbound / field sales** | 100% net | $15,000–40,000 `(assumption: 2 touches + pilot + AE time at loaded cost)` | 60–180 days | ❌ **Arithmetically impossible.** Exceeds the entire $13,000 ceiling before the pilot starts. Run once as a 100-email floor test [gtm.md](gtm.md), never as a motion |
+
+## Entry cost — what the first version omitted
+
+Peer communities in this segment are membership organisations, not open forums: they charge fees, several restrict membership to MSP owners, and vendor participation is usually a separate sponsorship tier priced like a conference booth — which [gtm.md](gtm.md) §1 rules out on CAC grounds. **A technical founder with no MSP relationships may not be admissible as a peer at all.** The channel therefore carries an entry cost of both money and months before a single conversation, and that is why CAC above is 2× the first version's estimate and time-to-first-close is 6–9 months rather than 60–120 days.
+
+**This is the plan's most schedule-sensitive unknown**, and it is answerable in a fortnight: name three specific groups, establish membership rules and vendor terms, and confirm admissibility. If a vendor cannot join as a peer, the primary channel is not viable and the whole plan reshapes toward buying groups and the marketplace — better discovered in week two than month nine.
+
+## The three conclusions
+
+1. **Buying groups now have the best economics; peer communities are primary but neither cheap nor fast.** Both are relationship-gated rather than spend-gated, so the channel cannot be bought with the seed round — it has to be earned, with a lead time of 3–9 months. **Under the corrected ceiling the comfortable margin is gone: the primary channel at its top end ($9,000) sits between the $5,000 target and the $13,000 ceiling.** There is no channel with slack in it.
+2. **The marketplace is the only route to 100 customers, it costs 15–25% plus a dependency, and it is 18–24 months out.** Listing requires a shipping integration, SOC 2 and references. The sequencing is fixed by those prerequisites rather than chosen: prove the motion in communities, then list. Month-2 partner contact is an *intelligence call to price the rev-share*, not an application — [gtm.md](gtm.md) §4 now states both events separately.
+3. **Anything requiring a reseller margin or a field sales team is off the table, and the corrected numbers make pricing the binding constraint on distribution.** At per-ticket pricing alone a year-1 customer is worth ~$1,100 and **every channel in this table fails, including the primary one.** The two-part tariff is what makes any distribution viable. Channel viability and pricing are not two questions — they are one.
+
+**Recommended next 3 moves:** (1) replace the marketplace revenue-share assumption with a real number from three partner conversations before any integration work; (2) apply to two MSP buying groups now, since approval takes 3–6 months and the economics are the best available; (3) re-run this table after the two-part tariff test — several verdicts flip if ACV rises.

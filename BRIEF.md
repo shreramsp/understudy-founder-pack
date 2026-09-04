@@ -35,7 +35,7 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 
 ## Mechanism & moat
 
-**Core loop:** record (screen · clicks · spoken reasoning) → cluster → deduplicate → synthesize `SKILL.md` → simulate in parallel with a human → govern with approval gates on destructive actions → execute autonomously, escalating the hardest cases. No model training anywhere in the loop; skills are text, readable and auditable by the engineer they came from.
+**Core loop:** record (screen · clicks · spoken reasoning) → cluster → deduplicate → synthesize `SKILL.md` → simulate in parallel with a human → govern with approval gates on destructive actions → execute under supervision, escalating anything outside the skill's envelope. No model training anywhere in the loop; skills are text, readable and auditable by the engineer they came from.
 
 **Supporting design:** the agent holds its own identity for attribution, and self-explores with a test account to learn the environment beyond what was recorded.
 
@@ -57,6 +57,31 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 ## Founder edge
 
 AI/agents engineering depth. The clustering-and-skill-synthesis core is the hard technical bet in this company, and it is the founder's ground — founder-market fit argued on the mechanism rather than on years in managed services. *(The market-side gap is named honestly in ASSUMPTIONS.md A6 rather than papered over.)*
+
+## Claim boundary — binding on every artifact in this pack
+
+Founder decision, 2026-09-04, taken against the capability evidence in [research/capability_table.md](research/capability_table.md).
+
+**What this pack claims:** environment discovery, and **governed, supervised execution with human escalation.**
+**What it does not claim:** unattended autonomous resolution. Phase 4 of the original ladder is stated as *direction*, never as a deliverable, a roadmap date, or a number in the revenue build.
+
+*Basis:* the best frontier system completes 20.6% of long-horizon OSWorld 2.0 tasks, where the median task takes a human 1.6 hours — the shape of a real ticket [S16]; agents scoring ~85% on standard OSWorld still fail ~80% of real workflows [S15]. A pack promising autonomy against that evidence fails its first technical diligence call. **Any artifact implying unattended autonomy is a defect, not a stretch goal.**
+
+**Geography:** US-first. EU capture is constrained by data-protection practice treating continuous screen recording as disproportionate, and by works-council co-determination in DE/NL/AT/SE [S29] (A12).
+
+## The RPA differentiation argument — required, not optional
+
+Founder directive, 2026-09-04. **`tech/whitepaper.md` and `narrative/vc_memo.md` must each carry this argument explicitly**, because it is the single objection this company will be asked in every technical diligence conversation, and the base rate is against us: automation derived from observed work has failed in 30–50% of projects, with maintenance reaching 60% of total cost [S10][S11].
+
+**The claim to make and defend:** a narrated procedural skill **degrades gracefully under UI change, where an RPA automation breaks.**
+
+*Stated correctly — the first framing was technically wrong and would have lost the argument.* Enterprise RPA has not primarily encoded screen **coordinates** for over a decade: UiPath uses attribute-based selectors over the accessibility tree with anchor and CV fallbacks, Blue Prism uses application-modeller attribute matching. Saying "not coordinates" to a practitioner falsifies the pitch in one sentence. RPA brittleness actually comes from **selector contracts breaking on application upgrades, unstable dynamic identifiers, timing and synchronisation, configuration drift, and unhandled unhappy paths** [research/survey.md §6].
+
+**The real mechanical difference is contract vs. goal.** An RPA step is a *contract* — perform this action, on this element, in this application build — carrying **no statement of what success looks like**, so a break either halts the run or proceeds wrongly. A narrated skill carries the **goal state and a verification step**, so a broken assumption becomes a re-grounding search against an intact success criterion. That is arguable as a mechanism and testable as an experiment. "We use an LLM" is not the argument.
+
+**It must be tested against a fair baseline.** E2's RPA comparison must be a **selector-based** automation of the same procedure — not a coordinate-clicking toy, which would rig the result and prove nothing to the one persona (Ray) the argument exists to convince.
+
+**The experiment:** `validation/experiment_board.md` carries E2 — synthesized skills executed against a **deliberately altered UI** (moved, renamed and re-ordered elements, plus a version upgrade that changes selectors), measuring skill success rate against the selector-based baseline on the identical alteration. Falsifiable, threshold declared in advance.
 
 ## Riskiest assumption
 

@@ -2,7 +2,7 @@
 
 **Understudy is the AI service desk that onboards itself.** It records IT engineers doing real work, clusters those recordings into an executable skill library, and takes over tickets stack by stack — deploying into an unfamiliar client environment in days rather than the months of manual configuration every other AI service desk requires. Beachhead: MSPs, where onboarding a new client environment is cost of goods rather than a one-time project.
 
-**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **18/61 required artifacts · 0 visuals** · phases 0–1 complete; phase 2 written and revised through critic round 1, **gate not yet passed**.
+**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **26/61 required artifacts · 0 visuals** · phases 0–2 complete (phase 2 gate **passed** — all three critics at round 3); phase 3 written, critic loop running.
 
 ## Start here
 
@@ -19,7 +19,7 @@
 | `ASSUMPTIONS.md` | assumptions log | 1 | grill-me |
 | [`research/`](research/) | evidence layer — landscape, competitors, capability table, survey, 30 sources | 5 | startup-research |
 | [`strategy/`](strategy/) | market type, positioning, bottom-up sizing, personas, canvases, GTM, petal, channel economics, sales roadmap | 11 | startup-strategy |
-| `product/` | PRD, features, journeys, UX spec | 0 | startup-product |
+| [`product/`](product/) | PRD (9 first-principles), 20 flagship features, 50 prioritized, 4 journeys, 12-screen UX spec | 8 | startup-product |
 | `tech/` | whitepaper, deep dives, architecture, technique waves | 0 | startup-tech |
 | `narrative/` | one-pager, VC memo, deck, press release, founder story | 0 | startup-narrative |
 | `validation/` | Blank board set | 0 | startup-validation |
@@ -37,4 +37,4 @@
 
 ## Completeness
 
-`PARTIAL` — phases 0–1 of 10. The brief and the full evidence layer exist: 30 sources, 18 live searches, and four marked gaps where the search found nothing (no global MSP census, no independent deflection benchmark, no public competitor pricing, no post-acquisition record for FortressIQ). Eight product, nine tech, six narrative, nine validation and six financial artifacts remain, plus visuals, audit and site. Next: critic round 2 on the strategy layer, then `startup-product`. Row-by-row status will live in `audit/COVERAGE.md` once the audit phase runs.
+`PARTIAL` — phases 0–1 of 10. The brief and the full evidence layer exist: 30 sources, 18 live searches, and four marked gaps where the search found nothing (no global MSP census, no independent deflection benchmark, no public competitor pricing, no post-acquisition record for FortressIQ). Nine tech, six narrative, nine validation and six financial artifacts remain, plus visuals, audit and site. Next: phase 3 critic loop, then `startup-tech`. Row-by-row status will live in `audit/COVERAGE.md` once the audit phase runs.

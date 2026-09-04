@@ -102,7 +102,15 @@ Each feature tagged with the principles it serves.
 **Per environment (private tenant layer):** the skills specific to that client, their variance, their drift history. Never leaves the tenant boundary.
 **Global layer:** procedure shapes and variance patterns for common stacks, carrying no client data. This is the half that compounds and the half a security review must be able to reason about.
 
-**The open architecture question with direct revenue consequence:** where clustering runs. If it can execute inside the client boundary, or on redacted derivatives that never leave it, the ~6-week per-environment security review shortens dramatically and expansion velocity — which gates the revenue ramp — improves materially [strategy/sales_roadmap.md](../strategy/sales_roadmap.md). **Owed to `tech/architecture/`. It is a product requirement, not an implementation detail.**
+**Where clustering runs — settled (D6), and it is a constraint rather than a preference.** Distillation executes **inside the client boundary**. Raw session recordings never cross it; the only artifact that leaves is the **abstracted variance envelope** — procedure shapes and deviation patterns carrying no client data, no credentials and no identifiable configuration.
+
+Three consequences, all load-bearing:
+
+1. **Sonia's question has a structural answer.** "What leaves my environment?" is answered by architecture rather than by a retention policy, which is the difference between a review that closes in weeks and one that never does [strategy/sales_roadmap.md](../strategy/sales_roadmap.md).
+2. **The compounding half is defensible by construction.** The global layer cannot contain client data because the pipeline never carries it out — the moat and the privacy story stop being in tension (A8).
+3. **It constrains the build from day one.** In-boundary distillation is materially harder to retrofit than to assume, so it binds N6/N7 in [features_prioritized.md](features_prioritized.md) rather than sitting in a later tier. It also moves inference cost to the edge, which `financials/unit_economics.md` must model — the compute-heavy half of the loop now runs where we do not control the hardware.
+
+**No design in `tech/architecture/` may propose shipping raw admin-plane capture out of the client perimeter.**
 
 ## 7. Oversight, safety, privacy, compliance
 

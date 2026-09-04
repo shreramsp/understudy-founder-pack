@@ -11,6 +11,8 @@ Effort: **S** ≤2 weeks · **M** 2–6 weeks · **L** >6 weeks, solo-founder ba
 
 Nothing in this tier is user-facing polish. It exists to answer whether recorded sessions become reliable skills.
 
+**D6 binds this tier.** In-boundary distillation was previously an L-tier item; it is now an architecture constraint on N6 and N9, because retrofitting a boundary into a pipeline built without one is far more expensive than assuming it. The N-tier is therefore designed edge-first from the start.
+
 | # | Feature | Mechanism | User value | Depends on | Effort |
 |---|---|---|---|---|---|
 | N1 | Screen + input capture agent | OS-level capture of screen, input events, window/app context | Nothing yet — the substrate | — | M |
@@ -18,10 +20,10 @@ Nothing in this tier is user-facing polish. It exists to answer whether recorded
 | N3 | Action extraction | Convert raw capture into a typed action stream (clicked X in app Y, entered value class Z) | The representation clustering operates on | N2 | L |
 | N4 | Sensitive-value redaction | Detect and drop credentials, tokens, PII at capture time, before storage | The precondition for any security conversation | N1 | M |
 | N5 | Failure/abort labelling | Retain and mark sessions ending in escalation or rollback | Recovery behaviour becomes learnable (`P2`) | N2 | S |
-| N6 | Cross-session clustering | Group episodes of the same procedure across engineers and environments | **The core bet** (`P1 P7`) | N3 | L |
+| N6 | Cross-session clustering, **in-boundary** | Group episodes of the same procedure across engineers and environments — **executing inside the client perimeter (D6)** | **The core bet** (`P1 P7`) | N3 | L |
 | N7 | Skill synthesis to `SKILL.md` | Emit goal, preconditions, steps, **success criterion**, escalation envelope | A readable, executable artifact (`P3 P6`) | N6 | L |
 | N8 | Evaluation harness | Run a synthesized skill against a held-out environment and score it | **The only way to know if N6 works**; also the E2/A8 instrument | N7 | M |
-| N9 | Variance envelope extraction | Keep the distribution of how a procedure differed, not just the modal path | The moat, made into data (`P7`) | N6 | M |
+| N9 | Variance envelope extraction **+ boundary egress filter** | Keep the distribution of how a procedure differed; the envelope is the **only** artifact permitted to cross the client boundary, and the filter is what enforces it (D6) | The moat, made into data — and the security answer, made structural (`P7`) | N6 | M |
 | N10 | Decision-point narration | Prompt for ~10s of voice at detected branch points | Attacks demonstration underdetermination (`P1`) | N2 | M |
 | N11 | Engineer capture controls | Indicator, pause, post-session review before distillation | Consent is structural, not promised (`P8`) | N1 | S |
 | N12 | Skill viewer | Read a skill as text, with the sessions and authors it came from | Ray's "show me what it learned" — the demo that converts | N7 | S |
@@ -68,7 +70,6 @@ Only after N6–N8 show cross-environment transfer. Shadow before gate, gate bef
 | L5 | Alert-ticket remediation | Skills triggered by RMM alerts rather than users | Possibly the most mechanisable queue segment [strategy/market_sizing.md](../strategy/market_sizing.md) row 8 | X14 | M |
 | L6 | Banded onboarding pricing | Fee scaled by client size | Fixes the flat-$1,500 structure the sizing shows fails at small clients | N14 | S |
 | L7 | Client-facing transparency portal | The MSP's client sees what is captured and what leaves | Shortens the recurring 6-week review | X21 | M |
-| L8 | In-boundary clustering | Distillation runs inside the client perimeter | **May collapse the review entirely** — the open architecture question | X16 | L |
 | L9 | Skill test generation | Auto-generate regression tests per skill | Drift caught before production | X12 | M |
 | L10 | Multi-engineer consensus | Reconcile conflicting procedures from different engineers | Resolves "whose way is right" at scale | X3 | M |
 | L11 | Escalation routing intelligence | Route by who authored the relevant skills | Ray gets fewer, better interruptions | X9 N13 | M |

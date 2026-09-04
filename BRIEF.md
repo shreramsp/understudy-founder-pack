@@ -39,6 +39,8 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 
 **Supporting design:** the agent holds its own identity for attribution, and self-explores with a test account to learn the environment beyond what was recorded.
 
+**Architecture constraint (D6, binding).** Clustering runs **inside the client boundary**. Raw session recordings never leave it; the only thing that crosses is the **abstracted variance envelope** — procedure shapes and deviation patterns carrying no client data. This is what makes the compounding half defensible by construction rather than by policy, and it is the structural answer to the question that gates every deal: *what leaves my environment?*
+
 **Moat — hybrid library.** Global skills for the stacks every client shares (Okta, M365, Active Directory, Jira) compound across every deployment, so each new environment starts warmer than the last; environment-specific skills stay in a private tenant layer that never crosses the boundary. The compounding half never touches customer data — which is what makes the flywheel survive security review. Secondary moat: workflow lock-in once the library is the runbook of record.
 
 ## Competition & failed alternatives (as stated by founder — to be verified in `research/`)
@@ -52,7 +54,7 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 
 ## Business model
 
-**Two-part tariff** (founder-confirmed, D4): **~$6 per resolved ticket** — outcome pricing, comparable to the $5–13/ticket figures the category publishes and well under the buyer's own $22.50 blended cost [S27] — **plus $1,500 per environment onboarded**, priced against the 40–80 engineer-hours that onboarding costs today [S21].
+**Two-part tariff** (founder-confirmed, D4; banded per D7): **~$6 per resolved ticket** — outcome pricing, comparable to the $5–13/ticket figures the category publishes and well under the buyer's own $22.50 blended cost [S27] — **plus a banded per-environment onboarding fee** (~$1,500 at the median), priced against the 25–40 engineer-hours a median client onboarding costs today, 40–80 for a complex one [S21]. Flat pricing does not survive the small-client end of the book, so the schedule is banded by client size (D7).
 
 The onboarding fee is not a second-order add-on: it is roughly 87% of year-1 revenue, it arrives at the moment of the work the buyer already resents paying for, and without it no acquisition channel is economically viable [strategy/channel_plan.md](strategy/channel_plan.md). Signed by the MSP owner/COO.
 

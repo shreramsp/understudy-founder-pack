@@ -31,7 +31,7 @@ Three errors in the first version, all found independently and all in the same f
 | 10 | Price per resolved ticket | $6 | Below buyer's blended cost of $22.50 [S27]; far below $45 agent-handled [S28] |
 | 11 | **Ticket revenue per MSP per year, whole book** | **~$8,900** | 9 × 10 × 12 |
 | 12 | Environments (clients) per MSP | ~41 | `(assumption)` — consistent with [personas.md](personas.md): a 34-person, **$2.9M** MSP whose 41 clients average ~16 users. Cross-check: 620 users × $185/user/mo [S19] ≈ $1.4M of managed-services revenue, with the balance in projects, hardware and licence resale — a normal MSP revenue mix |
-| 13 | **Onboarding fee per environment** | **$1,500** ⚠ **basis broken — see §Pricing basis failure** | `(assumption)` — the fee was justified as 57–80% of onboarding hours displaced. **The corrected hours in [../product/journeys/beachhead.md](../product/journeys/beachhead.md) destroy that justification** and the pack does not paper over it |
+| 13 | **Onboarding fee, environments 2+** | **$1,500** · **environment 1 waived (D9)** | `(assumption)` — environment 1 displaces *negative* hours, so it is not charged. Environments 2+ displace 0–22 hours `(assumption: $0–1,650 at $75/hr)`, against which $1,500 sits at the upper end and is defensible only where transfer is real — which is the same bet as A8. Banding by client size still owed to `financials/pricing.md` (D7) |
 | 14 | New/replaced clients per MSP per year | ~6 | `(assumption: ~15% annual client turnover + growth)` |
 | 15 | **Steady-state onboarding revenue per MSP per year** | **~$9,000** | 13 × 14 |
 | 16 | **Blended annual revenue per MSP, steady state** | **~$17,900** | 11 + 15 |
@@ -56,24 +56,24 @@ An MSP does not onboard 41 environments on signature. Modelling the ramp is what
 
 | Year | Environments live | Onboarding fee — **one-time backfill** | Onboarding fee — **recurring** (new clients) | Ticket revenue — **recurring** | **Total** |
 |---|---|---|---|---|---|
-| 1 | 5 (backfill) | $7,500 | — | ~$1,090 | **~$8,600** |
+| 1 | 5 (backfill; **environment 1 waived, D9**) | $6,000 | — | ~$1,090 | **~$7,100** |
 | 2 | 15 cumulative | $15,000 | — | ~$3,250 | **~$18,250** |
 | 3 | 30 cumulative | $22,500 | — | ~$6,500 | **~$29,000** |
 | 4 | 41 (backfill complete) | $16,500 | ~$9,000 | ~$8,900 | **~$34,400** |
 | **Steady state** | 41 + turnover | — | ~$9,000 | ~$8,900 | **~$17,900/yr** |
 
-**3-year revenue per MSP ≈ $55,850; at 70% gross margin `(assumption, owed to financials/unit_economics.md)`, 3-year gross profit ≈ $39,100** — the number [gtm.md](gtm.md) derives its CAC ceiling from.
+**3-year revenue per MSP ≈ $54,350; at 70% gross margin `(assumption, owed to financials/unit_economics.md)`, 3-year gross profit ≈ $38,000** — the number [gtm.md](gtm.md) derives its CAC ceiling from.
 
 ### Revenue quality — say this before a diligence call computes it
 
-**Roughly 81% of three-year revenue ($45,000 of $55,850) is one-time backfill onboarding**, billed once per existing client and never again. Two consequences a sophisticated reader will price, so the pack states them first:
+**Roughly 80% of three-year revenue ($43,500 of $54,350) is one-time backfill onboarding**, billed once per existing client and never again. Two consequences a sophisticated reader will price, so the pack states them first:
 
 1. **This is implementation-shaped revenue during the land phase**, which earns a services multiple, not a SaaS one. It is the same revenue quality this pack criticises ServiceNow for [market_type.md](market_type.md); the difference is that ours *decays by design* as backfill completes, rather than being the permanent business model.
 2. **Net revenue retention falls below 100% after backfill.** An MSP goes from ~$34,400 in year 4 to ~$17,900 at steady state — a 48% step down — unless its own client base grows. **Expansion revenue therefore depends on the MSP winning clients, which is exactly what [petal_diagram.md](petal_diagram.md) petal 2 says we help them do.** That is a coherent story, but it must be told: the growth case rests on customers' growth, not on seat expansion.
 
 The durable recurring line is **~$17,900/yr per MSP**, and that — not the year-3 peak — is what a valuation should be built on.
 
-## Pricing basis failure — found by critic round 2, unresolved and escalated
+## Pricing basis — how the failure was found and resolved (D9)
 
 **The honest hours correction broke the fee's justification, and the two facts cannot both stand.**
 
@@ -86,15 +86,15 @@ The fee was priced as 57–80% of the onboarding hours it displaces. Against the
 
 **This is not a rounding problem.** Year 1 is exactly five backfill environments, and ~87% of year-1 revenue is this fee. **The stated pricing basis fails across the whole of year 1 for every customer**, and a design partner comparing an invoice to a timesheet finds it in one afternoon — which is precisely the scenario D8 exists to prevent.
 
-**Three options; none is chosen here, because this is a founder decision:**
+**Three options were put to the founder. Option 1 was chosen (D9).**
 
-1. **Waive or discount environment 1, charge from environment 2.** Matches the compounding story exactly — the first environment is the customer's investment, subsequent ones are the harvest — and it is the version that survives the timesheet conversation. Cost: year-1 revenue per MSP falls from ~$8,600 to **~$7,100**, and SAM falls with it.
+1. **Waive or discount environment 1, charge from environment 2.** Matches the compounding story exactly — the first environment is the customer's investment, subsequent ones are the harvest — and it is the version that survives the timesheet conversation. Cost: year-1 revenue per MSP falls from ~$8,600 to **~$7,100**. **Steady-state SAM is unaffected** — the waiver is one-time per customer, so it is an acquisition cost expressed as forgone revenue, not a price cut.
 2. **Re-base the fee on the maintenance line rather than on onboarding hours.** The runbook argument is genuinely strong (~8 hrs/month forever → ~40 min/month) but it is an *MSP-level* saving, not a per-environment one — spread across 41 environments it is roughly 12 minutes per environment per month, which does not carry a $1,500 unit price. **This option requires the fee to become a per-MSP subscription rather than a per-environment charge**, which changes the revenue model in [gtm.md](gtm.md) and [channel_plan.md](channel_plan.md).
 3. **Keep the per-environment fee and justify it on retained knowledge and the tier-1 floor** — real value, but not denominated in hours, which means abandoning the engineer-hours ROI calculator that [petal_diagram.md](petal_diagram.md) identifies as the instrument that creates the budget line in the first place.
 
-**Recommendation: option 1.** It preserves the ROI calculator, tells the compounding story honestly, and costs ~$1,500 of year-1 revenue per customer — the cheapest of the three, and the only one a design partner's timesheet confirms rather than contradicts.
+**Chosen: option 1 (D9).** It preserves the ROI calculator, tells the compounding story honestly, and costs ~$1,500 of year-1 revenue per customer — the cheapest of the three, and the only one a design partner's timesheet confirms rather than contradicts.
 
-**Until this is settled, every downstream figure in this file carries the unresolved fee.** `financials/pricing.md` cannot produce the banded schedule D7 requires without it.
+**What it changes, and what it does not.** Year-1 revenue per MSP falls to **~$7,100**; 3-year revenue to ~$54,350 and 3-year gross profit to ~$38,000, which lowers the CAC ceiling to **~$12,700**. **Steady-state revenue and SAM are unchanged** — the waiver is one-time per customer, not recurring, so it is an acquisition cost expressed as forgone revenue rather than a permanent price cut.
 
 ## 4. Market size and sensitivity
 

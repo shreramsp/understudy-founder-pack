@@ -1,7 +1,7 @@
 # Go-to-market
 
 > **What this is** — the channel strategy by segment, the acquisition loop meant to compound, a CAC hypothesis per channel with payback logic, and the twelve-month motion from first conversation to first paid customer.
-> **Why it exists** — at ~$8,600 year-1 revenue per MSP and ~$17,900 at steady state [market_sizing.md](market_sizing.md), most enterprise go-to-market motions are arithmetically impossible: a $40k acquisition cost never pays back, and even the primary channel has no slack. This file exists to make that constraint explicit before the seed round is spent discovering it.
+> **Why it exists** — at ~$7,100 year-1 revenue per MSP and ~$17,900 at steady state [market_sizing.md](market_sizing.md), most enterprise go-to-market motions are arithmetically impossible: a $40k acquisition cost never pays back, and even the primary channel has no slack. This file exists to make that constraint explicit before the seed round is spent discovering it.
 > **How to read it** — the CAC ceiling in §2 is the governing constraint; every channel below is judged against it. A skeptic should attack the assumption that MSP peer communities convert at the rate claimed.
 > **Depends on / feeds** — cites [market_sizing.md](market_sizing.md), [petal_diagram.md](petal_diagram.md), [personas.md](personas.md); feeds [channel_plan.md](channel_plan.md), [sales_roadmap.md](sales_roadmap.md), `financials/unit_economics.md`, `validation/get_keep_grow.md`.
 
@@ -9,18 +9,18 @@
 
 | Quantity | Value | Source |
 |---|---|---|
-| **Year-1** revenue per MSP (5 environments live) | **~$8,600** | [market_sizing.md](market_sizing.md) §3 ramp |
-| 3-year revenue per MSP | ~$55,850 | ramp, years 1–3 |
+| **Year-1** revenue per MSP (5 environments live, **first waived per D9**) | **~$7,100** | [market_sizing.md](market_sizing.md) §3 ramp |
+| 3-year revenue per MSP | ~$54,350 | ramp, years 1–3 |
 | Target gross margin | 70% `(assumption: owed to financials/unit_economics.md)` | — |
-| **3-year gross profit per MSP** | **~$39,100** | derived |
-| **CAC ceiling at 3:1 LTV:CAC** | **~$13,000** | derived |
-| **CAC target for a healthy seed-stage motion** | **≤$5,000** | `(assumption: 3:1 is the floor, not the goal; year-1 revenue of $8,600 means anything above ~$5k has a payback longer than the first renewal decision)` |
+| **3-year gross profit per MSP** | **~$38,000** | derived |
+| **CAC ceiling at 3:1 LTV:CAC** | **~$12,700** | derived |
+| **CAC target for a healthy seed-stage motion** | **≤$5,000** | `(assumption: 3:1 is the floor, not the goal; year-1 revenue of $7,100 means anything above ~$5k has a payback longer than the first renewal decision)` |
 
-**Corrected after critic round 1.** The first version computed revenue across an MSP's entire client book and then added expansion on top, producing a $21,000 ceiling that flattered every channel. Revenue arrives one environment at a time; the ceiling is $13,000 and the year-1 constraint is tighter still.
+**Corrected after critic round 1.** The first version computed revenue across an MSP's entire client book and then added expansion on top, producing a $21,000 ceiling that flattered every channel. Revenue arrives one environment at a time, and the first is now waived (D9); the ceiling is $12,700 and the year-1 constraint is tighter still.
 
 **What this rules out immediately:** field sales, enterprise-style multi-threaded pursuit, conference booths as a primary channel, and any motion requiring more than roughly two sales touches plus a pilot. **What it demands:** channels where trust is inherited rather than purchased.
 
-**And it makes the onboarding fee load-bearing for distribution, not just for revenue.** Year-1 value is ~$8,600 and roughly 87% of it is the per-environment fee [market_sizing.md](market_sizing.md) §3. A pure per-ticket model yields a year-1 customer worth ~$1,100, at which point no channel in [channel_plan.md](channel_plan.md) is viable — including the primary one.
+**And it makes the onboarding fee load-bearing for distribution, not just for revenue.** Year-1 value is ~$7,100 and roughly 85% of it is the per-environment fee [market_sizing.md](market_sizing.md) §3. A pure per-ticket model yields a year-1 customer worth ~$1,100, at which point no channel in [channel_plan.md](channel_plan.md) is viable — including the primary one.
 
 ## 2. Channel strategy by segment
 

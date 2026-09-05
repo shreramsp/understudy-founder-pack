@@ -56,9 +56,9 @@ For an MSP this is not an inconvenience, it is cost of goods. Every new client i
 
 ## Business model
 
-**Two-part tariff** (founder-confirmed, D4; banded per D7): **~$6 per resolved ticket** — outcome pricing, comparable to the $5–13/ticket figures the category publishes and well under the buyer's own $22.50 blended cost [S27] — **plus a banded per-environment onboarding fee** (~$1,500 at the median), priced against the 25–40 engineer-hours a median client onboarding costs today, 40–80 for a complex one [S21]. Flat pricing does not survive the small-client end of the book, so the schedule is banded by client size (D7).
+**Two-part tariff** (founder-confirmed, D4; banded per D7): **~$6 per resolved ticket** — outcome pricing, comparable to the $5–13/ticket figures the category publishes and well under the buyer's own $22.50 blended cost [S27] — **plus a banded per-environment onboarding fee** (~$1,500 at the median), **charged from environment 2 onward — the first environment is waived (D9)**, because it displaces negative hours and charging for it would be charging for a loss. Environments 2+ displace 0–22 hours against a 25–40 baseline [S21]. Flat pricing does not survive the small-client end of the book, so the schedule is banded by client size (D7).
 
-The onboarding fee is not a second-order add-on: it is roughly 87% of year-1 revenue, it arrives at the moment of the work the buyer already resents paying for, and without it no acquisition channel is economically viable [strategy/channel_plan.md](strategy/channel_plan.md). Signed by the MSP owner/COO.
+The onboarding fee is not a second-order add-on: it is roughly 85% of year-1 revenue, it arrives at the moment of the work the buyer already resents paying for, and without it no acquisition channel is economically viable [strategy/channel_plan.md](strategy/channel_plan.md). Signed by the MSP owner/COO.
 
 ## Founder edge
 

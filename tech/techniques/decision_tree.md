@@ -49,13 +49,15 @@ Evaluated top to bottom. **A lower rule never overrides a higher one.**
 
 | Priority | Condition | Action | Why it outranks what follows |
 |---|---|---|---|
-| **1** | Step is destructive | Gate. Always. | Irreversibility beats every other consideration, including a perfect track record. **Confidence never downgrades this class** — a system that is right 200 times is not thereby permitted to delete a mailbox unattended |
+| **1** | Step is destructive **or unmapped (DD7)** | Gate. Always. | Irreversibility beats every other consideration, including a perfect track record. **Confidence never downgrades this class** — a system that is right 200 times is not thereby permitted to delete a mailbox unattended |
 | **2** | Preconditions unmet | Escalate | The situation is outside what the skill has seen; improvising here is exactly the over-merge failure DD1 warns about |
 | **3** | Skill is paused by drift | Do not execute | A skill whose verification is degrading is a wrong action waiting for a trigger |
 | **4** | Re-grounding occurred this run | Demote to gated | The interface changed; the first execution after a change is seen by a human |
 | **5** | Skill rung is shadow | Propose, never act | Trust is earned on evidence, not asserted |
 | **6** | Step is reversible | Record undo path, then gate per rung | Compensation before mutation, never after |
-| **7** | Step is read | Execute freely | No blast radius |
+| **7a** | Step is a **bounded read** — single-object state inspection (is this account enabled? is MFA registered?) | Execute freely | Genuinely no blast radius |
+| **7b** | Step is a **bulk read** — directory enumeration, mailbox export, MFA-state dump, licence inventory across a tenant | **Gate as reversible-write** | A read that produces a copy of client data is an exfiltration surface regardless of its verb. **The first version said reads have "no blast radius" and execute freely — that is the line a founder widens the week before a demo** |
+| **7c** | Operation is **unmapped by DD7's catalogue** | **Treat as destructive; block skill promotion** | Default-destructive on the unknown. Friction lands proportional to coverage gaps, which is where it belongs |
 
 **The ordering is the safety argument.** Classification (rule 1) precedes capability (rules 5–7), so no amount of demonstrated competence unlocks a destructive action. Automation bias makes this ordering more important over time, not less: the approver who has cleared 200 correct proposals reads the 201st less carefully [S35][S36], so the system must not rely on approval quality that it is itself eroding.
 

@@ -59,7 +59,13 @@
 
 **Key design choice.** *Whitelist construction over blacklist scrubbing.* Scrubbing fails open — one unanticipated identifier format and tenant data crosses. Whitelisting fails closed: an unrepresentable pattern is simply not shared, and the cost is a less complete global layer rather than a breach.
 
-**Failure modes.** Vocabulary too narrow (the global layer starves and A8's compounding never materialises). Vocabulary too broad (a `deviation_class` that is effectively a fingerprint — e.g. a policy pattern unique enough to identify one tenant). **Mitigation:** k-anonymity threshold — an envelope entry is only eligible to cross once the same pattern has been observed in *k* distinct tenants `(assumption: k=3)`. This is the guarantee D6's promise actually rests on and it belongs in the security review pack.
+**Failure modes.** Vocabulary too narrow (the global layer starves and A8's compounding never materialises). Vocabulary too broad (a `deviation_class` that is effectively a fingerprint — e.g. a policy pattern unique enough to identify one tenant). **Mitigation, corrected after critic round 1 — the first version was decorative on three counts:**
+
+1. **It is not k-anonymity.** Sweeney's k-anonymity is a property of equivalence classes over quasi-identifiers in a released table. This is a **minimum-support threshold on a released pattern** (k-map-shaped). A privacy reviewer will make that distinction immediately, so the pack makes it first.
+2. **The threshold was counting the wrong thing.** It counted distinct *client tenants*. One MSP brings ~41 of them — so at cold start all three observations can sit inside a single design partner's book, and the envelope **identifies that MSP with certainty at exactly the moment of its first security review.** The threshold now counts **distinct MSPs** `(assumption: m≥3 MSPs, and ≥3 tenants within each)`. This lengthens the cold start considerably and is the correct trade.
+3. **The attack is compositional, and per-entry thresholds do not address it.** A set of `deviation_class` values each cleared individually can jointly identify one tenant — the standard sparse-high-dimensional linkage result (Narayanan & Shmatikov 2008). Nothing in the released set is currently budgeted across entries.
+
+**Honest status:** the guarantee is **heuristic, not formal.** l-diversity (Machanavajjhala 2007), t-closeness (Li 2007) and differential privacy all exist precisely because minimum-support alone is insufficient, and none is implemented here. **D6's promise is contingent on X25 — adversarial re-identification testing — which wave 2 concedes is unbuilt.** Until X25 runs, the correct statement to a security reviewer is "threshold plus adversarial testing", not "anonymised".
 
 ---
 
@@ -75,13 +81,27 @@
 
 ---
 
+## DD7 · Blast-radius classification
+
+**The one question:** is this synthesized step destructive?
+
+**Why it is a deep dive and not a config table.** The entire safety ordering in [techniques/decision_tree.md](techniques/decision_tree.md) fires on this label, and the first version of this layer never said how a step acquires it. Wave 1 lists "action-class policy enforcement · standard privileged-access practice · borrowed" — but PAM classification is a **curated policy over named operations**, not a label inferred over arbitrary observed UI actions on admin surfaces. That gap *is* the adaptation, and it was unwritten.
+
+**Approach.** A mapping from `(app, ui_role, action_kind)` to a blast-radius class, built from three sources: an explicit operation catalogue for the common stacks (Entra, M365, AD, Jira), the semantics available from the accessibility tree, and the engineer's own classification during skill endorsement.
+
+**Key design choice — default-destructive on anything unmapped.** An operation the catalogue does not recognise is treated as destructive, and **an unmapped step blocks promotion of the whole skill** rather than being guessed. This is DD2's discipline (abstain rather than assert) applied to safety instead of semantics, and it is deliberately the annoying default: it produces friction proportional to coverage gaps, which is exactly where friction belongs.
+
+**Failure modes.** Misclassifying a destructive operation as reversible — the highest-severity failure in the system, since it routes past rule 1 of the decision tree. A catalogue that drifts as vendors add operations. Engineers over-classifying to avoid gates, or under-classifying to reduce approvals.
+
+**Note the second failure this exposes.** "Read" is not a single class. A mailbox export, a full directory enumeration and an MFA-state dump are all reads with real consequence, and the decision tree's original rule 7 said reads have "no blast radius" and execute freely. **That is the line a founder widens the week before a demo**, and the taxonomy is corrected accordingly.
+
 ## DD6 · Drift detection
 
 **The one question:** is this skill still true?
 
 **Approach.** Monitor per-skill verification pass rates and re-grounding frequency; a CUSUM-style change detector flags degradation before it becomes failure. Pause on threshold breach (`P4 P9`).
 
-**Key design choice.** *Pause first, ask second.* A false pause costs a human five minutes; a missed drift costs a client incident. But the asymmetry has a limit — S12 notes that a spuriously firing alert costs more trust than a missed one, so thresholds are tuned for specificity, not sensitivity.
+**Key design choice.** *Pause first, ask second — but tune for specificity.* The two asymmetries genuinely point opposite ways and the first version stated both without resolving them. Resolution: **pause is cheap, alerting is not.** A skill pauses on a low threshold (a missed drift can cause a client incident), but the *human-facing alert* fires on a high one — a spurious alert costs more trust than a silent pause, because a paused skill degrades throughput while a false alarm degrades belief. `(assumption: pause at a 2-sigma shift, alert at 3-sigma or on a second consecutive pause; both owed to the first pilot's data)`.
 
 **Failure modes.** Slow drift under the detector's threshold. Seasonal patterns misread as drift. Too few executions to establish a baseline — which is the normal case for a rare skill, and is why drift detection cannot be the only safety mechanism.
 
@@ -89,7 +109,7 @@
 
 ## What this list concedes
 
-**Five of six are engineering.** DD2–DD6 are hard, but they are recombinations of known methods with known failure modes, and a competent team ships them.
+**Six of seven are engineering.** DD2–DD7 are hard, but they are recombinations of known methods with known failure modes, and a competent team ships them.
 
 **DD1 is research with a product schedule attached.** It has no benchmark to beat, no prior system to compare against, and the honest position is that a negative result is possible. The mitigation is not confidence — it is **DD1's evaluation harness (N8) existing before DD1 is optimised**, so the answer arrives as evidence rather than as an opinion held by the person who built it.
 

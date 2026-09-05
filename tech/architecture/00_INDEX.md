@@ -19,3 +19,5 @@
 | [D10](D10.md) | Human-in-the-loop and escalation | Every path by which a decision reaches a person |
 
 **One convention across all ten:** anything inside a `MSP tenant` boundary never leaves it in raw form. If a diagram shows an arrow crossing that line, the arrow is labelled with exactly what it carries.
+
+**Three trust zones, not two.** The first version of this set drew the client tenant, the MSP tenant and the vendor — and omitted the **model provider**, which meant the diagram titled "the diagram the security review is about" did not answer the question a security review opens with. Action typing now runs on the node; **skill synthesis is the system's only outbound inference call**, on abstracted clusters carrying no frames, values or tenant identifiers. It is drawn in D01, D05 and D06.

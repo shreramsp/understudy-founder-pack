@@ -2,7 +2,7 @@
 
 > **What this is** — the first wave of the technique arsenal: methods that are established, documented and in production use somewhere today. Per technique: name, one-line mechanism, evidence anchor.
 > **Why it exists** — a deep-tech pack that lists only frontier methods is claiming novelty it does not have. Most of what this system does is well-understood engineering; naming that honestly is what makes the two genuinely uncertain steps (DD1 clustering, A8 transfer) legible as the actual bet rather than lost in a list.
-> **How to read it** — the cluster counts are the argument: 31 techniques, of which 27 are borrowed and 4 are adapted. A skeptic should check that nothing here is claimed as novel.
+> **How to read it** — the cluster counts are the argument: 31 techniques, of which 23 are borrowed and 8 are adapted. A skeptic should check that nothing here is claimed as novel.
 > **Depends on / feeds** — inherits [../deep_dives.md](../deep_dives.md), [../../research/survey.md](../../research/survey.md); feeds [wave2.md](wave2.md), [decision_tree.md](decision_tree.md), [technique_feature_matrix.md](technique_feature_matrix.md).
 
 **31 techniques across 6 clusters.** Status: `borrowed` (used as documented) · `adapted` (modified for this domain).
@@ -70,6 +70,6 @@
 
 ## What wave 1 concedes
 
-**27 of 31 are borrowed outright.** This system is mostly an assembly of well-understood parts, and saying so is the point: it means the schedule risk is low everywhere except the two places it is not. **Nothing in wave 1 is a differentiator.** The differentiation is the *circuit* [../../product/features_flagship.md](../../product/features_flagship.md), and specifically the four `adapted` rows — 1.6, 2.7, 3.5 and 4.5 — which are where an ordinary technique is pointed at an unusual object.
+**23 of 31 are borrowed outright.** This system is mostly an assembly of well-understood parts, and saying so is the point: it means the schedule risk is low everywhere except the two places it is not. **Nothing in wave 1 is a differentiator.** The differentiation is the *circuit* [../../product/features_flagship.md](../../product/features_flagship.md), and specifically the 8 `adapted` rows, which are where an ordinary technique is pointed at an unusual object. *(The first version said "27 borrowed and 4 adapted" against its own table — corrected by counting.)*
 
 **Recommended next:** implement 2.1, 2.2 and 2.7 first. They are the numeric core of DD1, they are decades old and well-characterised, and if the variance envelope cannot be extracted with methods this mature the problem is the representation (DD2) rather than the algorithm.

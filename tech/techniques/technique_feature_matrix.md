@@ -47,18 +47,20 @@
 
 | Technique | Wave | Verdict |
 |---|---|---|
-| **2.3 process mining (alpha/heuristic miners)** | 1 | **Genuine orphan.** Log-based mining is listed because it is the adjacent category [S8], but this system captures the desktop, not system logs. It informs the landscape and powers no feature. *Keep as context, do not build.* |
-| **2.4 task mining** | 1 | Same: it names what we extend, not what we implement |
+| **2.3 process mining (alpha/heuristic miners)** | 1 | **No longer an orphan — the earlier verdict is withdrawn.** DD1 needs to tolerate two engineers taking different routes through the same UI, which is transposition, which order-preserving alignment cannot represent. **Partial-order discovery is the family that can**, so this powers F5 and is on the build path |
+| **2.4 task mining** | 1 | Retained for the same reason: its conformance-alignment machinery is what handles reordering in F5 |
 | **2.5 re-identification testing** | 2 | **Orphan that should not be — this is a missing feature.** Nothing in the flagship list attacks our own envelope to see whether a tenant can be fingerprinted, and D6's whole guarantee rests on the answer. See §4 |
 | **2.4 federated aggregation** | 2 | Premature: relevant only once the global layer spans many MSPs (L1) |
-| **5.3 automation-bias countermeasures** | 2 | **Orphan that should not be.** `P9` says approval habituates and S7 specifies a static approval prompt. Nothing varies presentation or surfaces the unusual |
-| All 18 wave-3 rows | 3 | Expected — research pipeline, not build plan |
+| **5.3 automation-bias countermeasures** | 2 | **Orphan that should not be.** `P9` says approval habituates and UX7 (the approval prompt) specifies a static prompt. Nothing varies presentation or surfaces the unusual |
+| Wave-3 rows **other than 2.5 and 3.5** | 3 | Expected — research pipeline, not build plan |
 
 ## 4 · Unsupported features — promises with no mechanism
 
 | Feature | Gap | Resolution |
 |---|---|---|
 | **F20 Onboarding meter** | No technique. It is instrumentation — counting engineer-hours and time-to-first-verified-skill | **Acceptable, and declared.** It is a measurement surface, not a mechanism, which is also why it carries the sole `—` in the PRD's principle mapping. It does not require a technique; it requires a definition, which [../../product/PRD.md](../../product/PRD.md) §9 now supplies |
+
+**Two flagship features lean partly on aspirational rows, which §3 previously called "expected orphans" while §1 cited them as support.** F14 (envelope enforcement) lists wave-3 2.5 uncertainty-aware abstention, and F8 (authorship attribution) lists wave-3 3.5 legal versioning. Both are marked *aspirational* in §1 and neither is load-bearing — F14 works on preflight checks and goal predicates alone, F8 on attribution alone — but a flagship feature partly supported by a speculative row should say so where the support is listed, not only in a footnote. Both now do.
 
 **One genuine finding, in the other direction.** Two techniques (2.5 re-identification testing, 5.3 automation-bias countermeasures) power nothing **because two features are missing**, and both are safety-adjacent:
 
@@ -67,4 +69,4 @@
 
 **Both are added to `features_prioritized.md` as X25 and X26 rather than left as a matrix observation** — an orphan technique that identifies a missing feature is the most useful thing this matrix produces, and leaving it as a note would waste it.
 
-**Recommended next 3:** (1) build X25 (envelope adversarial testing) before the first security review; (2) build X26 (approval-surface countermeasures) before the first supervised promotion, since that is when habituation starts; (3) delete 2.3 and 2.4 from the build catalogue and keep them only in the landscape — carrying them as techniques implies an intent to implement that does not exist.
+**Recommended next 3:** (1) build X25 (envelope adversarial testing) before the first security review; (2) build X26 (approval-surface countermeasures) before the first supervised promotion, since that is when habituation starts; (3) **the earlier recommendation to delete 2.3 and 2.4 is withdrawn** — DD1's reordering requirement needs partial-order methods, and those are the rows that supply them.

@@ -1,4 +1,4 @@
-# Prioritized feature list — 58 features, Now / Next / Later
+# Prioritized feature list — 60 features, Now / Next / Later
 
 > **What this is** — fifty features in strict priority order across three tiers, each with its mechanism, the user value it produces, its dependencies, and a size.
 > **Why it exists** — [features_flagship.md](features_flagship.md) argues what matters; this file decides what gets built first and what is deliberately deferred. Priority here is **risk-ordered, not chronological**: the earliest items are the ones that retire the assumption that kills the company, not the ones a user sees first.
@@ -75,6 +75,8 @@ The seven N-rows at the top of this tier were demoted from Now (see Build math a
 | X20 | Environment dashboard | Per-client view: skills live, coverage, hours saved | What Dana opens each morning | N14 | S |
 | X23 | **Billable-resolution ledger** | Record, per ticket: skill version, verification result, and whether a human reversed the action within the ticket's life. A resolution bills only when the criterion passed **and** nothing was reversed | **Outcome pricing dies in month three without this** — the 14:20 case in [journeys/day_in_life.md](journeys/day_in_life.md) is an action that verified correctly and was undone. `strategy/sales_roadmap.md` step 6b names it as the clause to settle before the first invoice | X4 X8 | M | `P3 P9` |
 | X24 | **Incident disclosure pack** | One-click same-day export of what an agent did in a client environment, under which principal, with the revert state and the skill change that followed | A veto-holder who hears about an agent's mistake secondhand reopens a six-week review. The product cannot make the call; it can make the disclosure complete in four minutes | X21 | S | `P8 P9` |
+| X25 | **Envelope adversarial testing** | Actively attempt to fingerprint a tenant from its published envelope entries; raise the k-anonymity threshold if it succeeds | **D6's guarantee is currently asserted, not tested.** A founder who has attacked their own boundary has an answer no competitor's policy statement matches — identified by [tech/techniques/technique_feature_matrix.md](../tech/techniques/technique_feature_matrix.md) §4 as a missing feature | N9 | M | `P8 P9` |
+| X26 | **Approval-surface countermeasures** | Vary presentation and surface the unusual, so the 201st approval is not read like the 200th | `P9` states approval habituates and automation bias makes a reliable system more dangerous at the margin [S35][S36]. The static prompt in S7 is exactly the 14:20 failure | X6 | M | `P9` |
 | X21 | Audit export | Action log with skill version and verification result | Sonia's recurring review, answered with a file | X7 X4 | S |
 | X22 | Retention policy engine | Raw sessions expire on schedule; skills persist | The highest-sensitivity artifact has the shortest life | N4 | S |
 

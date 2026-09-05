@@ -2,7 +2,7 @@
 
 **Understudy is the AI service desk that onboards itself.** It records IT engineers doing real work, clusters those recordings into an executable skill library, and takes over tickets stack by stack — deploying into an unfamiliar client environment in days rather than the months of manual configuration every other AI service desk requires. Beachhead: MSPs, where onboarding a new client environment is cost of goods rather than a one-time project.
 
-**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **34/61 required artifacts · 0 visuals** · phases 0–2 complete (gate passed); phase 3 revised through critic round 1 and phase 4 drafted — **both gates open**.
+**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **40/61 required artifacts · 0 visuals** · phases 0–2 complete (gate passed); phases 3–4 revised through critic round 1; phase 5 drafted. **Phase 4 critic round 2 is blocked by a session rate limit, not by the work.**
 
 ## Start here
 
@@ -21,7 +21,7 @@
 | [`strategy/`](strategy/) | market type, positioning, bottom-up sizing, personas, canvases, GTM, petal, channel economics, sales roadmap | 11 | startup-strategy |
 | [`product/`](product/) | PRD (9 first-principles), 20 flagship features, 50 prioritized, 4 journeys, 12-screen UX spec | 8 | startup-product |
 | [`tech/`](tech/) | 10x whitepaper, 6 deep dives, 11 architecture diagrams (Mermaid), 73 techniques in 3 waves, decision tree, technique×feature matrix, not-vaporware | 19 | startup-tech |
-| `narrative/` | one-pager, VC memo, deck, press release, founder story | 0 | startup-narrative |
+| [`narrative/`](narrative/) | one-pager, technical VC memo, 14-slide deck, working-backwards press release, founder story, mission/vision | 6 | startup-narrative |
 | `validation/` | Blank board set | 0 | startup-validation |
 | `financials/` | pricing, revenue build, unit economics, risks, comps | 0 | startup-financials |
 | `visuals/` | manifest, infographics, image prompts | 0 | startup-visuals |
@@ -37,4 +37,4 @@
 
 ## Completeness
 
-`PARTIAL` — phases 0–1 of 10. The brief and the full evidence layer exist: 30 sources, 18 live searches, and four marked gaps where the search found nothing (no global MSP census, no independent deflection benchmark, no public competitor pricing, no post-acquisition record for FortressIQ). Six narrative, nine validation and six financial artifacts remain, plus visuals, audit and site. Next: phase 3 critic round 2 (interrupted by a session limit), then the phase 4 critic loop, then `startup-narrative`. Row-by-row status will live in `audit/COVERAGE.md` once the audit phase runs.
+`PARTIAL` — phases 0–1 of 10. The brief and the full evidence layer exist: 30 sources, 18 live searches, and four marked gaps where the search found nothing (no global MSP census, no independent deflection benchmark, no public competitor pricing, no post-acquisition record for FortressIQ). Six narrative, nine validation and six financial artifacts remain, plus visuals, audit and site. Next: `startup-validation` (drafting now), then the phase 4 and 5 critic loops once rate limits clear. Row-by-row status will live in `audit/COVERAGE.md` once the audit phase runs.

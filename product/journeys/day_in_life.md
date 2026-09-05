@@ -34,11 +34,11 @@ She promotes nothing today. Two of the shadow skills are one clean week away; sh
 ## 11:30 — Ray (principal) · a cross-environment question
 
 *Which of my environments have this conditional-access pattern?* Six, three of which he did not expect.
-→ *Component:* **X17** + **N9 variance envelope**, patterns only — no client data crosses a boundary (D6).
+→ *Component:* **X17** + **N9 variance envelope**, queried across his own 41 environments **entirely inside his MSP's node** — his data about his own clients, which never reaches the vendor (D6).
 
 ## 13:05 — Priya · the unglamorous majority
 
-Eleven tickets between 09:00 and 13:00. Six matched a skill and ran gated; three were novel and she did them by hand while capture ran; two were the kind of request no automation should touch — a user wanting a policy exception — and she just talked to the person.
+Six tickets between 09:00 and 13:00 — a heavy Tuesday morning against her ~3/day average. **Three** matched a skill and ran gated; **two** were novel and she did them by hand while capture ran; **one** was the kind of request no automation should touch — a user wanting a policy exception — and she just talked to the person.
 → *Component:* **N1 capture** on the two novel ones; nothing at all on the human one.
 **The one the system stayed out of matters.** A product that tries to intermediate a conversation about a policy exception makes the day worse, and `P9` plus envelope enforcement are what keep it out.
 
@@ -65,7 +65,9 @@ A gated skill proposes disabling a mailbox forwarding rule at a 60-person client
 
 ## 16:00 — Sonia (client-side IT director) · the quarterly review
 
-She exports the action log for her environment: every action, its skill version, its verification result, the approving human, under the agent's named principal. She also confirms what she was told at onboarding — no raw recording has left her boundary.
+She exports the action log for her environment: every action, its skill version, its verification result, the approving human, under the agent's named principal. She also confirms what she was told at onboarding — **raw recordings never leave her MSP's control, and nothing identifying her tenant reaches the vendor.**
+
+*The precise wording matters and the first version got it wrong. Sessions are recorded on MSP engineer workstations and live on the MSP's node; they were never inside Brightwater's boundary, so "no raw recording left your boundary" attests to nothing and implies custody she does not have. The true and stronger claim is about the MSP's control and the vendor's exclusion.*
 → *Component:* **X21 audit export**, egress attestation (D6).
 → She is not a user either. **She needs one file, twice a year, and for it to be boring.**
 

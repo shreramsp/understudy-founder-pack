@@ -1,17 +1,17 @@
-# Prioritized feature list — 60 features, Now / Next / Later
+# Prioritized feature list — 61 features, Now / Next / Later
 
-> **What this is** — fifty features in strict priority order across three tiers, each with its mechanism, the user value it produces, its dependencies, and a size.
+> **What this is** — 61 features in strict priority order across three tiers (10 Now · 32 Next · 19 Later), each with its mechanism, the user value it produces, its dependencies, and a size.
 > **Why it exists** — [features_flagship.md](features_flagship.md) argues what matters; this file decides what gets built first and what is deliberately deferred. Priority here is **risk-ordered, not chronological**: the earliest items are the ones that retire the assumption that kills the company, not the ones a user sees first.
-> **How to read it** — the Now tier is the whole bet. If N1–N8 fail, nothing below them matters and the Next tier should never be started. A skeptic should check that no Later item is secretly a dependency of a Now item.
-> **Depends on / feeds** — inherits [PRD.md](PRD.md) §4–§5, [features_flagship.md](features_flagship.md); feeds `tech/`, [journeys/](journeys/), `validation/experiment_board.md`.
+> **How to read it** — the Now tier is the whole bet: N1–N4, N6, N7, N11, N0, N8 and N15. If it fails, nothing below it matters and the Next tier should never be started. A skeptic should check that no Later item is secretly a dependency of a Now item.
+> **Depends on / feeds** — inherits [PRD.md](PRD.md) §5–§6, [features_flagship.md](features_flagship.md); feeds `tech/`, [journeys/](journeys/), `validation/experiment_board.md`.
 
-Effort: **S** ≤2 weeks · **M** 2–6 weeks · **L** >6 weeks, solo-founder baseline. Principle tags refer to [PRD.md](PRD.md) §4.
+Effort: **S** ≤2 weeks · **M** 2–6 weeks · **L** >6 weeks, solo-founder baseline. Principle tags refer to [PRD.md](PRD.md) §5.
 
 ## NOW — retire the core assumption (F5 clustering) or stop
 
 Nothing in this tier is user-facing polish. It exists to answer whether recorded sessions become reliable skills.
 
-**D6 binds this tier.** In-boundary distillation was previously an L-tier item; it is now an architecture constraint on N6 and N9, because retrofitting a boundary into a pipeline built without one is far more expensive than assuming it. The N-tier is therefore designed edge-first from the start.
+**D6 binds this tier.** Stage-1 distillation inside the MSP's own tenant was previously an L-tier item; it is now an architecture constraint on **N6 and N15**, because retrofitting a boundary into a pipeline built without one is far more expensive than assuming it. The N-tier is designed **MSP-tenant-first** from the start. (N9, the envelope egress filter, sits in Next — the boundary must exist before there is anything to filter across it.)
 
 | # | Feature | Mechanism | User value | Depends on | Effort | Principle |
 |---|---|---|---|---|---|---|
@@ -19,19 +19,20 @@ Nothing in this tier is user-facing polish. It exists to answer whether recorded
 | N2 | Session segmentation | Split a shift into task episodes by idle gaps, app focus and ticket context | Recordings become comparable units | N1 | M | `P1` |
 | N3 | Action extraction | Convert raw capture into a typed action stream (clicked X in app Y, entered value class Z) | The representation clustering operates on | N2 | L | `P1` |
 | N4 | Sensitive-value redaction | Detect and drop credentials, tokens, PII at capture time, before storage | Precondition for any security conversation; D6's boundary is worthless if the capture holds secrets | N1 | M | `P8 P9` |
-| N6 | Cross-session clustering, **in-boundary** | Group episodes of the same procedure across engineers and environments, executing inside the client perimeter (D6) | **The core bet** | N3 | L | `P1 P7` |
+| N6 | **Stage-1 clustering, in the MSP tenant** | Group episodes of the same procedure across engineers and environments, executing **inside the MSP's own tenant across that MSP's environments** (D6) | **The core bet** | N3 | L | `P1 P7` |
 | N7 | Skill synthesis to `SKILL.md` | Emit goal, preconditions, steps, **success criterion**, escalation envelope | A readable, executable artifact | N6 | L | `P3 P6` |
 | N0 | **Stub executor** | Minimal step execution against a lab tenant — read plus reversible write, no gating, no identity, no tenant isolation | **Without it N8 cannot score anything.** Pulled up from X1, deliberately crippled: this is a test fixture, not the product's executor | N7 | M | `P3` |
+| N11 | Engineer capture controls | Indicator, pause, post-session review before distillation | **Consent is structural, not promised.** Pulled back into Now: the transfer test at months 10–11 records real engineers, and the first humans this company ever records must not be the ones with no indicator and no pause. `P8` is not a later-tier concern | N1 | S | `P8` |
 | N15 | **In-boundary node lifecycle** | Provision, patch, upgrade, roll back and health-monitor the stage-1 distillation node inside an MSP's tenant | **D6 has no delivery vehicle without this.** One node per MSP (not per client, per the corrected boundary), but it is a distributed component inside someone else's infrastructure, operated by whoever runs this company | N6 | L | `P4` |
 | N8 | Evaluation harness | Run a synthesized skill against a held-out environment and score it | **The only way to know whether N6 works**; the E2 and A8 instrument | N7 N0 | M | `P3 P7` |
 
 ### Build math — stated because the first version's arithmetic did not close
 
-At the file's own effort key (**S** ≤2wk · **M** 2–6wk · **L** >6wk, solo founder), this chain is strictly sequential and its **floor is 34 weeks**: 2+2+6+2+6+6+2+2+6 (including N15). Midpoints put it past 50. The original Now tier held 14 items including three L's and was implicitly promised inside [gtm.md](../strategy/gtm.md) §4's 89-day slot — **that was not achievable and the file now says so.**
+At the file's own effort key (**S** ≤2wk · **M** 2–6wk · **L** >6wk, solo founder), this chain is strictly sequential and its **floor is 36 weeks** — 2+2+6+2+6+6+2+2+6+2, now including N11 — and that floor is unreachable by construction, because the key defines **L** as *">6 weeks"* while the sum values all four L items at exactly 6. A realistic floor is **~40 weeks; midpoints run past 55**.  The original Now tier held 14 items including three L's and was implicitly promised inside [gtm.md](../strategy/gtm.md) §4's 89-day slot — **that was not achievable and the file now says so.**
 
 Two consequences, both propagated rather than absorbed:
 
-1. **gtm.md §4 has been re-baselined** to a build window ending around month 8, the transfer test at months 8–9, and the first paid pilot near month 12 — which finally agrees with `strategy/market_type.md`'s "~12 months runway to first revenue" instead of contradicting it.
+1. **gtm.md §4 has been re-baselined** to a build window ending around **month 10**, the transfer test at **months 10–11**, and the first paid pilot at **month 12 — which holds only if every item lands at its optimistic bound.** That is the schedule's single point of failure and it is named rather than buried: at midpoints the build alone runs into month 13, and the pilot moves with it — which finally agrees with `strategy/market_type.md`'s "~12 months runway to first revenue" instead of contradicting it.
 2. **Seven features moved out of Now into Next** (N5, N9, N10, N11, N12, N13, N14). They keep their identifiers so every reference elsewhere in the pack still resolves; only their tier changed. **N0 moved *in*, because the original tier had a circular dependency**: N8 scores a skill by running it, X1 was the only executor, and X1 sat in a tier gated on N8 completing.
 
 **On N15's cost, since it is the item most likely to be underestimated.** A distributed node inside customer infrastructure is a support burden before it is a feature: version skew, an MSP's own patching windows, resource contention, and a failure mode where the node is down and nobody notices until skills go stale. The corrected D6 boundary is what makes this survivable — **three design partners means three nodes, not ~123** — but it is still the first operational obligation this company takes on, and it lands on one person.
@@ -47,16 +48,15 @@ The seven N-rows at the top of this tier were demoted from Now (see Build math a
 | # | Feature | Mechanism | User value | Depends on | Effort |
 |---|---|---|---|---|---|
 | N5 | Failure/abort labelling | Retain and mark sessions ending in escalation or rollback | Recovery behaviour becomes learnable | N2 | S | `P2` |
-| N9 | Variance envelope extraction **+ boundary egress filter** | Keep the distribution of how a procedure differed; the envelope is the **only** artifact permitted to cross the client boundary (D6) | The moat as data, and the security answer as structure | N6 | M | `P7` |
+| N9 | Variance envelope extraction **+ boundary egress filter** | Keep the distribution of how a procedure differed; the envelope is the **only** artifact permitted to leave the MSP tenant (D6) | The moat as data, and the security answer as structure | N6 | M | `P7` |
 | N10 | Decision-point narration | Prompt for ~10s of voice at detected branch points | Attacks demonstration underdetermination | N2 | M | `P1 P8` |
-| N11 | Engineer capture controls | Indicator, pause, post-session review before distillation | Consent is structural, not promised | N1 | S | `P8` |
 | N12 | Skill viewer | Read a skill as text, with its sessions and authors | Ray's "show me what it learned" — the demo that converts | N7 | S | `P6 P8` |
 | N13 | Authorship attribution | Name contributing engineers on every skill | The capture programme survives | N6 | S | `P8` |
 | N14 | Onboarding meter | Engineer-hours and time-to-first-verified-skill per environment | **The GTM number** [strategy/gtm.md](../strategy/gtm.md) | N8 | S | — *(a measurement surface, not a mechanism — the one row with no principle, deliberately)* |
 | X1 | Read-only executor | Execute non-mutating steps against a real environment | The first live action, with nothing at risk | N7 | L |
 | X2 | Shadow mode | Skill runs against live tickets without acting; outcomes compared to the human's | Trust bought before risk taken (`P5`) | X1 | M |
 | X3 | Deviation report | Route each divergence to the authoring engineer as a question | Corrections flow back (`P2 P6`) | X2 | M |
-| X4 | Success-criterion verification | Test the declared criterion after every action | What RPA structurally lacks (`P3`) | X1 | M |
+| X4 | Success-criterion verification | Test the declared criterion after every action | What RPA asserts about the interface rather than about the goal (`P3`) | X1 | M |
 | X5 | Action-class policy | read / reversible-write / destructive, destructive always gated | `P9`; the security conversation becomes concrete | X1 | S |
 | X6 | Approval queue | Human approves gated actions with a one-line summary of effect | Dana and Ray stay in control | X5 | M |
 | X7 | Agent identity integration | Own principal in the client IdP; every action attributable | Sonia's audit answer (`P8 P9`) | X1 | M |
@@ -102,7 +102,7 @@ The seven N-rows at the top of this tier were demoted from Now (see Build math a
 | L17 | Cost/usage analytics | Inference cost per skill and per resolved ticket | Protects gross margin as volume grows | X4 | S |
 | L18 | Skill deprecation workflow | Retire skills whose environment is gone | The library stays true rather than accumulating | X12 | S |
 | L19 | Multi-language capture | Non-English narration | International, post-US | N10 | M |
-| L20 | On-prem/air-gapped deployment | For clients permitting no outbound connectivity at all | Unlocks regulated MSP clients. **Note D6 already puts distillation inside the boundary**, so this is the narrower case of blocking even envelope egress | N6 X16 | L |
+| L20 | On-prem/air-gapped deployment | For clients permitting no outbound connectivity at all | Unlocks regulated MSP clients. **Note D6 already puts distillation inside the MSP tenant**, so this is the narrower case of blocking even envelope egress from the MSP tenant | N6 X16 | L |
 
 ## What is deliberately not on this list
 

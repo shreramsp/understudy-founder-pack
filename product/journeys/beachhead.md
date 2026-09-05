@@ -95,6 +95,6 @@ The first version of this table claimed environment 1 took **11 hours against a 
 
 ## What Dana bought, stated honestly
 
-Not ticket deflection — six gated skills do not empty her queue. **She bought the end of maintaining a runbook nobody kept current, and a floor under her tier-1 team at clients they do not know.** The deflection comes later and is smaller than the category advertises; the onboarding compression is immediate and is what the fee is charged for.
+Not ticket deflection — six gated skills do not empty her queue. **She bought the end of maintaining a runbook nobody kept current, and a floor under her tier-1 team at clients they do not know.** The deflection comes later and is smaller than the category advertises; the onboarding compression begins at environment 2, not environment 1, and the fee is charged against the runbook and the tier-1 floor rather than against first-environment hours.
 
 **Recommended next:** instrument the week-9 beat before anything else in the product — reuse rate on environment 2 is the earliest real evidence for A8, and it arrives roughly two months into a customer relationship rather than at the end of one.

@@ -42,6 +42,10 @@ Confirmed by the founder in the grill (**not** assumptions): MSP beachhead · hy
 
 | D8 | **The environment-1-costs-more finding stays visible** — in [journeys/beachhead.md](product/journeys/beachhead.md), in the onboarding meter (F20/S9), and in every ROI artifact | 2026-09-04 | Founder directive: *"we'd rather a design partner's timesheet confirm our number than falsify it."* Binding on `strategy/gtm.md`'s engineer-hours ROI calculator, on `narrative/` (no artifact may quote a first-environment saving), and on `startup-website` — the quantified proof block must lead with compression at environment 2, never with environment 1 |
 
+## Open decision — blocking the financials layer
+
+**The onboarding fee's justification failed under the corrected hours (critic round 2).** The fee was priced at 57–80% of onboarding hours displaced; environment 1 now displaces *negative* hours and environment 2 displaces $0–1,650 against a $1,500 fee. Year 1 is five backfill environments and ~87% of year-1 revenue is this fee, so the stated basis fails across the whole of year 1. Three options and a recommendation are in [strategy/market_sizing.md](strategy/market_sizing.md) §Pricing basis failure. **`financials/pricing.md` cannot produce D7's banded schedule until this is decided.**
+
 ## Open questions for the founder
 
 1. Is there any existing recording corpus, design partner MSP, or prior pilot — or is this genuinely zero-evidence today?

@@ -1,7 +1,7 @@
 # Product requirements — Understudy · v0.1 · 2026-09-04
 
 > **What this is** — the product definition: the closed core loop, the principles every feature must obey, the superset feature set organised by loop phase, and the metrics that say whether it works.
-> **Why it exists** — this product's failure mode is not missing features, it is building a recorder that produces plausible skills nobody trusts enough to run. The first-principles section (§4) exists to make that failure structurally hard: a feature that maps to no principle gets cut, and the principles are drawn from why forty years of prior attempts failed rather than from what would be nice to have.
+> **Why it exists** — this product's failure mode is not missing features, it is building a recorder that produces plausible skills nobody trusts enough to run. The first-principles section (§5) exists to make that failure structurally hard: a feature that maps to no principle gets cut, and the principles are drawn from why forty years of prior attempts failed rather than from what would be nice to have.
 > **How to read it** — §5 then §6; the principle tags in §5 are the argument that this is engineering rather than a wish list. A skeptic should attack principle P5, which concedes the product cannot do the thing the category is excited about.
 > **Depends on / feeds** — inherits [BRIEF.md](../BRIEF.md) (incl. the binding claim boundary D1 and pricing D4), [research/survey.md](../research/survey.md), [research/capability_table.md](../research/capability_table.md), [strategy/personas.md](../strategy/personas.md); feeds [features_flagship.md](features_flagship.md), [features_prioritized.md](features_prioritized.md), [journeys/](journeys/), [ux_spec.md](ux_spec.md), `tech/`.
 

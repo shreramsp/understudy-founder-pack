@@ -78,7 +78,12 @@
 ## S10 · Boundary and egress attestation — Sonia's screen
 
 **Purpose.** Show what leaves the environment. **Primary action:** export.
-**Hierarchy:** raw recordings — **never leave, stated first** → what the envelope contains → what crossed, itemised → retention state.
+**Hierarchy — the title question now has two answers, and both are shown:**
+1. **What leaves your environment → your MSP's node.** Session recordings of your admins, captured on your MSP's engineer workstations, stored in your MSP's tenant. Retention and controls stated here.
+2. **What leaves your MSP → an abstracted envelope only.** Procedure shapes and deviation patterns carrying no tenant name, domain, user, policy id or configuration value, and only once a pattern has been seen in ≥3 distinct tenants.
+3. What actually crossed, itemised → retention state.
+
+**The wording matters and the first version got it wrong.** Under the two-stage boundary (D6), saying "raw recordings never leave" *to the client* is false — they leave her environment for her MSP's node. The true and stronger claim is the two-part one: her MSP retains custody, and the vendor is structurally excluded. A director who was told "never leaves my environment" and later finds recordings of her admins in her MSP's tenant is a lost contract and a burned reference.
 **States.** *Error:* if egress filtering is degraded, the system stops distillation rather than continuing and reporting later.
 **Micro-interactions.** One export, complete, no configuration. She needs one file, twice a year, and for it to be boring [journeys/day_in_life.md](journeys/day_in_life.md).
 

@@ -9,7 +9,7 @@
 **Session goal.** Resolve an MFA re-enrolment for a user at Brightwater Dental — a 22-person client on Microsoft Entra ID that Priya has never worked in — without escalating.
 
 *Vocabulary note: this journey is Entra/M365 throughout. The first version mixed Okta and Entra terms in the same scenario, which is the kind of error a practitioner spots immediately.*
-**Baseline today.** She reads a generic runbook, finds Brightwater's Okta configured unlike the others, burns 25 minutes, escalates to Ray. The escalation counts against her.
+**Baseline today.** She reads a generic runbook, finds Brightwater's Entra tenant configured unlike the others, burns 25 minutes, escalates to Ray. The escalation counts against her.
 
 ---
 

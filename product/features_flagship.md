@@ -1,7 +1,7 @@
 # Flagship features — the 20 that carry the product
 
 > **What this is** — the twenty highest-leverage features, each stated as name → mechanism → the principle it obeys → **the visible product moment**, meaning what a user literally sees.
-> **Why it exists** — feature lists drift into adjectives, and adjectives cannot be built or falsified. The "visible moment" column is the discipline: if a feature has no moment, it is infrastructure, and if it maps to no principle in [PRD.md](PRD.md) §4 it should not exist.
+> **Why it exists** — feature lists drift into adjectives, and adjectives cannot be built or falsified. The "visible moment" column is the discipline: if a feature has no moment, it is infrastructure, and if it maps to no principle in [PRD.md](PRD.md) §5 it should not exist.
 > **How to read it** — F1–F4 are the company; F13–F16 are the trust surface that decides adoption. A skeptic should attack F2, which has no benchmark in the literature to inherit.
 > **Depends on / feeds** — inherits [PRD.md](PRD.md); feeds [features_prioritized.md](features_prioritized.md), [journeys/](journeys/), [ux_spec.md](ux_spec.md), `tech/deep_dives.md`, `visuals/`.
 
@@ -19,7 +19,7 @@
 
 **F5 · Cross-session clustering** · *Mechanism:* groups recordings of the same procedure across engineers and environments, separating the invariant procedure from environment-specific detail. · `P1 P7` · **Moment:** twelve recordings of MFA re-enrolment collapse into one skill with three named variants. **This is the company's core bet and has no benchmark in the literature to inherit [capability_table row 5].**
 
-**F6 · Skill synthesis with a declared success criterion** · *Mechanism:* emits `SKILL.md` carrying goal, preconditions, steps, **a test for "done correctly"**, and an escalation envelope. · `P3 P6` · **Moment:** the skill opens with "Succeeds when: the user can complete an MFA challenge from a new device" — the line an RPA script never had.
+**F6 · Skill synthesis with a declared success criterion** · *Mechanism:* emits `SKILL.md` carrying goal, preconditions, steps, **a test for "done correctly"**, and an escalation envelope. · `P3 P6` · **Moment:** the skill opens with "Succeeds when: the user can complete an MFA challenge from a new device" — a statement about the goal, where an RPA assertion would state something about the interface.
 
 **F7 · Variance envelope extraction** · *Mechanism:* records how the same procedure differed across environments and keeps the distribution, not just the modal path. · `P7` · **Moment:** a skill shows "observed in 14 environments · 3 variants · 2 known deviations" — the asset made visible.
 
@@ -43,7 +43,7 @@
 
 **F15 · Test-account self-exploration** · *Mechanism:* bounded, read-only-by-default discovery of the environment beyond what was recorded. · `P1 P4` · **Moment:** the agent maps a tenant's group structure overnight and reports what differs from the twelve it already knows.
 
-## Verify and Learn — the part RPA never had
+## Verify and Learn — checking the goal, not the interface
 
 **F16 · Success-criterion verification** · *Mechanism:* every action ends by testing its declared criterion; a passing action is one that was *checked*, not one that did not error. · `P3 P9` · **Moment:** "Reset complete — verified by signing in as the test principal."
 

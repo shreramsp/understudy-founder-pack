@@ -1,8 +1,8 @@
-# Pitch deck — 14 slides
+# Pitch deck — 15 slides
 
 > **What this is** — the deck as markdown: one section per slide, each title stating the takeaway as a full sentence, a 3–5 bullet payload, and a `visual:` line naming the supporting visual.
 > **Why it exists** — a deck is the pack compressed to fourteen claims. This file is also what seeds `visuals/visual_manifest.md`: every `visual:` line below becomes a manifest row, so the visual layer is derived from what the story needs rather than from what is easy to draw.
-> **How to read it** — the titles alone should carry the argument; if they do not, the deck has failed. A skeptic should attack slide 10, where the pack admits it has no traction.
+> **How to read it** — the titles alone should carry the argument; if they do not, the deck has failed. A skeptic should attack slide 10, where the pack admits it has no traction, and slides 11–12, which give away the two limits most decks hide.
 > **Depends on / feeds** — arranges [one_pager.md](one_pager.md), [vc_memo.md](vc_memo.md) and the layers beneath them; feeds `visuals/visual_manifest.md`, `startup-website`.
 
 ---
@@ -81,6 +81,13 @@
 - A design partner's timesheet should confirm our number, not falsify it.
 `visual: V11 — hours per environment, 1 through 5, against baseline, with the waiver marked`
 
+### 11b · We are not cheaper per ticket. We are throughput at a capacity ceiling.
+- The tickets we automate are the cheapest quartile of an MSP queue — resets, permissions, provisioning, alert remediation.
+- A junior tech clears those at roughly $2–6. **At $6 we are at or above their marginal cost.**
+- So the pitch is not savings. **26% of MSPs cannot staff the clients they could win** [S33]; the alternative to us is a hire they already failed to make.
+- We say this on a slide rather than have a buyer find it in their own numbers.
+`visual: V33 — cost per ticket: their marginal cost vs our price, with the capacity ceiling marked`
+
 ### 12 · Where a real API exists, we are the wrong tool — and that bounds the mechanism.
 - Driving an API beats driving a UI on speed, cost and stability.
 - Capture's durable value concentrates where APIs are poor: native admin consoles, terminals, legacy tooling.
@@ -107,6 +114,7 @@
 
 - **No autonomy slide.** Excluded by the claim boundary (D1), not withheld for modesty.
 - **No logo wall, no testimonials, no invented metrics.** There are no customers.
+- **No cost-savings claim on the ticket half.** We are at or above the buyer's marginal cost there, and slide 11b says so (D18).
 - **No blended 10× claim.** The whitepaper locates the leverage precisely: ~8× on the maintenance line, ~1.3× on repeat onboarding. A single headline multiplier would misuse its own table.
 - **No slide titled "Market" or "Team".** Titles are claims; a label is a wasted slide.
 

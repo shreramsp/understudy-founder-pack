@@ -60,6 +60,19 @@ Six components, in the order they run. Full diagrams in [../tech/architecture/](
 4. **Adoption fails from inside, quietly.** The expert whose cooperation capture requires is the one best equipped to reject it — **disuse**, in the human-factors taxonomy [S36], is a documented failure mode. It looks like slow adoption and no dashboard shows it. *Mitigation: attribution, correction rights and rejection without justification, designed in rather than messaged.*
 5. **Schedule.** ~40-week build floor for a solo founder; first paid pilot at month 12 **only if every item lands at its optimistic bound**. *Mitigation: none. It is the single point of failure and it is named.*
 
+## 6b · What the ticket half actually sells
+
+**This is stated here rather than left for a buyer to derive, because it is derivable in one conversation.**
+
+Our per-ticket price is $6. The tickets we address are the cheapest quartile of an MSP queue by construction, and a junior technician clears them at `(assumption: $2–6 each)` — a figure `validation/experiment_board.md` E8 exists to establish. **So on the ticket half we are plausibly at or above the customer's own marginal cost, and the savings argument is not available.**
+
+The argument that *is* available is capacity. An MSP at its staffing ceiling cannot convert marginal cost into marginal output — **26% of them report being unable to staff clients they could otherwise win** [S33], and the alternative to us is a hire they have already failed to make. What we sell on that half is throughput and coverage at the ceiling, not a cheaper unit.
+
+**Three consequences we accept rather than argue around:**
+1. The per-ticket line will not survive a buyer who has spare capacity. Those are not our customers.
+2. It caps price capture: `financials/comps_exits.md`'s "capture more of the labour value" path is weaker than it first appears, because the labour value on this subset is small.
+3. **The onboarding half carries the economics**, and its own basis is unresolved — the fee is priced above the hours it displaces at every band, and E3 is reframed to test whether the library has value independent of hours at all (D17).
+
 ## 7 · Traction
 
 **There is none.** No pilot, no customer, no measured result, no code. Design partners are not yet signed. Every operating figure in this pack is a declared target with its source or `(assumption)` tag attached, and the artifacts state where the numbers would be falsified. **A memo that manufactured traction here would be the strongest evidence against everything else in it.**

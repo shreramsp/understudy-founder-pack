@@ -31,6 +31,7 @@
 | V05 | The closed loop: Watch → Distil → Rehearse → Gate → Act → Verify → Learn | buyers | product/PRD.md | image | pending-image |
 | V07 | Contract vs goal: the same procedure under a UI change | buyers | tech/whitepaper.md | image | pending-image |
 | V12 | Admin surface map: API-covered vs UI-only | buyers | tech/techniques/wave3.md | image | pending-image |
+| V33 | Cost per ticket: their marginal cost vs our price, capacity ceiling marked | buyers | narrative/pitch_deck.md | image | pending-image |
 | V17 | The two-stage boundary: what leaves your environment, what leaves your MSP | buyers | tech/architecture/D06.md | mermaid | **source renders** |
 | V18 | Banded pricing against hours displaced, by client size | buyers | financials/pricing.md | html | **rendered** |
 | V19 | Decision-making unit: who can say no | buyers | validation/decision_making_unit.md | html | **rendered** |

@@ -2,7 +2,7 @@
 
 > **What this is** — the value metric and why it was chosen, the anchor analysis, the competitor price table, the banded tier design D7 requires, willingness-to-pay logic per persona, and the pricing-power argument.
 > **Why it exists** — this pack's pricing has failed a critique once already: the fee was justified against onboarding hours the corrected journeys showed it did not displace. This file rebuilds it band by band and states, explicitly, the band where the justification still does not hold.
-> **How to read it** — §4 is the uncomfortable section and the one that matters. A skeptic should attack the small-client band, where the fee exceeds the value it displaces.
+> **How to read it** — §4 is the uncomfortable section and the one that matters: it shows **what we charge ($1,005 blended) beside what the hours justify (~$241 blended)**, and names E3 as the test that resolves the gap (D16, D17). A skeptic should attack whether the library has value independent of hours at all.
 > **Depends on / feeds** — inherits [../strategy/market_sizing.md](../strategy/market_sizing.md) (D4, D7, D9), [../product/journeys/beachhead.md](../product/journeys/beachhead.md); feeds [revenue_build.md](revenue_build.md), [unit_economics.md](unit_economics.md), `startup-website` (pricing page).
 
 **Standing rule inherited from `tech/whitepaper.md` §2, and it governs this entire layer:** no `(assumption)` figure may be treated as an input to a financial forecast until the experiment that tests it returns a number. **Everything below is a scenario conditional on E1, E2, E3 and E8**, not a forecast, and every table says which experiment it waits on.

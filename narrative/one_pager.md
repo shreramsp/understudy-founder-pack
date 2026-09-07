@@ -21,6 +21,8 @@
 
 **Evidence.** Pre-build, and the pack says so. What exists: the mechanism is validated at user-study scale in the literature (ALLOY, arXiv 2510.10049), the enabling capability is measured [S14][S16], and the market pain is sourced [S21][S33]. **What does not exist: any pilot, any customer, any measured result.** Every operating figure in this pack is a declared target, not a measurement.
 
+**What we are actually selling on the ticket half — and it is not savings.** The tickets we automate are the cheapest quartile of an MSP's queue by construction: password and MFA resets, mailbox permissions, provisioning, printer queues, RMM-alert remediation with documented fixes. A junior technician clears those at `(assumption: $2–6 each)`. **At $6 per resolved ticket we are at or above their marginal cost.** What we sell is not a cheaper ticket — it is **throughput at a capacity ceiling**: 26% of MSPs say they cannot staff the clients they could otherwise win [S33], and the alternative to us is a hire they have already failed to make. We would rather state that than have a buyer work it out from their own numbers.
+
 **What we deliberately do not claim.**
 - **Not unattended autonomy.** Long-horizon agent completion is 20.6% [S16]; supervision is architecture, not a phase we remove.
 - **Not faster first onboarding — it is slower.** Environment 1 costs 31–46 hours against a 25–40 baseline, because the work is unchanged and review is added. Compression begins at environment 2 (18–28 hours). **We waive the fee on environment 1** rather than charge for a loss.

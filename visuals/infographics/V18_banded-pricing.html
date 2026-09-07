@@ -36,18 +36,20 @@ font:400 11px/1.5 JetBrains Mono,monospace;color:var(--faint)}
 @media print{body{background:#fff} .sheet{max-width:none;padding:24px}}
 </style></head><body><div class="sheet">
 <div class="eyebrow">Pricing · V18</div>
-<h1>The fee's justification has failed arithmetic twice. Here is where it holds and where it doesn't.</h1>
-<p class="sub">Charged from environment 2, on the compression the library produces rather than on the full onboarding cost. Every band is uncomfortable at its lower bound, and that is shown rather than smoothed.</p>
-<div class="zones"><div class="z"><h2>Schedule as decided (D11)</h2><table>
-<tr><th>Band</th><th>Share of book</th><th>Baseline hrs</th><th>With Understudy</th><th>Hours displaced</th><th>Value</th><th>Fee</th><th>Fee as % of value</th></tr>
-<tr><td>Small ≤10 users</td><td class="n">~45%</td><td class="n">15–25</td><td class="n">~11–18</td><td class="n">0–7</td><td class="n">$0–525</td><td class="n">$400</td><td class="warnc">76%–∞</td></tr>
-<tr><td><strong>Typical 10–30</strong></td><td class="n">~40%</td><td class="n">25–40</td><td class="n">18–28</td><td class="n">0–22</td><td class="n">$0–1,650</td><td class="n">$1,500</td><td class="warnc">91%–∞</td></tr>
-<tr><td>Complex 30+</td><td class="n">~15%</td><td class="n">40–80</td><td class="n">28–56</td><td class="n">12–24</td><td class="n">$900–1,800</td><td class="n">$1,500</td><td class="warnc">83%–167%</td></tr>
-<tr><td colspan="6"><strong>Blended</strong></td><td class="n"><strong>~$1,005</strong></td><td></td></tr>
+<h1>What we charge, beside what the hours justify.</h1>
+<p class="sub">One consistent method across all three bands: matched pairs, at the $46–58/hr the file's own $95–120k loaded technician implies. The gap is shown deliberately — E3 is the test that resolves it.</p>
+<div class="zones"><div class="z"><h2>The schedule, and the hours behind it</h2><table>
+<tr><th>Band</th><th>Share</th><th>Baseline</th><th>With Understudy</th><th>Displaced</th><th>Value</th><th>Fee</th><th>Fee % of value</th></tr>
+<tr><td>Small ≤10 users</td><td class="n">~45%</td><td class="n">15–25</td><td class="n">10–18</td><td class="n">5–7</td><td class="n">$230–406</td><td class="n">$400</td><td class="warnc">99%–174%</td></tr>
+<tr><td><strong>Typical 10–30</strong></td><td class="n">~40%</td><td class="n">25–40</td><td class="n">18–28</td><td class="n">7–12</td><td class="n">$322–696</td><td class="n">$1,500</td><td class="warnc"><strong>216%–466%</strong></td></tr>
+<tr><td>Complex 30+</td><td class="n">~15%</td><td class="n">40–80</td><td class="n">28–56</td><td class="n">12–24</td><td class="n">$552–1,392</td><td class="n">$1,500</td><td class="warnc">108%–272%</td></tr>
 </table></div>
-<div class="z"><h2>The pattern is the finding</h2><div class="callout w"><strong>The compression basis is defensible for the typical band's upper half and nowhere else.</strong> Twice now the fee has been justified against hours and twice the arithmetic has refused it. That may mean the value this product creates is simply not hours-shaped — which is why a per-MSP platform fee stays alive as a named contingency (D12), to be settled by ten conversations rather than by argument.</div></div>
-<div class="z"><h2>What environment 1 costs</h2><table>
-<tr><td class="n">31–46 hrs</td><td>against a 25–40 baseline — <strong>worse</strong></td><td class="sig">waived (D9)</td></tr>
-</table></div></div>
-<div class="src">Source: financials/pricing.md · product/journeys/beachhead.md · [S21] · decisions D4, D7, D9, D11, D12</div>
+<div class="z"><h2>The gap, kept visible</h2><div class="kpis">
+<div class="kpi"><div class="lab">What we charge</div><div class="big">$1,005</div><div style="color:var(--muted);font-size:12.5px;margin-top:5px">blended, per environment from #2</div></div>
+<div class="kpi"><div class="lab">What the hours justify</div><div class="big sig">$241</div><div style="color:var(--muted);font-size:12.5px;margin-top:5px">at ~50% of midpoint displaced value</div></div>
+<div class="kpi"><div class="lab">If the hours basis wins</div><div class="big warnc">$124M</div><div style="color:var(--muted);font-size:12.5px;margin-top:5px">SAM, against $179M at the current schedule</div></div>
+</div></div>
+<div class="z"><h2>Two corrections that produced this table</h2><div class="callout w"><strong>The earlier version computed hours displaced three different ways</strong> — crossed extremes for two bands, matched pairs for the third. That inconsistency is what produced D11's cascade, and under one method <strong>typical is the worst band, not complex — the reverse of what D11 acted on.</strong><br><br><strong>The rate was also wrong:</strong> $75/hr implied a $156k loaded technician, above the top of this file's own $95–120k range.</div></div>
+<div class="z"><h2>E3 is a basis test, not a price test</h2><div class="callout">The fee is above displaced value at every band, at every point. So the question is not "will they pay $1,500" — it is <strong>whether an MSP owner pays for the library at all, or only for the hours it saves.</strong> Ten conversations distinguish three different companies: a $179M SAM, a $124M SAM, or a per-MSP platform fee.</div></div></div>
+<div class="src">Source: financials/pricing.md §4 · validation/experiment_board.md E3 · [S21] · decisions D7, D11, D16, D17</div>
 </div></body></html>

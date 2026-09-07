@@ -72,6 +72,11 @@ Two stages, both mandatory, per the visuals contract:
 
 **Recommended next 3:** (1) render P07 first — the contract-vs-goal visual carries the argument that converts technical evaluators; (2) prove the byte-transfer path on one image before generating the batch; (3) re-run `build_docimages.js` after every batch, since it is the reconciliation step and prints what remains unillustrated.
 
+### P33 · Cost per ticket vs price
+**Orientation:** 16:9. **Subject:** two bars and a ceiling line.
+**Exactly TWO bars** side by side, labels bound inside: `THEIR MARGINAL COST $2–6`, `OUR PRICE $6`. **One horizontal dashed line above both**, labelled inside a tag: `CAPACITY CEILING`. One corner tag: `26% CANNOT STAFF`. Headline: `Not cheaper. More throughput.`
+**Forbid:** a third bar, axis numbers, any sentence.
+
 ---
 
 ## Dossier prompts (V40–V76)

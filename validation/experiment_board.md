@@ -23,11 +23,24 @@
 **The fairness bar has been raised twice and that is the point.** The original design compared against a coordinate-clicking script — a strawman. The second required only "selector-based", which permits fallbacks disabled. **An experiment worth running is one that can lose**, and this one now can.
 **Result.** — · **Learning.** — · **Decision.** — · **Status: planned.**
 
-## E3 · Willingness to pay for environment 2
+## E3 · Basis test — do they pay for the library, or only for the hours? (D17)
 
-**Hypothesis.** **≥5 of 10** MSP owners accept the banded onboarding fee at the median band, framed "first environment free", after seeing their own hour counts.
-**Design.** 10 discovery conversations, run to the script in [discovery_guide.md](discovery_guide.md). Ask for their onboarding hours *before* showing any price. Present the banded schedule. Record acceptance, objection, and counter-anchor.
-**Threshold.** ≥5 accept → pricing holds. ≤2 accept, **or the median hour count comes back below 25**, → the fee has no basis and the revenue model returns to per-ticket, which `strategy/channel_plan.md` shows closes every channel.
+**Reframed after the financials critique.** The original hypothesis asked whether owners would pay $1,500. That is the wrong question, because `financials/pricing.md` §4 now shows the fee is priced **above** the hours it displaces at every band — 99–174% small, 216–466% typical, 108–272% complex. An hours-defensible schedule would be roughly **$241 blended against the $1,005 we charge.** So the price question is downstream of a prior one.
+
+**Hypothesis.** MSP owners will pay a per-environment fee **materially above the engineer-hours it displaces**, because what they are buying is the maintained runbook, the tier-1 floor at unfamiliar clients, and knowledge that survives attrition — none of which is hours-denominated.
+
+**Design.** 10 owner conversations, in this order and no other:
+1. Get their onboarding hours by client size, before any price. *(Also feeds `market_sizing.md` row 13 and E8.)*
+2. Show the **hours arithmetic honestly** — including that we charge above it.
+3. Present the schedule and ask what they would pay for, in their words.
+4. Present the **~$241 hours-defensible alternative** and ask which they would rather buy.
+
+**Threshold, declared in advance.**
+- **≥5 of 10 accept the banded schedule after seeing the gap** → the library has value independent of hours; the schedule stands and the ROI calculator is re-based on library value.
+- **≥5 prefer the ~$241 schedule** → the value *is* hours-shaped, revenue per MSP falls to ~$10,350 and SAM to ~$124M, and the model must be rebuilt on it.
+- **≤2 accept either** → the per-environment fee has no basis at all and the **D12 per-MSP platform fee** becomes the model.
+
+**Why this is the highest-value ten conversations in the pack.** It costs nothing, needs no product, and it is the only thing that can distinguish three futures the model cannot: a $179M SAM, a $124M SAM, or a different revenue architecture entirely.
 **Result.** — · **Learning.** — · **Decision.** — · **Status: planned.**
 
 ## E4 · Channel admissibility
@@ -76,4 +89,4 @@
 - **Order is by cost, not by importance.** E3, E4 and E5 need no product and run first; E1 and E2 wait on the harness. A company that runs its expensive experiment first learns the same thing later and poorer.
 - **A negative result is published.** E1 in particular: forty years of literature has assumed procedure transfer works without measuring it, and a clean negative is the most useful thing this company could contribute if the positive does not arrive.
 
-**Recommended next 3:** (1) run E3, E4 and E5 in the first month — three phone calls, ten conversations and one afternoon of attacking our own schema; (2) build the harness before the clusterer so E1 and E2 share it; (3) re-rank this board after the first five results, and record what changed in [pivot_log.md](pivot_log.md).
+**Recommended next 3:** (1) run E3, E4 and E5 in the first month — three phone calls, ten conversations and one afternoon of attacking our own schema; (2) run E3 as a *basis* test rather than a price test — it is the only experiment that can distinguish three different companies; (3) re-rank this board after the first five results, and record what changed in [pivot_log.md](pivot_log.md).

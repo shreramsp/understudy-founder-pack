@@ -14,6 +14,7 @@ The banded schedule is **decided**, not undecided. The earlier version of this s
 | Operative figure | Value |
 |---|---|
 | Blended fee per environment (45/40/15 at $400/$1,500/$1,500) | **~$1,005** |
+| **What the hours actually justify** `(D16 — kept visible deliberately)` | **~$241** |
 | Year-1 revenue per MSP (5 environments, first waived per D9) | **~$5,110** |
 | Steady-state revenue per MSP | **~$14,930** |
 | 3-year revenue per MSP | **~$40,000** |

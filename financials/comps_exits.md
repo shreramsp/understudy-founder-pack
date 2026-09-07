@@ -42,7 +42,7 @@ An IPO requires roughly $100M+ ARR with durable growth. Against `revenue_build.m
 
 **On the MSP wedge alone: no, and the arithmetic says so rather than the mood.**
 
-SAM is $179–215M. A generational outcome requires either capturing a share of it no early-stage company should assume, or entering a market this pack has declined to claim. **The honest ceiling on the wedge is an excellent business — durable recurring revenue at ~$15–18k per MSP, a defensible mechanism, and a natural acquirer set — and not a generational one.**
+SAM is ~$179M (D11; $215M under the superseded flat fee). A generational outcome requires either capturing a share of it no early-stage company should assume, or entering a market this pack has declined to claim. **The honest ceiling on the wedge is an excellent business — durable recurring revenue at ~$15k per MSP, a defensible mechanism, and a natural acquirer set — and not a generational one.**
 
 **What would change that answer**, in descending order of credibility:
 

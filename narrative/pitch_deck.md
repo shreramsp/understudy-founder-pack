@@ -60,11 +60,11 @@
 - Only abstracted patterns cross the boundary — raw recordings never leave the MSP's control.
 `visual: V08 — the variance envelope: one procedure, many tenants, the distribution as the asset`
 
-### 9 · ~12,000 US MSPs in the serviceable band, a $215M SAM, and it is a wedge rather than a category.
+### 9 · ~12,000 US MSPs in the serviceable band, a $179M SAM, and it is a wedge rather than a category.
 - ~45,000 US MSPs; ~12,000 at 10–100 employees [S31].
-- Two-part tariff: ~$6/resolved ticket plus a banded per-environment fee. ~$17,900/yr per MSP at steady state.
-- **SAM ≈ $215M.** Internal IT is ~$288M more and this deck does not claim it.
-- Roughly 80% of three-year revenue is one-time onboarding — a services shape during land, and we price it as such.
+- Two-part tariff: ~$6/resolved ticket plus a banded per-environment fee ($400/$1,500/$1,500), first environment free. ~$14,930/yr per MSP at steady state.
+- **SAM ≈ $179M.** Internal IT is ~$288M more and this deck does not claim it.
+- Roughly 73% of three-year revenue is one-time onboarding — a services shape during land, and we price it as such.
 `visual: V09 — bottom-up SAM build, arithmetic shown, with the sensitivity band`
 
 ### 10 · We have no traction, and every number in this deck is a declared target.

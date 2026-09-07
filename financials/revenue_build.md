@@ -11,7 +11,7 @@
 
 `market_sizing.md` was built on a **flat $1,500** per-environment fee. [pricing.md](pricing.md) §4 shows that flat fee is priced *above* displaced value at the complex band and recommends banding down. The blended effect:
 
-| | Flat $1,500 (current strategy basis) | **Banded per pricing.md §4 rec.** ($400 / $1,500 / $1,500) |
+| | Flat $1,500 (superseded) | **Banded — CHOSEN (D11)** ($400 / $1,500 / $1,500) |
 |---|---|---|
 | Blended fee per environment | $1,500 | **~$1,005** (0.45×400 + 0.40×1,500 + 0.15×1,500) |
 | Steady-state fee revenue/MSP/yr (6 new clients) | $9,000 | **~$6,030** |
@@ -25,7 +25,7 @@
 
 **The consequence that matters is not SAM.** It is the CAC ceiling: at ~$9,300, the primary channel's $4,000–9,000 range [../strategy/channel_plan.md](../strategy/channel_plan.md) **touches the ceiling at its top end**, and the newsletter channel at $4,000–8,000 does too. **Under the banded schedule there is no channel with a comfortable margin, and one that was viable becomes marginal.** This is a founder decision and it is escalated rather than chosen here.
 
-**Both scenarios are carried below.** Figures are given flat-basis first, banded in brackets.
+**Both scenarios are carried below**, with the flat basis first and the **chosen** banded figures in brackets. Read the bracketed numbers as operative.
 
 ## 2 · The path
 

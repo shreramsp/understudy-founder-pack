@@ -53,9 +53,11 @@ Charged **from environment 2**. Basis is the compression the library produces, n
 |---|---|---|---|---|---|---|---|
 | **Small** ≤10 users | ~45% | 15–25 | ~11–18 | **0–7** | **$0–525** | **$400** | **76%–∞** ⚠ |
 | **Typical** 10–30 users | ~40% | 25–40 | 18–28 | 0–22 | $0–1,650 | **$1,500** | 91%–∞ ⚠ |
-| **Complex** 30+ users | ~15% | 40–80 | 28–56 | 12–24 | $900–1,800 | **$3,000** | **167%–333%** ⚠⚠ |
+| **Complex** 30+ users | ~15% | 40–80 | 28–56 | 12–24 | $900–1,800 | **$1,500** (D11) | 83%–167% ⚠ |
 
-**Every band is uncomfortable, and the honest reading is worse than the D9 correction implied.**
+**Schedule as decided (D11): $400 small · $1,500 typical · $1,500 complex. Blended ~$1,005.**
+
+**Every band remains uncomfortable at its lower bound, and that is stated rather than smoothed.**
 
 **The compression basis does not survive at any band's lower bound**, and at the complex band it does not survive at all — a $3,000 fee against $900–1,800 of displaced hours is priced above the value it claims. Three responses:
 
@@ -63,7 +65,7 @@ Charged **from environment 2**. Basis is the compression the library produces, n
 2. **Re-base the fee on the library rather than the compression.** What environment 2 buys is not only fewer hours; it is a maintained runbook for that client and a tier-1 floor at it. Those are real and are not hours-denominated — but abandoning the hours denomination discards the ROI calculator that `petal_diagram.md` identifies as the instrument that creates the budget line at all.
 3. **Fold the onboarding fee into a per-MSP platform fee** and keep per-ticket as the only usage metric. This is D9's rejected alternative 2 returning by a different road, and it changes the revenue model in three strategy files.
 
-**Recommendation: option 1 for the schedule, and treat option 3 as live.** The compression basis is defensible for the typical band at its upper half and nowhere else. **This is the second time the fee's justification has failed under arithmetic, and that pattern is itself information: the value this product creates may simply not be hours-shaped.** E3 is the experiment that settles it, and it costs ten conversations.
+**Decided (D11): option 1 — complex banded down to $1,500. Option 3 stays live as a named contingency (D12), to be settled by E3 rather than by argument.** The compression basis is defensible for the typical band at its upper half and nowhere else. **This is the second time the fee's justification has failed under arithmetic, and that pattern is itself information: the value this product creates may simply not be hours-shaped.** E3 is the experiment that settles it, and it costs ten conversations.
 
 ## 5 · Willingness to pay, by persona
 

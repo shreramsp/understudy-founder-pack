@@ -31,10 +31,10 @@ Three errors in the first version, all found independently and all in the same f
 | 10 | Price per resolved ticket | $6 | Below buyer's blended cost of $22.50 [S27]; far below $45 agent-handled [S28] |
 | 11 | **Ticket revenue per MSP per year, whole book** | **~$8,900** | 9 × 10 × 12 |
 | 12 | Environments (clients) per MSP | ~41 | `(assumption)` — consistent with [personas.md](personas.md): a 34-person, **$2.9M** MSP whose 41 clients average ~16 users. Cross-check: 620 users × $185/user/mo [S19] ≈ $1.4M of managed-services revenue, with the balance in projects, hardware and licence resale — a normal MSP revenue mix |
-| 13 | **Onboarding fee, environments 2+** | **$1,500** · **environment 1 waived (D9)** | `(assumption)` — environment 1 displaces *negative* hours, so it is not charged. Environments 2+ displace 0–22 hours `(assumption: $0–1,650 at $75/hr)`, against which $1,500 sits at the upper end and is defensible only where transfer is real — which is the same bet as A8. Banding by client size still owed to `financials/pricing.md` (D7) |
+| 13 | **Onboarding fee, environments 2+** | **Banded (D11): $400 / $1,500 / $1,500 · blended ~$1,005** · environment 1 waived (D9) | `(assumption)` — environment 1 displaces *negative* hours, so it is not charged. Environments 2+ displace 0–22 hours `(assumption: $0–1,650 at $75/hr)`, against which $1,500 sits at the upper end and is defensible only where transfer is real — which is the same bet as A8. Banding by client size still owed to `financials/pricing.md` (D7) |
 | 14 | New/replaced clients per MSP per year | ~6 | `(assumption: ~15% annual client turnover + growth)` |
-| 15 | **Steady-state onboarding revenue per MSP per year** | **~$9,000** | 13 × 14 |
-| 16 | **Blended annual revenue per MSP, steady state** | **~$17,900** | 11 + 15 |
+| 15 | **Steady-state onboarding revenue per MSP per year** | **~$6,030** | 13 × 14 at the blended $1,005 (D11) |
+| 16 | **Blended annual revenue per MSP, steady state** | **~$14,930** | 11 + 15 |
 
 ### Onboarding hours by client size — the correction that matters most
 
@@ -56,22 +56,24 @@ An MSP does not onboard 41 environments on signature. Modelling the ramp is what
 
 | Year | Environments live | Onboarding fee — **one-time backfill** | Onboarding fee — **recurring** (new clients) | Ticket revenue — **recurring** | **Total** |
 |---|---|---|---|---|---|
-| 1 | 5 (backfill; **environment 1 waived, D9**) | $6,000 | — | ~$1,090 | **~$7,100** |
-| 2 | 15 cumulative | $15,000 | — | ~$3,250 | **~$18,250** |
-| 3 | 30 cumulative | $22,500 | — | ~$6,500 | **~$29,000** |
-| 4 | 41 (backfill complete) | $16,500 | ~$9,000 | ~$8,900 | **~$34,400** |
-| **Steady state** | 41 + turnover | — | ~$9,000 | ~$8,900 | **~$17,900/yr** |
+| 1 | 5 (backfill; **environment 1 waived, D9**) | $4,020 | — | ~$1,090 | **~$5,110** |
+| 2 | 15 cumulative | $10,050 | — | ~$3,250 | **~$13,300** |
+| 3 | 30 cumulative | $15,075 | — | ~$6,500 | **~$21,575** |
+| 4 | 41 (backfill complete) | $11,055 | ~$6,030 | ~$8,900 | **~$25,985** |
+| **Steady state** | 41 + turnover | — | ~$6,030 | ~$8,900 | **~$14,930/yr** |
 
-**3-year revenue per MSP ≈ $54,350; at 70% gross margin `(assumption, owed to financials/unit_economics.md)`, 3-year gross profit ≈ $38,000** — the number [gtm.md](gtm.md) derives its CAC ceiling from.
+*At the banded blended fee of ~$1,005 (D11).*
+
+**3-year revenue per MSP ≈ $40,000; at 70% gross margin `(assumption, owed to financials/unit_economics.md)`, 3-year gross profit ≈ $28,000** — the number [gtm.md](gtm.md) derives its CAC ceiling from.
 
 ### Revenue quality — say this before a diligence call computes it
 
-**Roughly 80% of three-year revenue ($43,500 of $54,350) is one-time backfill onboarding**, billed once per existing client and never again. Two consequences a sophisticated reader will price, so the pack states them first:
+**Roughly 73% of three-year revenue ($29,145 of $40,000) is one-time backfill onboarding**, billed once per existing client and never again. Two consequences a sophisticated reader will price, so the pack states them first:
 
 1. **This is implementation-shaped revenue during the land phase**, which earns a services multiple, not a SaaS one. It is the same revenue quality this pack criticises ServiceNow for [market_type.md](market_type.md); the difference is that ours *decays by design* as backfill completes, rather than being the permanent business model.
-2. **Net revenue retention falls below 100% after backfill.** An MSP goes from ~$34,400 in year 4 to ~$17,900 at steady state — a 48% step down — unless its own client base grows. **Expansion revenue therefore depends on the MSP winning clients, which is exactly what [petal_diagram.md](petal_diagram.md) petal 2 says we help them do.** That is a coherent story, but it must be told: the growth case rests on customers' growth, not on seat expansion.
+2. **Net revenue retention falls below 100% after backfill.** An MSP goes from ~$25,985 in year 4 to ~$14,930 at steady state — a 43% step down — unless its own client base grows. **Expansion revenue therefore depends on the MSP winning clients, which is exactly what [petal_diagram.md](petal_diagram.md) petal 2 says we help them do.** That is a coherent story, but it must be told: the growth case rests on customers' growth, not on seat expansion.
 
-The durable recurring line is **~$17,900/yr per MSP**, and that — not the year-3 peak — is what a valuation should be built on.
+The durable recurring line is **~$14,930/yr per MSP**, and that — not the year-3 peak — is what a valuation should be built on.
 
 ## Pricing basis — how the failure was found and resolved (D9)
 
@@ -100,32 +102,32 @@ The fee was priced as 57–80% of the onboarding hours it displaces. Against the
 
 | Measure | Value | Build |
 |---|---|---|
-| **SAM** — US, 10–100 employee band, steady state | **~$215M/yr** | 12,000 × $17,900 |
-| **SAM at per-ticket pricing alone** | **~$107M/yr** | 12,000 × $8,900 — *the business without the onboarding fee* |
-| **TAM** — all 45,000 US MSPs | **~$800M/yr** | 45,000 × $17,900 |
-| **SOM** — 3 years, 2% of SAM | **~$4.3M ARR** | 240 MSPs |
+| **SAM** — US, 10–100 employee band, steady state | **~$179M/yr** | 12,000 × $14,930 (D11) |
+| **SAM at per-ticket pricing alone** | **~$107M/yr** | 12,000 × $8,900 — *the business without the onboarding fee, and the D12 contingency's floor* |
+| **TAM** — all 45,000 US MSPs | **~$670M/yr** | 45,000 × $14,930 |
+| **SOM** — 3 years, 2% of SAM | **~$3.6M ARR** | 240 MSPs |
 
 SAM in $M/yr across the two softest assumptions:
 
 | Tickets/user/mo → | 0.5 | **0.8** | 1.2 |
 |---|---|---|---|
-| **15% automatable** | $173 | $185 | $201 |
-| **25% automatable** | $193 | **$215** | $244 |
-| **35% automatable** | $213 | $245 | $287 |
+| **15% automatable** | $144 | $154 | $167 |
+| **25% automatable** | $161 | **$179** | $203 |
+| **35% automatable** | $178 | $204 | $239 |
 
-The band is **$173M–$287M**, and it is narrow because the onboarding fee — the larger half — does not vary with ticket volume at all. That is a structural argument for the two-part tariff independent of its size: it makes revenue robust to the assumption we are least sure of.
+The band is **$144M–$239M**, and it is narrow because the onboarding fee — the larger half — does not vary with ticket volume at all. That is a structural argument for the two-part tariff independent of its size: it makes revenue robust to the assumption we are least sure of.
 
-**Top-down check.** US MSP revenue is $120–140B [S31]. A $215M SAM is ~0.16% of it — comfortably conservative for a tool automating a slice of service-delivery labour, and built bottom-up rather than reasoned down from a headline.
+**Top-down check.** US MSP revenue is $120–140B [S31]. A $179M SAM is ~0.13% of it — comfortably conservative for a tool automating a slice of service-delivery labour, and built bottom-up rather than reasoned down from a headline.
 
 ## 5. What this means — the uncomfortable part, kept
 
-**The MSP market is not, by itself, venture-scale, and the corrected arithmetic makes that clearer than the first version did.** A $215M SAM supports a real company; it does not support a generational one. Three responses; the pack takes the first two and names the third as unproven:
+**The MSP market is not, by itself, venture-scale, and each successive correction has made that clearer.** A $179M SAM supports a real company; it does not support a generational one. Three responses; the pack takes the first two and names the third as unproven:
 
 1. **The MSP is the wedge, not the market.** It is where onboarding pain is recurring rather than one-time, and where the global skill layer reaches density fastest because one customer brings 41 environments. It is how the product gets good.
 2. **Price the environment, not only the ticket.** Founder-confirmed pricing was per-resolved-ticket; the corrected arithmetic says that alone yields ~$107M and a year-1 customer worth ~$1,100. **This is a change to a founder decision and is flagged as such** — see the open decision in the checkpoint.
 3. **The internal-IT expansion market — an option, not a number in the headline.** `(assumption: ~200,000 US firms of 100–2,000 employees; 20% addressable = 40,000)` × `(assumption: ~500 users each)` × 0.8 × 25% × $6 × 12 ≈ **$7,200/yr each → ~$288M**. Three reasons it is **not added to SAM**: entering means competing on resolution quality, the axis [positioning.md](positioning.md) explicitly commits to avoiding, against competitors funded at $164.5M [S13] and an incumbent that paid $2.85B [S26]; an internal-IT customer has **one** environment, so the onboarding fee is a single event and the shape reverts to the ~$107M per-ticket-only model this file already calls insufficient; and the estimate rests on three stacked assumptions with no source. It is an option worth naming and not a market this pack claims.
 
-**The honest summary a VC should be handed: a defended ~$215M SAM**, with a per-customer recurring line of ~$17,900 and a front-loaded backfill phase. The path beyond it runs through capturing more of the labour cost displaced — agent labour is 70–80% of the $22.50 blended cost per ticket [S28] and $6 captures roughly a quarter of it — and, optionally, through internal IT on terms this pack has not defended. **Summing the two into a $500M headline is the move a skeptical reader is looking for; it is not made here.**
+**The honest summary a VC should be handed: a defended ~$179M SAM** (D11; ~$215M under the superseded flat fee), with a per-customer recurring line of ~$17,900 and a front-loaded backfill phase. The path beyond it runs through capturing more of the labour cost displaced — agent labour is 70–80% of the $22.50 blended cost per ticket [S28] and $6 captures roughly a quarter of it — and, optionally, through internal IT on terms this pack has not defended. **Summing the two into a $500M headline is the move a skeptical reader is looking for; it is not made here.**
 
 ## Gap — stated, not guessed
 

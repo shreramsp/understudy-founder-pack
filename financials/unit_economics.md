@@ -39,9 +39,11 @@ The reference node is 1×24GB GPU, 8 vCPU / 32GB, ~2TB `(assumption)` [../tech/n
 | Effect on CAC | Raises it — more touches, longer cycle | Lowers it |
 | Effect on payback | Unchanged | Year-1 revenue of $7,100 [$5,110] against $2,000–4,000 of capital means **payback slips past year 1 in the banded scenario** |
 
-**Recommended: a hybrid, and it is a real commercial design rather than a hedge.** Offer the node as a **hardware credit against onboarding fees** — the MSP owns it, we fund it out of revenue we would otherwise book. Case A's margin, Case B's sales motion, and the credit is self-liquidating across the first 3–4 environments.
+**Decided (D13) — a hybrid, and a real commercial design rather than a hedge.** Offer the node as a **hardware credit against onboarding fees** — the MSP owns it, we fund it out of revenue we would otherwise book. Case A's margin, Case B's sales motion, and the credit is self-liquidating across the first 3–4 environments.
 
-**What this file will not do is state a single gross margin.** The strategy layer assumes 70%; both cases clear it, but by very different mechanisms and with very different working-capital consequences. **A pack quoting one number here would be hiding the decision.**
+**With D13 taken, the operative margin is Case A's (~96% marginal) with a working-capital line rather than a margin line**: the credit is `(assumption: $2,000–4,000 per customer)` recovered across the first 3–4 environments' onboarding fees. It appears in the cash plan, not in gross margin.
+
+**The file still refuses to publish a single blended gross-margin number externally**, because the credit's recovery period is untested and a headline margin quoted before the first customer would be a forecast dressed as a fact.
 
 ## 4 · CAC, payback and LTV
 

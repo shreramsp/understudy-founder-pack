@@ -35,7 +35,7 @@
 
 Petals 1 and 2 have **no incumbent vendor** — they are displaced internal cost pools, not markets with a defender. Petal 5 has **no MSP budget at all** and is retained only as a considered-and-rejected row. Blank's petal asks which adjacent markets supply customers; for this company the honest answer is that the two largest pools are internal costs, which is unusual and worth stating plainly rather than dressing as markets.
 
-**Sized total of the genuinely addressable pools:** petals 1 + 3 + 4 ≈ **$520M–$935M/yr** across the 12,000-MSP serviceable band `(assumption-heavy — every figure above except the engineer-hours [S21] and the revenue/tech benchmark [S32] is an assumption)`. That is the ceiling on what could ever be redirected to us in this segment, and it brackets the $215M SAM in [market_sizing.md](market_sizing.md) sensibly: we are claiming roughly a quarter to a half of the displaceable pool, not all of it.
+**Sized total of the genuinely addressable pools:** petals 1 + 3 + 4 ≈ **$520M–$935M/yr** across the 12,000-MSP serviceable band `(assumption-heavy — every figure above except the engineer-hours [S21] and the revenue/tech benchmark [S32] is an assumption)`. That is the ceiling on what could ever be redirected to us in this segment, and it brackets the $179M SAM in [market_sizing.md](market_sizing.md) sensibly: we are claiming roughly a fifth to a third of the displaceable pool, not all of it.
 
 ## What the petal says that the 2×2 did not
 

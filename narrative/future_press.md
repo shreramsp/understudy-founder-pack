@@ -43,5 +43,5 @@ The company also confirmed that roughly **38% of the ticket volume it once expec
 ## What this vision is deliberately not
 
 - **Not autonomy.** Six years on, still supervised. If that changes it will be because the evidence changed, not because the marketing did.
-- **Not a category-defining exit.** The 2026 pack put SAM at ~$215M for the MSP wedge. This release describes a company that grew into an adjacent market it had not yet earned the right to claim — and the pack said it had not earned it.
+- **Not a category-defining exit.** The 2026 pack put SAM at ~$179M for the MSP wedge. This release describes a company that grew into an adjacent market it had not yet earned the right to claim — and the pack said it had not earned it.
 - **Not a story where the founder was right about everything.** The first transfer result was below threshold. The clustering method had to change. The privacy threshold had to be recounted. Those are in the timeline because a vision that omits them is not a forecast, it is an advertisement.

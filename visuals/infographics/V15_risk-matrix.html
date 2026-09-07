@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Risk matrix</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+:root{--ink:#0B0B12;--muted:#5A5A6B;--faint:#8A8A99;--line:#E4E4EB;--soft:#EFEFF3;
+--accent:#4338CA;--accent-soft:#EEEDFB;--signal:#0D7A70;--warn:#B45309;--canvas:#fff;--surface:#F7F7F9;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.sheet{max-width:1000px;margin:0 auto;padding:44px 48px 36px}
+.eyebrow{font:600 11px/1 JetBrains Mono,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:30px;line-height:1.18;letter-spacing:-.025em;margin:12px 0 6px;font-weight:700;max-width:22ch}
+.sub{color:var(--muted);font-size:15px;margin:0 0 26px;max-width:62ch}
+.zones{display:grid;gap:18px}
+.z{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:var(--canvas)}
+.z h2{font-size:12px;margin:0 0 12px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);
+padding:0 10px 8px 0;border-bottom:1px solid var(--line);font-weight:600}
+td{padding:9px 10px 9px 0;border-bottom:1px solid var(--soft);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.n{font-family:JetBrains Mono,monospace;font-weight:600;font-variant-numeric:tabular-nums}
+.warnc{color:var(--warn);font-weight:600} .sig{color:var(--signal);font-weight:600}
+.big{font:600 30px/1 JetBrains Mono,monospace;letter-spacing:-.02em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.kpi{border:1px solid var(--line);border-radius:9px;padding:14px 16px}
+.kpi .lab{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);margin-bottom:7px;font-weight:600}
+.bar{height:11px;border-radius:6px;background:var(--accent)}
+.bartrack{background:var(--soft);border-radius:6px;overflow:hidden}
+.chip{display:inline-block;font:600 10.5px/1 JetBrains Mono,monospace;padding:3px 7px;border-radius:4px;
+background:var(--accent-soft);color:var(--accent);margin-right:5px}
+.chip.w{background:#FDF3E7;color:var(--warn)} .chip.s{background:#E7F3F1;color:var(--signal)}
+.callout{border-left:3px solid var(--accent);background:var(--surface);padding:13px 16px;border-radius:0 8px 8px 0;font-size:14px}
+.callout.w{border-left-color:var(--warn)}
+.src{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);
+font:400 11px/1.5 JetBrains Mono,monospace;color:var(--faint)}
+@media print{body{background:#fff} .sheet{max-width:none;padding:24px}}
+</style></head><body><div class="sheet">
+<div class="eyebrow">Residual risk · V15</div>
+<h1>Four residuals stay high, and one has no mitigation at all.</h1>
+<p class="sub">A matrix where everything mitigates to low is fiction. This is the correct shape for a pre-build company with one unmeasured mechanism, a solo founder and a ceiling on its market.</p>
+<div class="zones"><div class="z"><h2>Top risks after mitigation</h2><table>
+<tr><th>Risk</th><th>Likelihood</th><th>Leading indicator</th><th>Residual</th></tr>
+<tr><td>Core mechanism fails to transfer</td><td>medium</td><td class="n">E1 &lt;60% after 2 approaches</td><td class="warnc">HIGH</td></tr>
+<tr><td><strong>Disuse</strong> — engineers stop cooperating</td><td>medium-high</td><td class="n">pause &gt;25% · narration &lt;30%</td><td class="warnc">HIGH</td></tr>
+<tr><td>Market too small at achievable pricing</td><td>medium-high</td><td class="n">E3 &lt;5/10 accept</td><td class="warnc">HIGH</td></tr>
+<tr><td>Schedule — 40-wk floor, optimistic bounds only</td><td>high</td><td>any tier item over band</td><td class="warnc">HIGH</td></tr>
+<tr><td><strong>Key person</strong> — solo founder</td><td>medium</td><td>—</td><td class="warnc">HIGH · no mitigation</td></tr>
+<tr><td>Envelope re-identification succeeds</td><td>medium</td><td class="n">E5 / X25</td><td>medium-high</td></tr>
+<tr><td>Incumbent adds discovery</td><td>medium</td><td>competitor ships recording</td><td>medium-high</td></tr>
+<tr><td>API displacement erodes the surface</td><td>high · continuous</td><td>share of procedures with a usable API</td><td>medium-high</td></tr>
+<tr><td>A confident wrong action at a client</td><td class="warnc">high — it will happen</td><td class="n">reversal rate (X23)</td><td>medium</td></tr>
+</table></div>
+<div class="z"><h2>The two that deserve more attention than they will get</h2><div class="callout w"><strong>Disuse is the only severe risk invisible in every dashboard.</strong> Capture volume keeps rising, the library keeps growing, and what degrades is the quality of what is captured. E6 exists solely to see it.<br><br><strong>API displacement is the only risk that worsens regardless of execution.</strong> Every other risk is retired by evidence or by building; this one is a structural trend we can position against but not affect.</div></div></div>
+<div class="src">Source: financials/risk_matrix.md · validation/riskiest_assumptions.md · [S36]</div>
+</div></body></html>

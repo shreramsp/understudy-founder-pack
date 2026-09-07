@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Pivot log</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+:root{--ink:#0B0B12;--muted:#5A5A6B;--faint:#8A8A99;--line:#E4E4EB;--soft:#EFEFF3;
+--accent:#4338CA;--accent-soft:#EEEDFB;--signal:#0D7A70;--warn:#B45309;--canvas:#fff;--surface:#F7F7F9;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.sheet{max-width:1000px;margin:0 auto;padding:44px 48px 36px}
+.eyebrow{font:600 11px/1 JetBrains Mono,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:30px;line-height:1.18;letter-spacing:-.025em;margin:12px 0 6px;font-weight:700;max-width:22ch}
+.sub{color:var(--muted);font-size:15px;margin:0 0 26px;max-width:62ch}
+.zones{display:grid;gap:18px}
+.z{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:var(--canvas)}
+.z h2{font-size:12px;margin:0 0 12px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);
+padding:0 10px 8px 0;border-bottom:1px solid var(--line);font-weight:600}
+td{padding:9px 10px 9px 0;border-bottom:1px solid var(--soft);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.n{font-family:JetBrains Mono,monospace;font-weight:600;font-variant-numeric:tabular-nums}
+.warnc{color:var(--warn);font-weight:600} .sig{color:var(--signal);font-weight:600}
+.big{font:600 30px/1 JetBrains Mono,monospace;letter-spacing:-.02em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.kpi{border:1px solid var(--line);border-radius:9px;padding:14px 16px}
+.kpi .lab{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);margin-bottom:7px;font-weight:600}
+.bar{height:11px;border-radius:6px;background:var(--accent)}
+.bartrack{background:var(--soft);border-radius:6px;overflow:hidden}
+.chip{display:inline-block;font:600 10.5px/1 JetBrains Mono,monospace;padding:3px 7px;border-radius:4px;
+background:var(--accent-soft);color:var(--accent);margin-right:5px}
+.chip.w{background:#FDF3E7;color:var(--warn)} .chip.s{background:#E7F3F1;color:var(--signal)}
+.callout{border-left:3px solid var(--accent);background:var(--surface);padding:13px 16px;border-radius:0 8px 8px 0;font-size:14px}
+.callout.w{border-left-color:var(--warn)}
+.src{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);
+font:400 11px/1.5 JetBrains Mono,monospace;color:var(--faint)}
+@media print{body{background:#fff} .sheet{max-width:none;padding:24px}}
+</style></head><body><div class="sheet">
+<div class="eyebrow">What has been killed · V31</div>
+<h1>Five load-bearing claims survived authorship and did not survive scrutiny.</h1>
+<p class="sub">A company that cannot say what it has already rejected has not made any decisions. The entries produced by adversarial review are the most useful ones here.</p>
+<div class="zones"><div class="z"><h2>Killed during the run</h2><table>
+<tr><th>#</th><th>Option</th><th>Killed because</th></tr>
+<tr><td class="n">K1</td><td>Internal IT as the beachhead</td><td>Where every funded competitor fights, on the axis we cannot win</td></tr>
+<tr><td class="n">K3</td><td>Claiming unattended autonomy</td><td>Long-horizon completion is 20.6%</td></tr>
+<tr><td class="n">K4</td><td>Per-ticket pricing alone</td><td>~$107M SAM, year-1 customer worth ~$1,100 — no channel viable</td></tr>
+<tr><td class="n">K6</td><td>Charging for environment 1</td><td>It displaces <em>negative</em> hours</td></tr>
+<tr><td class="n warnc">K7</td><td class="warnc">Clustering inside the <em>client</em> boundary</td><td class="warnc">Not implementable — capture originates on MSP workstations; SaaS-only clients have no perimeter</td></tr>
+<tr><td class="n warnc">K8</td><td class="warnc">Hosted inference for action typing</td><td class="warnc">Frames of a client's admin console reaching a third party breaks D6 outright</td></tr>
+<tr><td class="n warnc">K9</td><td class="warnc">"RPA has no success criterion"</td><td class="warnc">Falsifiable in one sentence. Narrowed three times to the claim that survives</td></tr>
+<tr><td class="n warnc">K10</td><td class="warnc">The 10× maintenance multiplier</td><td class="warnc">Its baseline is hours the pack itself calls "largely unperformed"</td></tr>
+<tr><td class="n warnc">K11</td><td class="warnc">k≥3 counting client tenants</td><td class="warnc">Three observations could sit in one MSP's book, identifying it with certainty at its first security review</td></tr>
+</table><div style="margin-top:12px" class="callout w"><strong>K7–K11 were all written into the pack as settled and then killed by adversarial review.</strong> That is the argument for the critic loop, and the reason the run's honest completion state matters more than its artifact count.</div></div>
+<div class="z"><h2>Standing pivot criteria — each with a date and a number</h2><table>
+<tr><th>#</th><th>We pivot if…</th><th>By</th></tr>
+<tr><td class="n">P1</td><td>Transfer &lt;50% after three approaches</td><td class="n">Month 11</td></tr>
+<tr><td class="n">P3</td><td>Fewer than 5 of 10 accept the banded fee</td><td class="n">Month 2</td></tr>
+<tr><td class="n">P4</td><td>Zero of three groups admit a vendor founder</td><td class="n">Month 2</td></tr>
+<tr><td class="n">P5</td><td>Envelope re-identification succeeds</td><td class="n">Month 3</td></tr>
+<tr><td class="n">P6</td><td>Capture pause &gt;25% or narration &lt;30%</td><td class="n">Month 11</td></tr>
+</table></div>
+<div class="z"><h2>What we will not pivot on</h2><table>
+<tr><td>Supervised execution — if the market demands autonomy before the evidence supports it, we lose those deals</td></tr>
+<tr><td>Publishing negative results, including E1</td></tr>
+<tr><td>The environment-1 overrun staying visible</td></tr>
+</table></div></div>
+<div class="src">Source: validation/pivot_log.md · ASSUMPTIONS.md decisions D1–D13</div>
+</div></body></html>

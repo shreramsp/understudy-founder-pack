@@ -2,7 +2,7 @@
 
 **Understudy is the AI service desk that onboards itself.** It records IT engineers doing real work, clusters those recordings into an executable skill library, and takes over tickets stack by stack — deploying into an unfamiliar client environment in days rather than the months of manual configuration every other AI service desk requires. Beachhead: MSPs, where onboarding a new client environment is cost of goods rather than a one-time project.
 
-**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **55/61 required artifacts · 0 visuals** · phases 0–2 complete (gate passed); phases 3–4 revised through critic round 1; phases 5–7 drafted. **Four critic rounds are owed and blocked by session rate limits, not by the work.**
+**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **58/61 required artifacts · 20 HTML infographics · 0 rendered images** · phases 0–2 complete (gate passed); phases 3–4 revised through critic round 1; phases 5–8 drafted. **Four critic rounds are owed and blocked by session rate limits, not by the work.**
 
 ## Start here
 
@@ -24,7 +24,7 @@
 | [`narrative/`](narrative/) | one-pager, technical VC memo, 14-slide deck, working-backwards press release, founder story, mission/vision | 6 | startup-narrative |
 | [`validation/`](validation/) | riskiest assumptions, experiment board (8 experiments, thresholds pre-declared), discovery guide, get/keep/grow, stage gate, metrics by stage, pivot log, dual MVP, decision-making unit | 9 | startup-validation |
 | [`financials/`](financials/) | banded pricing schedule, revenue build with the pricing cascade, unit economics modelling both node cases, use of funds by assumption retired, 12-row risk matrix, comps and exits | 6 | startup-financials |
-| `visuals/` | manifest, infographics, image prompts | 0 | startup-visuals |
+| [`visuals/`](visuals/) | 69-row manifest, 20 rendered HTML infographics, 46 image prompts, docimages/dochtml reconciliation | 23 | startup-visuals |
 | `audit/` | coverage audit | 0 | startup-audit |
 
 ## Sharpest claims so far
@@ -37,4 +37,4 @@
 
 ## Completeness
 
-`PARTIAL` — phases 0–1 of 10. The brief and the full evidence layer exist: 30 sources, 18 live searches, and four marked gaps where the search found nothing (no global MSP census, no independent deflection benchmark, no public competitor pricing, no post-acquisition record for FortressIQ). Six narrative, nine validation and six financial artifacts remain, plus visuals, audit and site. Next: `startup-visuals`, then the phase 4–7 critic loops once rate limits clear, then audit and site. Row-by-row status will live in `audit/COVERAGE.md` once the audit phase runs.
+`PARTIAL` — phases 0–1 of 10. The brief and the full evidence layer exist: 30 sources, 18 live searches, and four marked gaps where the search found nothing (no global MSP census, no independent deflection benchmark, no public competitor pricing, no post-acquisition record for FortressIQ). Six narrative, nine validation and six financial artifacts remain, plus visuals, audit and site. Next: the phase 4–8 critic loops once rate limits clear, then `startup-audit` and the site. Row-by-row status will live in `audit/COVERAGE.md` once the audit phase runs.

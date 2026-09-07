@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Technique × feature matrix</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+:root{--ink:#0B0B12;--muted:#5A5A6B;--faint:#8A8A99;--line:#E4E4EB;--soft:#EFEFF3;
+--accent:#4338CA;--accent-soft:#EEEDFB;--signal:#0D7A70;--warn:#B45309;--canvas:#fff;--surface:#F7F7F9;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.sheet{max-width:1000px;margin:0 auto;padding:44px 48px 36px}
+.eyebrow{font:600 11px/1 JetBrains Mono,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:30px;line-height:1.18;letter-spacing:-.025em;margin:12px 0 6px;font-weight:700;max-width:22ch}
+.sub{color:var(--muted);font-size:15px;margin:0 0 26px;max-width:62ch}
+.zones{display:grid;gap:18px}
+.z{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:var(--canvas)}
+.z h2{font-size:12px;margin:0 0 12px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);
+padding:0 10px 8px 0;border-bottom:1px solid var(--line);font-weight:600}
+td{padding:9px 10px 9px 0;border-bottom:1px solid var(--soft);vertical-align:top}
+tr:last-child td{border-bottom:0}
+.n{font-family:JetBrains Mono,monospace;font-weight:600;font-variant-numeric:tabular-nums}
+.warnc{color:var(--warn);font-weight:600} .sig{color:var(--signal);font-weight:600}
+.big{font:600 30px/1 JetBrains Mono,monospace;letter-spacing:-.02em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
+.kpi{border:1px solid var(--line);border-radius:9px;padding:14px 16px}
+.kpi .lab{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);margin-bottom:7px;font-weight:600}
+.bar{height:11px;border-radius:6px;background:var(--accent)}
+.bartrack{background:var(--soft);border-radius:6px;overflow:hidden}
+.chip{display:inline-block;font:600 10.5px/1 JetBrains Mono,monospace;padding:3px 7px;border-radius:4px;
+background:var(--accent-soft);color:var(--accent);margin-right:5px}
+.chip.w{background:#FDF3E7;color:var(--warn)} .chip.s{background:#E7F3F1;color:var(--signal)}
+.callout{border-left:3px solid var(--accent);background:var(--surface);padding:13px 16px;border-radius:0 8px 8px 0;font-size:14px}
+.callout.w{border-left-color:var(--warn)}
+.src{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);
+font:400 11px/1.5 JetBrains Mono,monospace;color:var(--faint)}
+@media print{body{background:#fff} .sheet{max-width:none;padding:24px}}
+</style></head><body><div class="sheet">
+<div class="eyebrow">Tech · V26</div>
+<h1>Two orphan techniques turned out to be missing safety features.</h1>
+<p class="sub">A catalogue and a feature list can both look complete while being disconnected. The two failure columns are the point.</p>
+<div class="zones"><div class="z"><h2>Support density</h2><table>
+<tr><th>Feature</th><th>Techniques</th><th>Read</th></tr>
+<tr><td>F5 cross-session clustering · F17 re-grounding</td><td class="n">5–6 each</td><td class="sig">Correct — these are the two hardest problems</td></tr>
+<tr><td>F1 F6 F12 F13 F16</td><td class="n">3–4 each</td><td>Healthy</td></tr>
+<tr><td>F3 F8 F10 F15</td><td class="n">1–2 each</td><td>Thin, and honestly so</td></tr>
+<tr><td><strong>F20 onboarding meter</strong></td><td class="n warnc">0</td><td>Acceptable and declared — it is instrumentation, not a mechanism</td></tr>
+</table><div style="margin-top:12px;color:var(--muted);font-size:13.5px">A matrix where every technique powered every feature would be a sign nobody checked.</div></div>
+<div class="z"><h2>Orphan techniques — and what they revealed</h2><table>
+<tr><th>Technique</th><th>Verdict</th></tr>
+<tr><td class="n">2.3 / 2.4 process + task mining</td><td class="sig"><strong>No longer orphans — the earlier delete recommendation is withdrawn.</strong> DD1 must tolerate two engineers taking different routes, which is transposition, which order-preserving alignment cannot represent. Partial-order discovery is the family that can</td></tr>
+<tr><td class="n warnc">2.5 re-identification testing</td><td class="warnc"><strong>An orphan that should not be → became feature X25.</strong> D6's guarantee is asserted and never tested. A founder who has attacked their own boundary has an answer no policy statement matches</td></tr>
+<tr><td class="n warnc">5.3 automation-bias countermeasures</td><td class="warnc"><strong>An orphan that should not be → became feature X26.</strong> P9 says approval habituates; the product answers with a prompt identical the 201st time. That is the 14:20 failure</td></tr>
+</table></div>
+<div class="z"><h2>What the waves concede</h2><div class="kpis">
+<div class="kpi"><div class="lab">Wave 1 · established</div><div class="big">23<span style="font-size:14px">/31</span></div><div style="color:var(--muted);font-size:12.5px;margin-top:5px">borrowed outright. <strong>Nothing in wave 1 is a differentiator</strong></div></div>
+<div class="kpi"><div class="lab">Wave 2 · advanced</div><div class="big">24</div><div style="color:var(--muted);font-size:12.5px;margin-top:5px">stops short rather than padding — the field is thinner</div></div>
+<div class="kpi"><div class="lab">Wave 3 · frontier</div><div class="big">18</div><div style="color:var(--muted);font-size:12.5px;margin-top:5px">most frontier work targets executing better; our constraint is learning better</div></div>
+</div></div></div>
+<div class="src">Source: tech/techniques/technique_feature_matrix.md · wave1–3.md · tech/deep_dives.md</div>
+</div></body></html>

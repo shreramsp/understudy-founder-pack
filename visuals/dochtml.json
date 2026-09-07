@@ -1,0 +1,161 @@
+{
+"strategy/positioning.md": [
+{
+"id": "V02",
+"title": "The two-axis map: configured vs observed \u00d7 artifact vs executes",
+"form": "html"
+}
+],
+"strategy/market_sizing.md": [
+{
+"id": "V09",
+"title": "Bottom-up SAM build, arithmetic shown",
+"form": "html"
+}
+],
+"validation/riskiest_assumptions.md": [
+{
+"id": "V10",
+"title": "The evidence ledger: sourced / assumed / unknown",
+"form": "html"
+}
+],
+"product/journeys/beachhead.md": [
+{
+"id": "V11",
+"title": "Hours per environment 1\u20135 against baseline, waiver marked",
+"form": "html"
+},
+{
+"id": "V21",
+"title": "Journey: Dana onboards an environment",
+"form": "html"
+}
+],
+"financials/use_of_funds.md": [
+{
+"id": "V14",
+"title": "Use of funds against the one milestone",
+"form": "html"
+}
+],
+"financials/risk_matrix.md": [
+{
+"id": "V15",
+"title": "Risk matrix with residuals",
+"form": "html"
+}
+],
+"financials/revenue_build.md": [
+{
+"id": "V16",
+"title": "Revenue quality: one-time vs recurring across the ramp",
+"form": "html"
+}
+],
+"tech/architecture/D06.md": [
+{
+"id": "V17",
+"title": "The two-stage boundary: what leaves your environment, what leaves your MSP",
+"form": "mermaid"
+}
+],
+"financials/pricing.md": [
+{
+"id": "V18",
+"title": "Banded pricing against hours displaced, by client size",
+"form": "html"
+}
+],
+"validation/decision_making_unit.md": [
+{
+"id": "V19",
+"title": "Decision-making unit: who can say no",
+"form": "html"
+}
+],
+"product/journeys/edge_low.md": [
+{
+"id": "V20",
+"title": "Journey: Priya at an unfamiliar client",
+"form": "html"
+}
+],
+"product/journeys/edge_high.md": [
+{
+"id": "V22",
+"title": "Journey: Ray converted, then stretched",
+"form": "html"
+}
+],
+"product/journeys/day_in_life.md": [
+{
+"id": "V23",
+"title": "One Tuesday, four seats",
+"form": "html"
+}
+],
+"product/ux_spec.md": [
+{
+"id": "V24",
+"title": "The thirteen screens",
+"form": "html"
+}
+],
+"product/features_prioritized.md": [
+{
+"id": "V25",
+"title": "Feature tiers with the build-math floor",
+"form": "html"
+}
+],
+"tech/techniques/technique_feature_matrix.md": [
+{
+"id": "V26",
+"title": "Technique \u00d7 feature matrix heat table",
+"form": "html"
+}
+],
+"tech/techniques/decision_tree.md": [
+{
+"id": "V27",
+"title": "The runtime decision tree",
+"form": "mermaid"
+}
+],
+"validation/experiment_board.md": [
+{
+"id": "V28",
+"title": "Experiment board: thresholds declared in advance",
+"form": "html"
+}
+],
+"validation/stage_gate.md": [
+{
+"id": "V29",
+"title": "Stage gate: where we are and what passing requires",
+"form": "html"
+}
+],
+"validation/metrics_by_stage.md": [
+{
+"id": "V30",
+"title": "Metrics by stage, and the vanity metrics to ignore",
+"form": "html"
+}
+],
+"validation/pivot_log.md": [
+{
+"id": "V31",
+"title": "Pivot log: what has already been killed",
+"form": "html"
+}
+],
+"tech/architecture/D01.md": [
+{
+"id": "V32",
+"title": "The capture-to-skill pipeline",
+"form": "mermaid"
+}
+]
+}

@@ -37,3 +37,5 @@ The broader shift, if it holds: software that learns its environment by observat
 Because the most valuable thing in a managed-services business walks out of the building every evening, and occasionally does not come back. Everything else — the tooling, the tickets, the documentation nobody keeps current — is an attempt to write that down, and it fails for a structural reason: **writing it down is a separate act from doing it, so it competes with billable work and loses.**
 
 Understudy exists because the two acts can now be the same act.
+
+**The vision written as if it had happened** — dated 2032, with a "what did not happen" section and a timeline whose 2027 entry is the transfer result coming back *below* threshold — is in [future_press.md](future_press.md).

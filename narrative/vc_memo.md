@@ -52,6 +52,8 @@ Six components, in the order they run. Full diagrams in [../tech/architecture/](
 
 ## 6 · Honest risks
 
+*The full twelve-row matrix with likelihoods, leading indicators and residual levels is in [../financials/risk_matrix.md](../financials/risk_matrix.md). Five below; four residuals there stay **high** and one has no mitigation at all.*
+
 1. **The core mechanism is unevidenced.** Cross-session clustering into reliable skills has no benchmark and no named prior system. ALLOY demonstrates the adjacent claim at user-study scale; nothing demonstrates it across environments. **A negative result is possible and there is no partial credit.** *Mitigation: the evaluation harness is built before the clusterer, and the falsifying number — below ~70% on a held-out environment — is declared in advance.*
 2. **Where a real API exists, we are the wrong tool.** Driving an API beats driving a UI on speed, cost and stability. The durable value of capture concentrates in surfaces that lack good APIs — native admin consoles, terminals, legacy tooling — and as vendors ship better APIs that surface shrinks. *Mitigation: prefer APIs wherever they exist rather than defend UI automation on principle. This is a real limit on the mechanism and we would rather state it than have it found.*
 3. **The market is a wedge, not a category.** SAM is ~$179M at current pricing, after a banding correction that cut it from $215M. Venture scale requires either capturing more of the labour value we displace — $6 captures about a quarter of the $22.50 blended cost per ticket [S27][S28] — or the internal-IT expansion, which is a fight on an axis we have chosen to avoid. *Mitigation: none yet. This is the honest ceiling.*

@@ -26,7 +26,7 @@
 ## E3 · Willingness to pay for environment 2
 
 **Hypothesis.** **≥5 of 10** MSP owners accept the banded onboarding fee at the median band, framed "first environment free", after seeing their own hour counts.
-**Design.** 10 discovery conversations. Ask for their onboarding hours *before* showing any price. Present the banded schedule. Record acceptance, objection, and counter-anchor.
+**Design.** 10 discovery conversations, run to the script in [discovery_guide.md](discovery_guide.md). Ask for their onboarding hours *before* showing any price. Present the banded schedule. Record acceptance, objection, and counter-anchor.
 **Threshold.** ≥5 accept → pricing holds. ≤2 accept, **or the median hour count comes back below 25**, → the fee has no basis and the revenue model returns to per-ticket, which `strategy/channel_plan.md` shows closes every channel.
 **Result.** — · **Learning.** — · **Decision.** — · **Status: planned.**
 

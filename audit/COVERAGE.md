@@ -70,6 +70,19 @@ The 26 correct ones are the deliberate two-scenario tables in `revenue_build.md`
 
 **This check belongs in every future audit of this run.** Four cascades have passed through this pack (the penetration fix, D9, D11, the k-threshold correction), and each one left stale figures in files nobody thought to re-read. It is mechanical, it takes a minute, and it has found something every time.
 
+## 2c · Integrity checks — link, citation, discoverability
+
+Run 2026-09-06, mechanically across all 70 artifacts.
+
+| Check | Method | Result |
+|---|---|---|
+| **Relative links** | every `](path)` resolved against its containing file | **0 broken** of ~430 |
+| **Citation integrity** | every `[Sn]` tag matched against `research/sources.md`; every defined source matched against usage | **0 undefined tags.** One source (S4) was defined and never cited — **fixed**, it now carries the Ravenna round date and founder backgrounds it was gathered for |
+| **Discoverability** | artifacts no other artifact links to | **3 orphans found and fixed**: `financials/risk_matrix.md`, `narrative/future_press.md`, `validation/discovery_guide.md` |
+| **Infographic integrity** | tag balance, doctype, unfilled placeholders, source line | **20/20 sound**, all citing a source artifact or `[Sn]` tag |
+
+**The orphan check matters more than it looks.** Quality-bar property 8 is that work nobody can find is work nobody did — and three substantive artifacts were reachable only by browsing a directory. The risk matrix in particular is the artifact a VC memo's risks section should point at, and it did not.
+
 ## 3 · Open rows — deliberately not closed
 
 ### A52b · Dossier illustration coverage — **OPEN**

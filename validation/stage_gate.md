@@ -18,16 +18,19 @@
 
 ## Exit criteria — Discovery → Validation
 
-All six must hold. Each is a number or a binary, none is a judgement.
+All seven must hold. Each is a number or a binary, none is a judgement.
+
+**Criterion 7 was added after critic review, which found the original six contained no commitment.** All of them could pass with nobody having agreed to anything — a weaker bar than `strategy/gtm.md` §4 already sets for itself at months 9–10. **A gate the GTM plan outruns is not gating.**
 
 | # | Criterion | Threshold | Source |
 |---|---|---|---|
-| **1** | Problem confirmed unprompted | **≥6 of 10** MSP owners rank onboarding cost in their top three pains *before* the product is described | E3 / discovery guide exit line |
-| **2** | Ticket mix known | Category exports from **≥5 MSPs**; tier-1 + RMM-alert share established within ±10pp | E8 |
+| **1** | Problem confirmed **genuinely unprompted** | **≥6 of 10** owners name onboarding cost in the answer to **Q0** — *"the three biggest constraints on your delivery capacity last quarter"* — asked before the topic is raised by either party | discovery_guide Q0 |
+| **2** | Ticket mix known | **Graded evidence ladder**: ≥2 PSA exports **+** 8 memory estimates **+** one PSA-vendor or community benchmark. (±10pp was unreachable at 5 convenience exports — with a between-MSP SD near 10pp the half-width is ~12pp before selection bias) | E8 |
 | **3** | Channel is real | **≥1 of 3** named peer or buying groups admits a pre-revenue vendor founder | E4 |
-| **4** | Price has a basis | **≥5 of 10** owners accept the banded fee at the median band, framed "first environment free" | E3 |
+| **4** | Price has a basis | **Arm A ≥3 of 5 sign an LOI at the banded price, with the hours gap disclosed** — split-sample per E3's branch table, not a verbal reaction | E3 |
 | **5** | Core mechanism supported | Cross-environment skill transfer **≥70%** on the held-out set | E1 |
 | **6** | Differentiation supported | Skills retain **≥2×** the post-change success rate of a fallback-enabled RPA baseline | E2 |
+| **7** | **Somebody has committed something** | **≥3 signed design-partner LOIs** | `strategy/gtm.md` §4 |
 
 **Criteria 1–4 need no product and cost under $2,000 in total.** Criteria 5–6 need the harness. **A company that passes 1–4 and fails 5 is not in Validation; it is in Discovery with a better-understood market and a dead mechanism** — and the honest response is to say so publicly rather than re-scope quietly.
 
@@ -35,7 +38,7 @@ All six must hold. Each is a number or a binary, none is a judgement.
 
 - **No hiring.** Not an engineer, not the MSP-side operator the founder story names as the first hire.
 - **No marketplace integration work.** It is 18–24 months out and gated on SOC 2 and references [../strategy/channel_plan.md](../strategy/channel_plan.md).
-- **No seed raise on the strength of the pack.** The pack is an argument; the gate is evidence.
+- **No *seed* raise on the strength of the pack.** Stated honestly rather than as a technicality: criteria 5 and 6 are unreachable without the **pre-seed** `financials/use_of_funds.md` raises precisely to fund them. **The pre-seed is raised to fund the gate; the seed is raised on the gate having returned.** Claiming the gate before it returns is the thing prohibited here.
 - **No paid pilot before month 12**, which holds only if every build item lands at its optimistic bound.
 
 ## The next two gates, stated so the current one is not mistaken for the finish

@@ -14,9 +14,17 @@
 | **Ray** — principal/escalation engineer | ≥10 years · holds environment knowledge for named clients | Generalist without deep client-specific knowledge |
 | **Sonia** — client-side IT director | Approves what their MSP deploys in their environment | No approval authority |
 
-## Problem interview — 14 questions, all about the past
+## Unaided elicitation — asked FIRST, before anything below
 
-**Never describe the product before question 12.**
+**Added after critic review found gate criterion 1 was primed by its own instrument.** Questions 1–5 sit under a heading reading "Onboarding" and open *"walk me through the last client you onboarded"* — so "ranks onboarding in their top three pains, unprompted" was only ever unprompted **by the product description**, not by the topic. `metrics_by_stage.md` nonetheless calls it "the only unbiased read".
+
+> **Q0. What were the three biggest constraints on your delivery capacity last quarter?**
+
+**Gate criterion 1 is scored from Q0's answer alone**, before onboarding has been mentioned by either party. Everything below is diagnostic.
+
+## Problem interview — questions about the past
+
+**Never describe the product before question 12. And never ask Q0 twice — its value is that it is the first thing said.**
 
 **Onboarding**
 1. Walk me through the last client you onboarded. What happened in week one?
@@ -37,21 +45,25 @@
 
 **Constraint**
 12. Have you turned down a client in the last year? Why?
-13. What would you have to be true to take on 20% more clients without hiring?
+13. Tell me about the last time you turned down a client, or nearly did. What was the binding constraint that day?
 14. What have you already tried to fix this? What happened?
 
 ## Solution interview — only after the problem is confirmed unprompted
 
 15. *(Show the positioning statement, once.)* What do you think this does?
-16. What would have to be true for you to try it?
-17. *(Show the banded fee, framed "first environment free".)* What's your reaction to that number? *(E3)*
+16. Tell me about the last tool you brought in that changed how delivery works. What convinced you, and who else had to agree?
+17. **Follow E3's split-sample protocol exactly — this is the field instrument, and the earlier version ran the superseded price test.**
+   - **Arm A:** show the banded schedule **and the hours gap** — "this displaces about $241 of your time and we charge about $1,005; here's why we think it's worth it". Then ask for a countersigned design-partner LOI.
+   - **Arm B:** show the ~$241 schedule **only**. Then ask for the same LOI.
+   - **Never show an owner both.** That measures discount preference, not basis.
 18. Who else would have to agree before you could sign?
-19. What would your client's IT contact ask you about it? *(E7 — the veto persona, surfaced through the buyer)*
-20. What would make you stop using it after three months?
+19. Tell me about the last time a client's IT director blocked or slowed something you wanted to deploy in their environment. What did they ask for? *(E7a — past behaviour, not a forecast of an absent third party)*
+20. Tell me about a tool you stopped using within a year of buying it. What went wrong?
 
 ## Questions we deliberately do not ask
 
 - *"Would you use a system that learns your environment by watching engineers?"* — hypothetical, and everyone says yes.
+- **Anything phrased "what would have to be true…"** — the earlier version of this guide broke its own past-tense rule four times, including inside the section that claimed all-past discipline. Every one is now a "tell me about the last time" form.
 - *"How much would you pay for this?"* — invites an invented number. Ask what they pay for the thing today (Q2) and put a price in front of them (Q17) instead.
 - *"Does documentation going stale bother you?"* — leading. Q5 gets the same information from behaviour.
 - Anything that pitches. **If the interviewer is talking for more than a quarter of the call, the data is contaminated.**
@@ -67,8 +79,9 @@ Onboarding hours quoted:            (Q2)  → feeds market_sizing row 13
 Ticket volume + top 5 categories:   (Q10) → feeds market_sizing rows 6, 8
 Price reaction:                     (Q17) → feeds E3
 Objection that must be overcome:
+Must-have language — their words for what the solution must do (contract-required field, previously missing):
 Surprise finding (anything that contradicted the pack):
-Did they mention onboarding cost unprompted before Q12?   Y / N
+Did onboarding cost appear in the **Q0** answer, before the topic was raised?   Y / N   ← this is what scores gate criterion 1
 ```
 
 **That last line is the pack's exit criterion.** [../strategy/gtm.md](../strategy/gtm.md) requires ≥6 of 10 to rank onboarding in their top three pains *unprompted*. Recording it per interview is what keeps that from being decided retrospectively by whoever wants the answer to be yes.

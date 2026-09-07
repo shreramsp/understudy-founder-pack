@@ -30,12 +30,12 @@ Each states a date and a number. A criterion without both is an intention.
 
 | # | We pivot if… | By | To what |
 |---|---|---|---|
-| **P1** | Cross-environment transfer is **<50%** after three clustering approaches (E1) | Month 11 | The mechanism does not generalise. Pivot to a **single-environment** product: a maintained runbook for one client, sold to internal IT. Smaller, and honest |
+| **P1** | Cross-environment transfer is **<50%** after three clustering approaches (E1) | Month 11 | **Stop and return remaining capital, unless E1's failure teaches something specific that makes K1 viable.** The earlier version pivoted to a single-environment product sold to internal IT — which is **K1, the option this same log killed** as "where every funded competitor is fighting, on the axis we cannot win". A pivot into a market you rejected, on a mechanism that just failed, is not a pivot. **This is the one criterion that stops the company, and the log previously had none** |
 | **P2** | Transfer lands **50–70%** | Month 11 | Persevere with a narrowed claim: assisted onboarding rather than automated, priced against the runbook rather than the hours |
-| **P3** | Fewer than **5 of 10** owners accept the banded fee (E3) | Month 2 | Pricing has no basis. Test a per-MSP subscription — the option rejected as D9's alternative 2 — and accept the revenue-model change it forces |
+| **P3** | **Neither E3 arm reaches 3 of 5 signed LOIs** (branch 3) | Month 3 | The per-environment fee has no basis at any price. Move to the **D12 per-MSP platform fee** and accept the revenue-model change it forces. *(If Arm A fails but Arm B clears, that is branch 2 — rebuild on the ~$241 schedule at ~$124M SAM, not a platform-fee pivot. The earlier version conflated the two.)* |
 | **P4** | **Zero of three** peer/buying groups admit a vendor founder (E4) | Month 2 | The primary and best-economics channels are closed. Reshape around the RMM/PSA marketplace at 18–24 months, which changes the raise size and timing |
 | **P5** | Envelope re-identification **succeeds** (E5/X25) | Month 3 | Raise *m*, add a linkage budget or a noise floor — and if none suffices, **the global layer is abandoned** and the company is per-tenant only, which is K2 arriving by a different road |
-| **P6** | Capture pause rate **>25%** or narration **<30%** (E6) | Month 11 | `P8` is failing. The product needs to change, not the messaging — and if it cannot, the input dries up and there is no company |
+| **P6** | Capture pause rate **>25%** or narration **<30%** (**E6b**, at a design partner with employed engineers — not E1's contractors) | **First pilot + 90 days** | `P8` is failing. The product needs to change, not the messaging — and if it cannot, the input dries up and there is no company |
 | **P7** | Median client-side security review **>10 weeks** (E7) | Month 4 | Expansion velocity caps below the ramp. Re-time the revenue model and reconsider whether in-boundary distillation can be simplified further |
 
 ## What we will not pivot on

@@ -87,3 +87,5 @@ The product's adoption case (readable skills, correction rights, gated actions) 
 3. **Can failure branches be learned from happy-path recordings**, or must they be elicited separately?
 4. **What is the decay rate of a skill** as an environment drifts, and can drift be detected before an action goes wrong?
 5. **Is there a defensible evaluation of autonomous IT resolution** that a buyer would accept — and does building it constitute the moat?
+
+**Recommended next 3:** (1) resolve §8 Q2 (demonstrations per reliable skill) inside E1 — it is a precondition of the chosen alignment method, not a curiosity; (2) add the automation-trust literature to the product's design reviews, not just to this file, since §6b's findings bear directly on the approval surface; (3) publish §6 as a standalone note — the evidence *against* the mechanism is more useful to the field than the pack's case for it, and publishing it early costs nothing and buys credibility.

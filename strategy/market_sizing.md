@@ -64,7 +64,7 @@ An MSP does not onboard 41 environments on signature. Modelling the ramp is what
 
 *At the banded blended fee of ~$1,005 (D11).*
 
-**3-year revenue per MSP ≈ $40,000; at 70% gross margin `(assumption, owed to financials/unit_economics.md)`, 3-year gross profit ≈ $28,000** — the number [gtm.md](gtm.md) derives its CAC ceiling from.
+**3-year revenue per MSP ≈ $40,000; at the fully loaded 76% gross margin derived in [../financials/unit_economics.md](../financials/unit_economics.md) §3b (D15), 3-year gross profit ≈ $30,400** — the number [gtm.md](gtm.md) derives its CAC ceiling from. *The 70% assumption this file previously carried is discharged.*
 
 ### Revenue quality — say this before a diligence call computes it
 

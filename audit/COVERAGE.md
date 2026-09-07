@@ -76,7 +76,7 @@ Run 2026-09-06, mechanically across all 70 artifacts.
 
 | Check | Method | Result |
 |---|---|---|
-| **Relative links** | every `](path)` resolved against its containing file | **0 broken** of ~430 |
+| **Relative links** | every relative markdown link resolved against its containing file | **0 broken** of ~430 |
 | **Citation integrity** | every `[Sn]` tag matched against `research/sources.md`; every defined source matched against usage | **0 undefined tags.** One source (S4) was defined and never cited — **fixed**, it now carries the Ravenna round date and founder backgrounds it was gathered for |
 | **Discoverability** | artifacts no other artifact links to | **3 orphans found and fixed**: `financials/risk_matrix.md`, `narrative/future_press.md`, `validation/discovery_guide.md` |
 | **Infographic integrity** | tag balance, doctype, unfilled placeholders, source line | **20/20 sound**, all citing a source artifact or `[Sn]` tag |

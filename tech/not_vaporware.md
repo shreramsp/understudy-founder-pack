@@ -61,7 +61,7 @@ Per **MSP**, per month `(all volumes assumption-based; no pilot exists)`:
 | Execution | ~124 resolved tickets, mostly deterministic; model only on re-grounding | mid-tier, rare | `(assumption: $5–15)` |
 | **Total marginal API** | | | **`(assumption: $15–45)`** |
 
-**Revenue per MSP per month:** ~$744 in ticket revenue (124 × $6) plus ~$750 of amortised onboarding fees ≈ **~$1,494/month, ~$17,900/yr** — which reconciles with the steady-state figure the strategy layer carries.
+**Revenue per MSP per month:** ~$744 in ticket revenue (124 × $6) plus ~$503 of amortised onboarding fees at the banded blended fee (D11) ≈ **~$1,247/month, ~$14,930/yr** — which reconciles with the steady-state figure the strategy layer carries.
 
 **Marginal gross margin is therefore ~97%**, and that is not the interesting number. Falling inference prices [S30] make the API line nearly irrelevant here. **The cost that decides this business is the node**, which D6 moved onto hardware we do not own — so it leaves our P&L and arrives in the customer's procurement conversation instead.
 
@@ -78,7 +78,7 @@ The dominant cost is not in the table above, so the table's margin conclusion ca
 
 **Commercial fallback, because "provide a GPU box" loses deals:** offer a hardware credit against the onboarding fee, or a hosted node the vendor operates *inside a tenant the MSP owns* — which preserves the boundary while removing the procurement conversation. `financials/unit_economics.md` owes both sides, but the reference spec is ours to state and it is stated here.
 
-**Only now the margin claim:** at ~$1,494/month per MSP against $15–45 of marginal API, gross margin clears the 70% the strategy assumes with wide room — **provided the node sits with the MSP or is credited against the onboarding fee.** If the vendor absorbs the hardware, roughly $2,000–4,000 of amortised capital lands per customer and the margin conclusion does not survive. `financials/unit_economics.md` must model both cases; this file states the reference spec so it can.
+**Only now the margin claim:** at ~$1,247/month per MSP against $15–45 of marginal API, gross margin clears the 70% the strategy assumes with wide room — **provided the node sits with the MSP or is credited against the onboarding fee.** If the vendor absorbs the hardware, roughly $2,000–4,000 of amortised capital lands per customer and the margin conclusion does not survive. `financials/unit_economics.md` must model both cases; this file states the reference spec so it can.
 
 ## 4 · Buildable this quarter vs research risk
 

@@ -50,6 +50,26 @@
 
 **Five research artifacts were fixed rather than exempted** during this audit — `landscape`, `competitors`, `capability_table`, `survey` and `sources` now end with what to research next, which is a genuine improvement rather than a compliance gesture.
 
+## 2b · Cross-artifact numeric consistency sweep
+
+Run 2026-09-06, mechanically: every figure superseded by a decision (D9, D11) or by a critic correction was searched across all 68 artifacts, and each occurrence classified as *live* or *historical*.
+
+**31 live occurrences flagged · 26 correct on inspection · 5 genuinely stale and fixed.**
+
+The 26 correct ones are the deliberate two-scenario tables in `revenue_build.md` and `unit_economics.md` (flat basis alongside the chosen banded one), the D9 decision record, and coincidental matches — a $9,000 CAC range and a 35% reseller margin are not the $9,000 fee revenue or the 35% automatable share.
+
+**The five fixed:**
+
+| File | Was | Now |
+|---|---|---|
+| `strategy/market_sizing.md` | D9's consequences read as current | marked superseded by D11 the same day, with current values stated |
+| `product/PRD.md` | ~$7,100 year-1 model | ~$5,110 (D9, D11) |
+| `tech/not_vaporware.md` | ~$1,494/month, ~$17,900/yr | ~$1,247/month, ~$14,930/yr at the banded fee |
+| `validation/get_keep_grow.md` | steady state ~$17,900 | ~$14,930 |
+| `tech/whitepaper.md`, `architecture/D06.md` | k≥3 distinct **tenants** | m≥3 distinct **MSPs**, with the hole the old threshold left explained |
+
+**This check belongs in every future audit of this run.** Four cascades have passed through this pack (the penetration fix, D9, D11, the k-threshold correction), and each one left stale figures in files nobody thought to re-read. It is mechanical, it takes a minute, and it has found something every time.
+
 ## 3 · Open rows — deliberately not closed
 
 ### A52b · Dossier illustration coverage — **OPEN**

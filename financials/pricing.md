@@ -20,18 +20,24 @@
 
 **Why environment 1 is free (D9).** It costs the customer *more* than doing nothing — 31–46 engineer-hours against a 25–40 baseline, because the work is unchanged and review is added. Charging for it is charging for a loss, and a design partner's timesheet establishes that in one afternoon.
 
-## 2 · Anchor analysis — what budget this comes out of
+## 2 · Anchor analysis — corrected twice, and one anchor withdrawn
 
-| Anchor | Figure | Source |
+| Anchor | Figure | Basis |
 |---|---|---|
-| MSP's own onboarding labour | 25–40 engineer-hours, median client | [S21] |
-| Loaded engineer rate | `(assumption: $75/hr)` | — |
-| **The budget being displaced** | **$1,875–3,000 per median client** | derived |
-| Buyer's blended cost per ticket | $22.50 | [S27] |
-| Agent-handled cost per ticket | $45 | [S28] |
+| MSP onboarding labour, **complex client** | 40–80 engineer-hours | **[S21] — this is what the source actually says** |
+| MSP onboarding labour, **median client** | 25–40 engineer-hours | `(assumption — no source)`. **The earlier version cited [S21] for this figure and [S21] does not contain it.** See below |
+| Loaded engineer rate | **$46–58/hr** | Derived from §5's own $95–120k loaded technician cost ÷ 2,080 hrs. The earlier `$75/hr` implied $156k loaded — above the top of this file's own range |
+| **The budget displaced, median client** | **$322–696** | 7–12 hours × $46–58, matched-pair method (§4) |
+| Buyer's blended cost per ticket | $22.50 | [S27] — **and it is the wrong anchor. See below** |
 | Agent labour as share of ticket cost | 70–80% | [S28] |
 
-**The onboarding budget is not a line item.** It is unbilled engineer time [../strategy/petal_diagram.md](../strategy/petal_diagram.md) petal 1 — which makes it the easiest budget to justify against and the hardest to find, because there is no code to charge it to. The ROI calculator exists to convert it into one.
+**Two anchors were wrong, and both are the same error class this pack has now committed three times.**
+
+**The `[S21]` mis-citation.** The 25–40-hour median figure carried a source tag for a source that says 40–80. `strategy/market_sizing.md` states this correctly — *"S21's 40–80 hours is the typical-to-complex band"* — and this file cited it for the median anyway. **An unsourced assumption wearing a citation is worse than an untagged one**, because it defeats the check the tag exists to enable, and this number sits under roughly 40–60% of revenue. It is now marked as an assumption with no citation, which is what it always was.
+
+**The $22.50 blended anchor is the wrong population.** [S27] is a blended *internal IT help-desk* cost across the whole queue — including the expensive escalations this product explicitly does not touch. The tickets we address are the cheapest quartile by construction: password/MFA resets, mailbox permissions, provisioning, printer queues, and RMM-alert remediation with documented fixes. **A junior technician at $22–30/hr loaded clearing 6–10 of those an hour costs the MSP roughly `(assumption: $2–6 per ticket)`** — and a material share of the alert half is already scripted inside the RMM they pay for.
+
+**The consequence is uncomfortable and is stated rather than buried: at $6, our per-ticket price may sit at or above the MSP's own marginal cost for exactly the tickets we automate.** What we would actually be selling on that half is capacity rather than savings — the tech is at capacity and the alternative is a hire [S33]. That is a real argument, but it is not the arithmetic argument this file was making. **E8 must establish the cost of the automatable subset, not the blend**, and until it does, the per-ticket price has no verified basis either.
 
 ## 3 · Competitor price table
 
@@ -45,27 +51,30 @@
 
 **No AI-ITSM vendor publishes a price**, which `research/sources.md` records as a marked gap. That is why the anchor above is the buyer's own cost structure rather than a competitor's list price — the only honest anchor available.
 
-## 4 · The banded schedule (D7) — and the band where the basis fails
+## 4 · The banded schedule (D7/D11) — one method, and the fee fails at every band
 
-Charged **from environment 2**. Basis is the compression the library produces, not the full onboarding cost.
+**The earlier version of this table computed "hours displaced" three different ways** — crossed extremes for the small and typical rows, matched pairs for complex. That inconsistency is not cosmetic: **it is what produced D11's entire cascade.** The complex row looked worst (167–333%) only because it was the one row using the stricter convention.
 
-| Band | Share of a book `(assumption)` | Baseline hours | With Understudy | Hours displaced | Value displaced | **Fee** | Fee as % of value |
+**Matched pairs is the correct method, and it is now used for all three rows.** A low-complexity client has a low baseline *and* a low post-Understudy figure; crossing the extremes compares one client's baseline against a different client's outcome, which is not a real client. "With Understudy" is baseline × 0.70, per M1's derivation that ~30% of an onboarding is environment discovery and ~70% is mechanical setup observation does not touch.
+
+| Band | Share `(assumption)` | Baseline hrs | With Understudy | **Displaced (matched)** | Value @ $46–58 | Fee | **Fee as % of value** |
 |---|---|---|---|---|---|---|---|
-| **Small** ≤10 users | ~45% | 15–25 | ~11–18 | **0–7** | **$0–525** | **$400** | **76%–∞** ⚠ |
-| **Typical** 10–30 users | ~40% | 25–40 | 18–28 | 0–22 | $0–1,650 | **$1,500** | 91%–∞ ⚠ |
-| **Complex** 30+ users | ~15% | 40–80 | 28–56 | 12–24 | $900–1,800 | **$1,500** (D11) | 83%–167% ⚠ |
+| **Small** ≤10 users | ~45% | 15–25 | 10–18 | **5–7** | $230–406 | $400 | **99%–174%** |
+| **Typical** 10–30 | ~40% | 25–40 | 18–28 | **7–12** | $322–696 | $1,500 | **216%–466%** ⚠⚠ |
+| **Complex** 30+ | ~15% | 40–80 | 28–56 | **12–24** | $552–1,392 | $1,500 | **108%–272%** |
+| **Blended** | | | | | | **~$1,005** | |
 
-**Schedule as decided (D11): $400 small · $1,500 typical · $1,500 complex. Blended ~$1,005.**
+### What the consistent method changes
 
-**Every band remains uncomfortable at its lower bound, and that is stated rather than smoothed.**
+**1. The fee fails at every band, at every point in every range.** The lowest ratio anywhere in the table is 99%. There is no point at which the banded schedule is priced below the hours it displaces.
 
-**The compression basis does not survive at any band's lower bound**, and at the complex band it does not survive at all — a $3,000 fee against $900–1,800 of displaced hours is priced above the value it claims. Three responses:
+**2. D11 cut the wrong band.** Under the corrected method **typical (216–466%) is the worst band and complex (108–272%) is the best of the three** — the reverse of what D11 acted on. D11's *arithmetic* propagated correctly and every downstream figure in the pack is internally consistent with it; **its rationale was an artifact of the inconsistency it was correcting for.** That is recorded here rather than quietly fixed, because the cascade it triggered moved SAM by $36M and the CAC ceiling by $3,400.
 
-1. **Price the complex band down to $1,500**, matching typical, and accept that large environments subsidise nothing. Simplest, and it makes the schedule nearly flat — which is what D7 was trying to escape.
-2. **Re-base the fee on the library rather than the compression.** What environment 2 buys is not only fewer hours; it is a maintained runbook for that client and a tier-1 floor at it. Those are real and are not hours-denominated — but abandoning the hours denomination discards the ROI calculator that `petal_diagram.md` identifies as the instrument that creates the budget line at all.
-3. **Fold the onboarding fee into a per-MSP platform fee** and keep per-ticket as the only usage metric. This is D9's rejected alternative 2 returning by a different road, and it changes the revenue model in three strategy files.
+**3. An hours-defensible schedule would be roughly a quarter of this one.** At ~50% of midpoint displaced value: **~$159 small, ~$254 typical, ~$486 complex — blended ~$241.** That would put steady-state onboarding revenue at ~$1,446/yr per MSP instead of $6,030, revenue per MSP at ~$10,350, and **SAM at ~$124M**.
 
-**Decided (D11): option 1 — complex banded down to $1,500. Option 3 stays live as a named contingency (D12), to be settled by E3 rather than by argument.** The compression basis is defensible for the typical band at its upper half and nowhere else. **This is the second time the fee's justification has failed under arithmetic, and that pattern is itself information: the value this product creates may simply not be hours-shaped.** E3 is the experiment that settles it, and it costs ten conversations.
+**The schedule is held at $400/$1,500/$1,500 pending E3, on the founder's instruction** — a structure should not be abandoned on the strength of numbers that were computed three inconsistent ways. But the finding is now unambiguous: **the hours basis cannot support this fee at any band.** Either the fee is justified on something other than hours — the maintained runbook, the tier-1 floor, knowledge retention, none of which are hours-denominated — or it moves to the D12 per-MSP platform fee, or it drops by roughly 4×.
+
+**E3 is therefore no longer a price test. It is a *basis* test:** does an MSP owner pay for the library, or only for the hours? Ten conversations settle it, and no model can.
 
 ## 5 · Willingness to pay, by persona
 

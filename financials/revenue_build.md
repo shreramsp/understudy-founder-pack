@@ -7,25 +7,24 @@
 
 **Conditional on E1.** If cross-environment transfer lands below ~70%, M1 collapses, the onboarding fee loses its compression basis entirely, and every figure below is void. Nothing here is a forecast.
 
-## 1 · The pricing cascade — two scenarios, undecided
+## 1 · The pricing cascade — decided (D11), and what it moved
 
-`market_sizing.md` was built on a **flat $1,500** per-environment fee. [pricing.md](pricing.md) §4 shows that flat fee is priced *above* displaced value at the complex band and recommends banding down. The blended effect:
+The banded schedule is **decided**, not undecided. The earlier version of this section carried two live columns and an escalation sentence after D11 had already settled it, and the superseded flat figures then leaked into `unit_economics.md`'s headline row — where an investor skimming the top line read $7,100 and $17,900, the two numbers D11 retired. **Banded is now the sole primary basis across this layer; flat survives only as the footnote below.**
 
-| | Flat $1,500 (superseded) | **Banded — CHOSEN (D11)** ($400 / $1,500 / $1,500) |
-|---|---|---|
-| Blended fee per environment | $1,500 | **~$1,005** (0.45×400 + 0.40×1,500 + 0.15×1,500) |
-| Steady-state fee revenue/MSP/yr (6 new clients) | $9,000 | **~$6,030** |
-| Ticket revenue/MSP/yr | $8,900 | $8,900 |
-| **Steady-state revenue/MSP/yr** | **$17,900** | **~$14,930** |
-| Year-1 revenue/MSP (5 envs, 1 waived) | ~$7,100 | **~$5,110** |
-| 3-year revenue/MSP | ~$54,350 | **~$40,000** |
-| 3-year gross profit @70% | ~$38,000 | **~$28,000** |
-| **CAC ceiling at 3:1** | ~$12,700 | **~$9,300** |
-| **SAM** (12,000 MSPs) | ~$215M | **~$179M** |
+| Operative figure | Value |
+|---|---|
+| Blended fee per environment (45/40/15 at $400/$1,500/$1,500) | **~$1,005** |
+| Year-1 revenue per MSP (5 environments, first waived per D9) | **~$5,110** |
+| Steady-state revenue per MSP | **~$14,930** |
+| 3-year revenue per MSP | **~$40,000** |
+| Fully loaded gross margin (bridged in `unit_economics.md` §3b) | **~76%** |
+| 3-year gross profit | **~$30,400** |
+| **CAC ceiling at 3:1** | **~$10,100** |
+| SAM (12,000 MSPs) | **~$179M** |
 
-**The consequence that matters is not SAM.** It is the CAC ceiling: at ~$9,300, the primary channel's $4,000–9,000 range [../strategy/channel_plan.md](../strategy/channel_plan.md) **touches the ceiling at its top end**, and the newsletter channel at $4,000–8,000 does too. **Under the banded schedule there is no channel with a comfortable margin, and one that was viable becomes marginal.** This is a founder decision and it is escalated rather than chosen here.
+*Footnote — what the flat $1,500 schedule gave, for anyone reconciling against an earlier draft: $17,900 steady state, $7,100 year 1, $54,350 over three years, a $12,700 ceiling and a $215M SAM. D11 banded the complex tier down and the cascade moved every one of them.*
 
-**Both scenarios are carried below**, with the flat basis first and the **chosen** banded figures in brackets. Read the bracketed numbers as operative.
+**A correction that arrived after D11 and does not change these figures but does change their standing:** `pricing.md` §4 now computes hours displaced by one consistent method across all three bands, and under it **the fee is priced above displaced value at every band** — with *typical* the worst offender, not complex. D11's arithmetic propagated correctly; its rationale was an artifact of an inconsistency. **The schedule stands pending E3 on the founder's instruction, and E3 is now a test of whether the fee has any hours basis at all.**
 
 ## 2 · The path
 
@@ -37,7 +36,7 @@
 | **$10M** | $10M | ~560 [~670] | ~23,000 [~27,000] | **Marketplace listing live** — requires SOC 2, a shipping integration and references; 18–24 months minimum | RMM/PSA marketplace |
 | **$50M** | $50M | ~2,800 [~3,350] | — | **Exceeds the MSP wedge.** 2,800 MSPs is ~23% of the serviceable band — a share no early-stage company should assume. Requires internal IT, which this pack does not claim | Undefined, honestly |
 
-**The $50M row is where the pack stops claiming.** `market_sizing.md` puts SAM at $215M [$179M]; $50M ARR is 23–28% of the entire serviceable market. **A build that runs to $100M without naming a new market is arithmetic laundering**, and this one names the wall instead.
+**The $50M row is where the pack stops claiming.** `market_sizing.md` puts SAM at ~$179M; $50M ARR is 23–28% of the entire serviceable market. **A build that runs to $100M without naming a new market is arithmetic laundering**, and this one names the wall instead.
 
 ## 3 · Expansion layers, in order of confidence
 
@@ -50,11 +49,18 @@
 
 ## 4 · The revenue-quality problem, restated because it survives both scenarios
 
-**~80% of three-year revenue per MSP is one-time backfill onboarding.** It bills once per existing client and never again. Two consequences:
+**~73% of three-year revenue per MSP is one-time backfill onboarding.** It bills once per existing client and never again.
 
-- During land, this is **implementation-shaped revenue earning a services multiple**, not a SaaS one — the same revenue quality this pack criticises ServiceNow for [S20].
-- **NRR falls below 100% once backfill completes**: from the year-4 peak to the steady-state run rate, a step down of roughly 45%. Growth past that point depends on the customer winning clients.
+**The earlier version called this an NRR decline, and that was wrong.** Every diligence definition of net revenue retention excludes one-time implementation revenue from both numerator and denominator. On the recurring line alone the ramp runs **$1,090 → $8,900**, so NRR is well above 100% throughout — **the "45% step down" is the exhaustion of a one-time backfill balance, not churn.** A reader taking the old sentence literally would conclude the subscription contracts, which this pack's own ramp says it does not.
 
-**The durable line is ~$17,900 [$14,930] per MSP per year, and that — not the peak — is what a valuation should rest on.**
+**Reported correctly, there are three lines and they should never be summed into one "recurring" figure:**
 
-**Recommended next 3:** (1) settle the banded schedule before this build is shown to anyone, since the two scenarios differ by ~$36M of SAM and by whether any channel has slack; (2) do not model past $10M without naming the market that carries it; (3) re-run this file the day E1 returns a number, because every row above is void if it comes back low.
+| Line | Annual, steady state | Character |
+|---|---|---|
+| **Ticket revenue** | **~$8,900** | genuinely recurring — the subscription line a valuation should rest on |
+| Turnover-driven onboarding fees | ~$6,030 | recurs only as a function of **the customer's own client churn**, not ours. Not recurring by any standard definition |
+| Backfill onboarding | declining to zero by ~year 4 | a one-time implementation backlog, and it should be carried as one |
+
+**So the durable subscription line is ~$8,900 per MSP per year — roughly 60% of the ~$14,930 figure the rest of this pack quotes**, and `comps_exits.md` values on the smaller number with the turnover line argued separately. During the land phase this is implementation-shaped revenue earning a services multiple, the same quality this pack criticises ServiceNow for [S20]; the difference is that ours decays by design.
+
+**Recommended next 3:** (1) run E3 before this build is shown to anyone — the fee is priced above displaced value at every band and E3 is the only thing that establishes whether it has a basis; (2) do not model past $10M without naming the market that carries it; (3) re-run this file the day E1 returns a number, because every row above is void if it comes back low.

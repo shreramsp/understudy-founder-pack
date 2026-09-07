@@ -7,32 +7,37 @@
 
 ## 1 · The raise
 
-**Pre-seed, `(assumption: $750k–1.2M)`** — sized to reach one measured result plus a first paid pilot, with runway past it rather than up to it.
+**Pre-seed, $900k–1.2M.** The earlier version said $750k–1.2M and its own blocks summed to $820k — **$70k underwater at the floor before anything slipped**, with the reserve then covering under a month of burn. The floor is raised and the plan below now totals to a stated figure.
 
-**Why not more.** A larger round funds hiring and channel spend before E1 returns a number, and E1 can return a negative. **A company that has raised $3M against an unmeasured core mechanism has to keep going; one that has raised $1M can publish the negative and stop.** That optionality is worth the dilution difference.
+**Two structural holes the earlier version also had, both fixed:** there was **no founder compensation for months 11–24** in an 18–24 month plan (B2 ended at month 10), and the reserve was a round number rather than sized against the slip it insures — `product/features_prioritized.md` puts midpoints "past 55 weeks", a ~3.5-month overrun costing ~$165k at B2's rate.
 
-**Why not less.** The build floor to the harness plus the transfer test is ~40 weeks solo [../product/features_prioritized.md](../product/features_prioritized.md), and month 12 for a first paid pilot holds only at every item's optimistic bound. A round that ends at month 12 ends exactly when the evidence arrives.
+**Why not more.** A larger round funds hiring and channel spend before E1 returns a number, and E1 can return a negative. **A company that has raised $3M against an unmeasured core mechanism has to keep going; one that has raised $1M can publish the negative and stop.**
+
+**Why not less.** The build floor to the harness plus the transfer test is ~40 weeks solo, and month 12 for a first paid pilot holds only at every item's optimistic bound. A round ending at month 12 ends exactly when the evidence arrives.
 
 ## 2 · Milestone-linked spend
 
-Each block names what it retires. **Ordered by cost, not by importance** — three company-killing assumptions cost under $2,000 to test and none of them needs code.
+Ordered by cost, not importance. **Three company-killing assumptions cost under $2,000 to test and none needs code.**
 
 | # | Block | Spend | Months | What it retires |
 |---|---|---|---|---|
-| **B1** | **Discovery + cheap experiments** | ~$5k | 1–2 | **E3** (does the fee have a basis), **E4** (is the channel even open), **E5/X25** (can our own envelope be re-identified), **E8** (ticket mix, ±40% of SAM). Any one negative reshapes the company before a line of code |
-| **B2** | Founder salary + the Now-tier build | ~$420k | 2–10 | The pipeline: capture, typing, clustering, synthesis, the stub executor, the **harness first** |
-| **B3** | **E1 + E2** | ~$15k | 10–12 | **The core mechanism, measured.** Contract engineers for the transfer test; the fallback-enabled RPA baseline for E2 |
-| **B4** | Security and compliance groundwork | ~$60k | 6–18 | SOC 2 Type II — a 6–12 month clock that gates enterprise-adjacent clients *and* the marketplace, and cannot be compressed later |
-| **B5** | First pilots + node hardware credits | ~$40k | 12–18 | E7 (review cycle time), the hardware-credit hybrid tested commercially |
-| **B6** | First hire — **MSP-side operator** | ~$180k | 14–24 | Closes the gap A6 names. **Not an engineer** |
-| **B7** | Reserve | ~$100k | — | The 40-week floor is a floor |
+| **B1** | Discovery + cheap experiments | **$5k** | 1–2 | **E3** (does the fee have any basis), **E4** (is the channel open at all), **E5/X25** (envelope re-identification), **E8** (ticket mix and the automatable subset's real cost) |
+| **B2** | Founder comp + Now-tier build | **$420k** | 2–10 | The pipeline, harness first. `(assumption: $150k founder comp + ~$285k contract engineering and infra — decomposed rather than a single $47k/month line for one person)` |
+| **B2b** | **Founder comp, months 11–24** | **$175k** | 11–24 | Nothing — it is the cost of existing while the evidence arrives. **The earlier version simply omitted it** |
+| **B3** | E1 + E2 | $15k | 10–12 | **The core mechanism, measured** |
+| **B4** | Security groundwork | **$60k**, of which ~$15k at month 6 | 6–18 | Policy and platform first; the **Type II audit spend waits for X16 (tenant isolation) to ship** — a Type II requires controls operating over a real production system, and at month 6 there is none |
+| **B5** | First pilots + node | $40k | 12–18 | E7 review cycle time, and the hosted-node option `unit_economics.md` §3 now recommends instead of the withdrawn credit |
+| **B6** | First hire — **MSP-side operator** | $180k | **on E1 ≥70%, not before month 14** | Closes the A6 gap. **Milestone-gated, not date-gated** — the earlier version fired the largest discretionary commitment before E1 returned, breaking this file's own rule |
+| **B7** | Reserve | **$165k** | — | Sized to the 55-week midpoint slip, not to a round number |
+| | **Plan case total** | **$1,060k** | | |
+| | **Reduced-scope case** (B6 deferred) | **$880k** | | Reaches E1 and a first pilot; defers the hire to a seed |
 
-**B1 costs 0.5% of the round and can invalidate the other 99.5%.** That is the whole sequencing argument.
+**B1 is 0.5% of the plan-case round and can invalidate the other 99.5%.**
 
 ## 3 · Hires, in order
 
 1. **MSP-side operator / founding GTM** (month ~14). The founder story names this gap explicitly; it does not close by reading.
-2. **Systems engineer** (month ~18), for the node fleet — D09's on-call obligation arrives with the first deployment and lands on one person until this hire.
+2. **Systems engineer** (month ~18), for the node fleet — the on-call obligation (D6/N15, drawn in `tech/architecture/D09.md`) arrives with the **first deployment**, not with this hire, so months 12–18 need a contracted on-call backstop priced into B5 rather than one person's phone.
 3. **Nobody before E1 returns a number.** Hiring against an unmeasured mechanism converts optionality into obligation.
 
 ## 4 · Capital-efficiency metric to report

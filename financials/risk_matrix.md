@@ -17,12 +17,13 @@
 | **8** | **API displacement** — vendors ship good APIs and the UI surface shrinks | **High, and continuous** | Moderate now, severe over 5 years | Share of target procedures with a usable API | Prefer APIs where they exist; concentrate on surfaces that lack them | **Medium-high.** This is structural erosion, not an event, and D10 requires it stated publicly |
 | **9** | **Schedule** — 40-week floor, month 12 only at optimistic bounds | **High** | Moderate | Any Now-tier item exceeding its band | Reserve block; DD1 time-boxed | **High.** Solo founder, sequential critical path, no slack |
 | **10** | **Node fleet operations** — version skew, silent node failure | Medium | Moderate | Stale-skill age, buffer depth | S13 fleet health, HALT-and-page, schema versioning | **Medium.** One node per MSP is tractable; the on-call obligation arrives with deployment one |
-| **11** | **Key person** — solo founder | Medium | **Fatal** | — | **None.** No co-founder, no bus factor | **High.** Stated rather than mitigated |
+| **11** | **Key person** — solo founder | Medium | **Fatal** | Founder unreachable >72h; no second person able to deploy or roll back a node | **Partly buyable for under $5k, and the earlier version said "none":** founder vesting with a cliff, IP assignment, key-man cover, credential and code escrow, and a written recovery runbook. None of it replaces a co-founder | **High** — but high *because unmitigable in substance*, not because the cheap instruments were skipped |
+| **11b** | **Node capital exposure** — hardware credit unrecovered on churn | Medium | Moderate | Customer stalls at environment 2 (gtm §5's own falsification test) | **The blanket credit is withdrawn** (`unit_economics.md` §3): hosted node at MSP cost is the default; where a credit is used it carries title, a 24-month term and pro-rata clawback | **Low** — after withdrawal. It was **unrecorded entirely** before, in a matrix whose contract names cost as a required category |
 | **12** | Regulatory — EU capture constraints | Low (US-first) | Moderate | EU expansion attempt | US-first (D3) | **Low.** Deferred, not solved [S29] |
 
 ## What the residual column says
 
-**Four risks stay High and one has no mitigation at all.** That is the correct shape for a pre-build company with one unmeasured mechanism, a solo founder and a ceiling on its market — and a matrix that showed anything else would be describing a different company.
+**Four risks stay High.** Row 11 no longer claims *no* mitigation — the cheap instruments exist and are named — but its residual is unchanged, because none of them replaces a second person. That is the correct shape for a pre-build company with one unmeasured mechanism, a solo founder and a ceiling on its market — and a matrix that showed anything else would be describing a different company.
 
 **Risk 2 deserves more attention than it will get.** It is the only severe risk whose realisation is *invisible in every dashboard*: capture volume keeps rising, the library keeps growing, and what degrades is the quality of what is captured. E6 exists solely to see it, and it runs for free inside E1.
 

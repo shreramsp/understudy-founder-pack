@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Product — Understudy</title>
+<meta name="description" content="The closed loop: watch, distil, rehearse, gate, act, verify, learn.">
+<meta property="og:title" content="Product — Understudy">
+<meta property="og:description" content="The closed loop: watch, distil, rehearse, gate, act, verify, learn.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="visuals/hero/hero.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<nav class="site">
+  <div class="w">
+    <a class="brand" href="index.html"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0B0B12"/><path d="M20 74 L38 52 L54 62 L80 26" stroke="#4338CA" stroke-width="10" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg> Understudy</a>
+    <div class="nl">
+      <a href="product.html" class="on">Product</a>
+      <a href="evidence.html">Evidence</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="pack.html">The pack</a>
+    </div>
+    <a class="btn" href="pack.html">Read the pack</a>
+  </div>
+</nav>
+
+
+<section class="page-head"><div class="w narrow"><span class="eyebrow">Product</span>
+  <h1>A closed loop, and the link that makes it different from RPA.</h1>
+  <p class="lede">Every part of this exists somewhere already. What does not exist anywhere is the circuit &mdash; capture that keeps failures, feeding clustering that keeps variance, producing skills that declare success, so that verification is possible, so that recovery is possible.</p></div></section>
+<section><div class="w narrow">
+  <h2>The loop</h2>
+  <ol class="steps">
+    <li><strong>Watch</strong> &mdash; screen, actions and optional narration across the admin surfaces engineers actually use. Failed and abandoned sessions are kept deliberately: they contain what successful runs never do.</li>
+    <li><strong>Distil</strong> &mdash; recordings of the same procedure cluster into one skill, with the <em>distribution</em> of how it differs across environments kept alongside it.</li>
+    <li><strong>Rehearse</strong> &mdash; the skill runs against live tickets without acting, and its intended actions are compared with what your engineer actually did.</li>
+    <li><strong>Gate</strong> &mdash; every step is classified by blast radius. Destructive is always gated. Bulk reads are gated too, because a read that copies client data is an exfiltration surface regardless of its verb.</li>
+    <li><strong>Act</strong> &mdash; under the agent&rsquo;s own directory identity, so your client&rsquo;s audit log attributes it without our help.</li>
+    <li><strong>Verify</strong> &mdash; every action ends by testing the criterion the skill declared. When the interface changes, that criterion is still valid, so a break becomes a search rather than a failure.</li>
+  </ol>
+  <h2>Why this is not RPA, stated narrowly</h2>
+  <p>RPA can assert on world state, and modern selector engines already recover from broken selectors through fuzzy, anchor and image fallbacks. Anyone who tells you otherwise gets corrected in the room. <strong>The real difference is that the goal is not carried in the RPA artifact in a form the runtime can re-plan against</strong> &mdash; so recovery is confined to fallbacks a developer wrote in advance. A skill carries the goal as a predicate held at execution time, so it can search a space nobody anticipated.</p>
+  <div class="rule"><strong>And it is tested, not asserted.</strong> Against a fallback-enabled baseline built by a contracted certified practitioner and published for replication &mdash; because a baseline with its fallbacks switched off would prove nothing.</div>
+  <h2>Where your recordings live</h2>
+  <p>Clustering runs inside your own tenant. <strong>Raw session recordings never reach us.</strong> The only thing that crosses is an abstracted pattern &mdash; the shape of a procedure and how it varies &mdash; and only once the same pattern has been seen at three or more separate MSPs. A pattern seen once is a fingerprint, so it does not travel.</p>
+</div></section>
+
+<div class="next">
+  <div class="w">
+    <span class="eyebrow">Keep reading</span>
+    <div class="row">
+      <a href="evidence.html"><div class="k">Evidence</div><div class="t">What we know</div><div class="d">And what is still untested.</div></a>
+      <a href="pricing.html"><div class="k">Pricing</div><div class="t">What it costs</div><div class="d">Including the gap between what we charge and what hours justify.</div></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="w">
+    <div class="fl">
+      <a href="index.html">Home</a><a href="product.html">Product</a><a href="evidence.html">Evidence</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="pack.html">The pack</a>
+      <a href="https://github.com/dlmastery/startup-skills">GitHub</a>
+    </div>
+    <p class="fine"><strong>Understudy</strong> is a founder-artifact pack generated by an artifact pipeline — not a funded company, not a shipping product, and not a company with customers. <strong>There is no traction: no pilot, no customer, no code.</strong> Every operating figure on this site is a declared target carrying its source or an (assumption) tag, and the pack states where each would be falsified. Row-by-row completeness is in audit/COVERAGE.md.</p>
+  </div>
+</footer>
+</body>
+</html>

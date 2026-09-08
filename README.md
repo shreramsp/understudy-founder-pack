@@ -2,9 +2,15 @@
 
 **Understudy is the AI service desk that learns each client environment by watching engineers work.** It records IT engineers doing real work, clusters those recordings into a readable, executable skill library, and takes over tier-1 tickets under supervision — for MSPs, where onboarding a new client environment is recurring cost of goods rather than a one-time project. Every AI service desk can resolve a ticket; none can learn where it is.
 
-**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **59/61 required artifacts · 20 HTML infographics · 0 rendered images** · 96 files. Two manifest rows are open and **four of eight generated layers have never been through the critic loop** — see [Completeness](#completeness).
+**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **59/61 required artifacts · 20 HTML infographics · a 5-page site and a 70-document reader · 0 rendered images** · 103 files. Two manifest rows are open and **four of eight generated layers have never been through the critic loop** — see [Completeness](#completeness).
 
 ---
+
+## Open this first
+
+**[`pack.html`](pack.html)** — the whole pack as a browsable reader. All 70 documents, sidebar-navigable and searchable, Mermaid diagrams drawn, every cross-reference clickable. **Every document is embedded, so it opens from a double-click with no server.**
+
+**[`index.html`](index.html)** — the five-page site built from the pack: [product](product.html), [evidence](evidence.html), [pricing](pricing.html), [about](about.html).
 
 ## Start here — 60 seconds
 

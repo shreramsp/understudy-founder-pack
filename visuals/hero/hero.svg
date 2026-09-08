@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Understudy — record, distil, execute">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEEDFB"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<style>.t{font-family:Inter,system-ui,sans-serif}.m{font-family:"JetBrains Mono",monospace}</style>
+</defs>
+<rect width="1200" height="630" fill="url(#g)"/>
+<rect x="0" y="0" width="1200" height="6" fill="#4338CA"/>
+<text class="t" x="80" y="150" font-size="26" font-weight="600" fill="#4338CA" letter-spacing="3">UNDERSTUDY</text>
+<text class="t" x="80" y="240" font-size="56" font-weight="700" fill="#0B0B12">The service desk that learns</text>
+<text class="t" x="80" y="308" font-size="56" font-weight="700" fill="#0B0B12">your client environments</text>
+<text class="t" x="80" y="376" font-size="56" font-weight="700" fill="#0B0B12">by watching engineers work.</text>
+<g transform="translate(80,450)">
+  <rect x="0" y="0" width="184" height="58" rx="10" fill="#fff" stroke="#E4E4EB"/><text class="m" x="24" y="36" font-size="17" fill="#0B0B12">WATCH</text>
+  <path d="M196 29 h34" stroke="#8A8A99" stroke-width="2"/><path d="M224 23 l8 6 -8 6" fill="#8A8A99"/>
+  <rect x="240" y="0" width="184" height="58" rx="10" fill="#EEEDFB" stroke="#4338CA" stroke-width="2"/><text class="m" x="264" y="36" font-size="17" fill="#4338CA">DISTIL</text>
+  <path d="M436 29 h34" stroke="#8A8A99" stroke-width="2"/><path d="M464 23 l8 6 -8 6" fill="#8A8A99"/>
+  <rect x="480" y="0" width="184" height="58" rx="10" fill="#fff" stroke="#E4E4EB"/><text class="m" x="504" y="36" font-size="17" fill="#0B0B12">REHEARSE</text>
+  <path d="M676 29 h34" stroke="#8A8A99" stroke-width="2"/><path d="M704 23 l8 6 -8 6" fill="#8A8A99"/>
+  <rect x="720" y="0" width="184" height="58" rx="10" fill="#fff" stroke="#E4E4EB"/><text class="m" x="744" y="36" font-size="17" fill="#0B0B12">GATE · ACT</text>
+</g>
+<text class="t" x="80" y="562" font-size="21" fill="#5A5A6B">For MSPs, where onboarding a client is cost of goods — not a one-time project.</text>
+</svg>

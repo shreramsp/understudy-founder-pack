@@ -29,7 +29,8 @@
 | A53 ingest | opt | n/a — no sources ingested |
 | **A54 this file** | req | present |
 | A55 run README | req | present, refreshed from the glob |
-| A56–A57 site | opt | not run |
+| A56 `index.html` + 4 pages + `pack.html` | opt | **built** — 6 pages, 0 broken refs, all documents inlined in the reader |
+| A57 live public URL | opt | **not published** — requires founder go-ahead; the repo is not the founder's |
 
 **No stub rows.** Every required artifact exceeds 400 words and carries its owning contract's named sections. The lowest-word required artifacts were re-checked individually rather than trusted to a line count: `research/capability_table.md` and `strategy/lean_canvas.md` are dense tables whose substance is in cells, not lines.
 
@@ -98,9 +99,19 @@ Two things worth recording precisely:
 
 **To close it:** a session with an image tool renders the 46 prompts, verifies each in two stages (the file exists · the file is *this* visual), and re-runs both builders.
 
-### A56–A57 · Site — **not run**
+### A56 · Site — **built**
 
-The website phase has not been attempted. It is gated behind the audit by design, and behind four owed critic rounds.
+Five pages plus a document reader, generated from the shipped builder with the CONFIG and PAGES filled from the pack rather than invented. Copy is drawn from `strategy/positioning.md`, `narrative/one_pager.md`, `financials/pricing.md` and `validation/riskiest_assumptions.md`. **0 broken references across 85 checked.**
+
+The site carries the pack's honesty constraints rather than dropping them for polish: the home page states that environment one costs the customer *more* than doing nothing, the pricing page publishes the ~$246 hours-defensible schedule beside the $1,005 charged, the evidence page opens with "there is no traction", and the footer discloses that this is a generated artifact pack with no customers.
+
+### A57 · Live URL — **not published, and requires a decision**
+
+Publishing makes the repository's contents public, and `origin` points at `dlmastery/startup-skills` rather than the founder's own repo. **Not attempted without explicit go-ahead.**
+
+### Critic rounds — **stopped by decision, 2026-09-07**
+
+Four round-2s and one never-run round-1 (visuals) remain owed. **The founder has stopped the loop:** this pack is a masters course deliverable, not a fundraising document, and the remaining findings would be propagation debt that matters in diligence and not in assessment. Recorded here so the state is not mistaken for completion.
 
 ## 4 · Critic coverage — updated 2026-09-07
 

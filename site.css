@@ -145,3 +145,13 @@ footer{padding:44px 0 64px;color:var(--muted);font-size:14.5px}
 .fl{display:flex;gap:22px;flex-wrap:wrap;margin-bottom:20px;font-weight:500}
 .fl a:hover{color:var(--ink)}
 .fine{font-size:13px;line-height:1.7;max-width:80ch;color:var(--faint)}
+
+/* visuals gallery */
+.vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
+.vcard{display:block;text-decoration:none;color:inherit;border:1px solid var(--line,#E4E4EB);border-radius:12px;
+padding:20px 22px;background:#fff;transition:border-color .15s,transform .15s}
+.vcard:hover{border-color:var(--accent,#4338CA);transform:translateY(-2px)}
+.vcard .ve{font:600 10px/1 'JetBrains Mono',monospace;letter-spacing:.11em;text-transform:uppercase;color:var(--accent,#4338CA)}
+.vcard h3{font-size:16.5px;line-height:1.32;margin:11px 0 8px;font-weight:700;letter-spacing:-.01em}
+.vcard p{font-size:13.5px;line-height:1.55;color:var(--muted,#5A5A6B);margin:0 0 14px}
+.vcard .vgo{font:600 12.5px 'JetBrains Mono',monospace;color:var(--accent,#4338CA)}

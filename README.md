@@ -1,5 +1,9 @@
 # Understudy — founder artifact pack
 
+> **Masters coursework.** This founder-artifact pack was generated with the **startup-skills** pipeline ([dlmastery/startup-skills](https://github.com/dlmastery/startup-skills), MIT licensed) — the pipeline supplied the method; the idea, the 18 founder decisions and the resulting analysis are this project's own.
+> **Not a funded company.** No customers, no code, no traction. Every figure here is a declared target carrying its source or an `(assumption)` tag.
+
+
 **Understudy is the AI service desk that learns each client environment by watching engineers work.** It records IT engineers doing real work, clusters those recordings into a readable, executable skill library, and takes over tier-1 tickets under supervision — for MSPs, where onboarding a new client environment is recurring cost of goods rather than a one-time project. Every AI service desk can resolve a ticket; none can learn where it is.
 
 **Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **59/61 required artifacts · 20 HTML infographics · a 5-page site and a 70-document reader · 0 rendered images** · 103 files. Two manifest rows are open and **four of eight generated layers have never been through the critic loop** — see [Completeness](#completeness).

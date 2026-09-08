@@ -7,7 +7,7 @@
 
 ## 1 · Manifest coverage
 
-**59 of 61 required rows present · 0 stubs · 2 open.** Counted from the glob on 2026-09-04.
+**60 of 61 required rows present · 0 stubs · 1 open.** Counted from the glob on 2026-09-04.
 
 | Layer | Rows | Status |
 |---|---|---|

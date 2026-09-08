@@ -6,7 +6,7 @@
 
 **Understudy is the AI service desk that learns each client environment by watching engineers work.** It records IT engineers doing real work, clusters those recordings into a readable, executable skill library, and takes over tier-1 tickets under supervision — for MSPs, where onboarding a new client environment is recurring cost of goods rather than a one-time project. Every AI service desk can resolve a ticket; none can learn where it is.
 
-**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **59/61 required artifacts · 20 HTML infographics · a 5-page site and a 70-document reader · 0 rendered images** · 103 files. Two manifest rows are open and **four of eight generated layers have never been through the critic loop** — see [Completeness](#completeness).
+**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **60/61 required artifacts · 20 HTML infographics · a 5-page site and a 70-document reader · 0 rendered images** · 103 files. Two manifest rows are open and **four of eight generated layers have never been through the critic loop** — see [Completeness](#completeness).
 
 ---
 
@@ -82,4 +82,4 @@ Three further rows render live from their source: [D01](tech/architecture/D01.md
 
 ## Completeness
 
-`PARTIAL`. 59 of 61 required artifacts are present with no stubs, and property 0 passes on all 68 — after this audit found and fixed eleven failures. **Two manifest rows are open: dossier illustration coverage (37 of 58 artifacts have prompts but no rendered image) and the website phase, which has not been run.** More importantly, **only one of eight generated layers has passed its critic gate**; narrative, validation, financials and visuals have never been reviewed at all. The critic loop is where this pack found its real errors — five load-bearing claims survived authorship and did not survive scrutiny — so the unreviewed layers should be read as drafts. Row-by-row status, the property-0 result and the priority draw order are in [audit/COVERAGE.md](audit/COVERAGE.md).
+`PARTIAL`. 60 of 61 required artifacts are present with no stubs, and property 0 passes on all 68 — after this audit found and fixed eleven failures. **One manifest row is open: dossier illustration coverage — 37 of 58 artifacts have prompts but no rendered image, because this run had no text-to-image tool.** The site has since been built and published. More importantly, **only one of eight generated layers has passed its critic gate**; narrative, validation, financials and visuals have never been reviewed at all. The critic loop is where this pack found its real errors — five load-bearing claims survived authorship and did not survive scrutiny — so the unreviewed layers should be read as drafts. Row-by-row status, the property-0 result and the priority draw order are in [audit/COVERAGE.md](audit/COVERAGE.md).

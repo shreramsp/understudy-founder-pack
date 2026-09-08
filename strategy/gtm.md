@@ -12,11 +12,11 @@
 | **Year-1** revenue per MSP (5 environments live, **first waived per D9**) | **~$5,110** | [market_sizing.md](market_sizing.md) §3 ramp |
 | 3-year revenue per MSP | ~$40,000 | ramp, years 1–3, banded (D11) |
 | Fully loaded gross margin | **76%** | derived with its cost stack in `financials/unit_economics.md` §3b — the 70% assumption is discharged |
-| **3-year gross profit per MSP** | **~$30,400** | derived at 76% |
-| **CAC ceiling at 3:1 LTV:CAC** | **~$10,100** | derived (D11, at the loaded 76% margin) |
+| **3-year gross profit per MSP** | **~$30,600** | built by driver, `financials/unit_economics.md` §3b; range $27,200–32,000 |
+| **CAC ceiling at 3:1 LTV:CAC** | **~$10,200** | range $9,100–10,700 (D11, D15) |
 | **CAC target for a healthy seed-stage motion** | **≤$5,000** | `(assumption: 3:1 is the floor, not the goal; year-1 revenue of $5,110 means anything above ~$5k has a payback longer than the first renewal decision — the target and the year-1 revenue are now essentially the same number)` |
 
-**Corrected after critic round 1.** The first version computed revenue across an MSP's entire client book and then added expansion on top, producing a $21,000 ceiling that flattered every channel. Revenue arrives one environment at a time, and the first is now waived (D9); the ceiling is **$10,100** after the D11 banding and the margin bridge, and the year-1 constraint is tighter still — **no channel now has a comfortable margin.**
+**Corrected after critic round 1.** The first version computed revenue across an MSP's entire client book and then added expansion on top, producing a $21,000 ceiling that flattered every channel. Revenue arrives one environment at a time, and the first is now waived (D9); the ceiling is **~$10,200** after the D11 banding and the driver-built margin, with a $9,100–10,700 range the top-end channel verdict flips inside, and the year-1 constraint is tighter still — **no channel now has a comfortable margin.**
 
 **What this rules out immediately:** field sales, enterprise-style multi-threaded pursuit, conference booths as a primary channel, and any motion requiring more than roughly two sales touches plus a pilot. **What it demands:** channels where trust is inherited rather than purchased.
 

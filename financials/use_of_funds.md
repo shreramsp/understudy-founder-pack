@@ -22,17 +22,17 @@ Ordered by cost, not importance. **Three company-killing assumptions cost under 
 | # | Block | Spend | Months | What it retires |
 |---|---|---|---|---|
 | **B1** | Discovery + cheap experiments | **$5k** | 1–2 | **E3** (does the fee have any basis), **E4** (is the channel open at all), **E5/X25** (envelope re-identification), **E8** (ticket mix and the automatable subset's real cost) |
-| **B2** | Founder comp + Now-tier build | **$420k** | 2–10 | The pipeline, harness first. `(assumption: $150k founder comp + ~$285k contract engineering and infra — decomposed rather than a single $47k/month line for one person)` |
+| **B2** | Founder comp + Now-tier build | **$420k** | 2–10 | The pipeline, harness first. `(assumption: $150k founder comp + ~$270k contract engineering and infra = $420k. **The contract line is deliberate and it qualifies the solo framing**: it buys specialist help on DD2 typing and the harness without a hire, and it does NOT compress the ~40-week floor, which is why B7 is unchanged)` |
 | **B2b** | **Founder comp, months 11–24** | **$175k** | 11–24 | Nothing — it is the cost of existing while the evidence arrives. **The earlier version simply omitted it** |
 | **B3** | E1 + E2 | $15k | 10–12 | **The core mechanism, measured** |
 | **B4** | Security groundwork | **$60k**, of which ~$15k at month 6 | 6–18 | Policy and platform first; the **Type II audit spend waits for X16 (tenant isolation) to ship** — a Type II requires controls operating over a real production system, and at month 6 there is none |
-| **B5** | First pilots + node | $40k | 12–18 | E7 review cycle time, and the hosted-node option `unit_economics.md` §3 now recommends instead of the withdrawn credit |
+| **B5** | First pilots + node + **contracted on-call backstop** | **$70k** | 12–18 | E7 review cycle time; the hosted-node option; and **six months of 24/7 cover on customer infrastructure before the month-18 systems hire** — asserted in §3 and previously unfunded. The $800/yr node-ops line in `unit_economics.md` is per-MSP COGS at scale, not the fixed cost of first cover |
 | **B6** | First hire — **MSP-side operator** | $180k | **on E1 ≥70%, not before month 14** | Closes the A6 gap. **Milestone-gated, not date-gated** — the earlier version fired the largest discretionary commitment before E1 returned, breaking this file's own rule |
 | **B7** | Reserve | **$165k** | — | Sized to the 55-week midpoint slip, not to a round number |
-| | **Plan case total** | **$1,060k** | | |
-| | **Reduced-scope case** (B6 deferred) | **$880k** | | Reaches E1 and a first pilot; defers the hire to a seed |
+| | **Plan case total** | **$1,090k** | | |
+| | **Reduced-scope case** (B6 deferred) | **$910k** | | Reaches E1 and a first pilot; defers the hire to a seed |
 
-**B1 is 0.5% of the plan-case round and can invalidate the other 99.5%.**
+**B1 is 0.5% of the plan-case round and can invalidate the other 99.5%.** *(E5's ~$8k adversarial testing is funded from B3 rather than B1, which covers the four conversation-based experiments.)*
 
 ## 3 · Hires, in order
 
@@ -64,4 +64,4 @@ A seed requires **three** things, and only one is a number:
 
 **What it explicitly does not require: autonomy, a large logo, or a blended 10× claim.** All three are excluded by decisions this pack has already made, and a seed story that reintroduced them would contradict the pre-seed story that raised on their absence.
 
-**Recommended next 3:** (1) run B1 in month one — it is 0.5% of the round and it gates the rest; (2) start B4's SOC 2 clock in month six even though it feels early, because it gates two channels and cannot be compressed; (3) report dollars-per-assumption-retired to investors monthly — it is the only efficiency metric that is meaningful before revenue.
+**Recommended next 3:** (1) run B1 in month one — it is 0.5% of the round and it gates the rest; (2) start B4's **policy and platform work** at month six — the Type II audit spend itself waits for X16 to ship, per the split above, so the clock that cannot be compressed is the controls-operating window, not the whole programme; (3) report dollars-per-assumption-retired to investors monthly — it is the only efficiency metric that is meaningful before revenue.

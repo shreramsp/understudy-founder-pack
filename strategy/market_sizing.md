@@ -96,7 +96,7 @@ The fee was priced as 57–80% of the onboarding hours it displaces. Against the
 
 **Chosen: option 1 (D9).** It preserves the ROI calculator, tells the compounding story honestly, and costs ~$1,500 of year-1 revenue per customer — the cheapest of the three, and the only one a design partner's timesheet confirms rather than contradicts.
 
-**What it changed at the time, and what it did not.** Year-1 revenue per MSP fell to ~$7,100; 3-year revenue to ~$54,350 and gross profit to ~$38,000, lowering the CAC ceiling to ~$12,700. **Steady-state revenue and SAM were unchanged** — the waiver is one-time per customer, not recurring, so it is an acquisition cost expressed as forgone revenue rather than a permanent price cut. **All four of those figures were superseded the same day by D11's banding** — current values are ~$5,110 / ~$40,000 / ~$28,000 / ~$9,300, and the ramp in §3 is the operative one.
+**What it changed at the time, and what it did not.** Year-1 revenue per MSP fell to ~$7,100; 3-year revenue to ~$54,350 and gross profit to ~$38,000, lowering the CAC ceiling to ~$12,700. **Steady-state revenue and SAM were unchanged** — the waiver is one-time per customer, not recurring, so it is an acquisition cost expressed as forgone revenue rather than a permanent price cut. **All four of those figures were superseded the same day by D11's banding** — current values are ~$5,110 / ~$40,000 / ~$30,600 / ~$10,200, and the ramp in §3 is the operative one.
 
 ## 4. Market size and sensitivity
 

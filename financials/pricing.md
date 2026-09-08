@@ -20,6 +20,16 @@
 
 **Why environment 1 is free (D9).** It costs the customer *more* than doing nothing — 31–46 engineer-hours against a 25–40 baseline, because the work is unchanged and review is added. Charging for it is charging for a loss, and a design partner's timesheet establishes that in one afternoon.
 
+## 1b · Does an MSP accept a per-ticket line at all? (discharging A9)
+
+**A9 has been owed a check in this file since phase 0 and was never written.** §1's "why not per seat or per endpoint" answers why per-seat is a poor value metric *for us* — it never asked whether the *buyer* accepts the axis. That is the load-bearing question, because **MSP per-user and per-device pricing exists precisely so cost is passthrough-able**: every tool in their stack is priced on that axis (RMM per endpoint, PSA and documentation per technician, backup per device), and an MSP quotes its client a fixed per-user rate. **A per-resolved-ticket cost is the one line an MSP cannot pass through, and it peaks in exactly the months its own margin is worst.**
+
+**The precedent that resolves it, and it is already in this channel.** White-label NOC and helpdesk outsourcing is bought **per incident** and priced into the MSP's per-user rate against a utilisation assumption. MSPs already buy variable per-ticket capacity and already know how to absorb it — so the axis is acceptable, **but only with the instrument that comes with it.**
+
+**The instrument: a per-client monthly cap, or an included-ticket allowance above which billing stops.** Without it we are asking an owner to take an uncapped variable cost against a fixed price he has already quoted, which is the objection D18's capacity framing makes *sharper* rather than softer. **`financials/revenue_build.md` should model the cap's revenue effect before E3, not after.**
+
+**A9 is resolved: the axis is acceptable with a cap; it is not acceptable uncapped.**
+
 ## 2 · Anchor analysis — corrected twice, and one anchor withdrawn
 
 | Anchor | Figure | Basis |
@@ -70,17 +80,35 @@
 
 **2. D11 cut the wrong band.** Under the corrected method **typical (216–466%) is the worst band and complex (108–272%) is the best of the three** — the reverse of what D11 acted on. D11's *arithmetic* propagated correctly and every downstream figure in the pack is internally consistent with it; **its rationale was an artifact of the inconsistency it was correcting for.** That is recorded here rather than quietly fixed, because the cascade it triggered moved SAM by $36M and the CAC ceiling by $3,400.
 
-**3. An hours-defensible schedule would be roughly a quarter of this one.** At ~50% of midpoint displaced value: **~$159 small, ~$254 typical, ~$486 complex — blended ~$241.** That would put steady-state onboarding revenue at ~$1,446/yr per MSP instead of $6,030, revenue per MSP at ~$10,350, and **SAM at ~$124M**.
+**3. An hours-defensible schedule would be roughly a quarter of this one.** At ~50% of midpoint displaced value: **~$159 small, ~$254 typical, ~$486 complex — blended ~$246.** That would put steady-state onboarding revenue at ~$1,446/yr per MSP instead of $6,030, revenue per MSP at ~$10,350, and **SAM at ~$124M**.
 
 **The schedule is held at $400/$1,500/$1,500 pending E3, on the founder's instruction** — a structure should not be abandoned on the strength of numbers that were computed three inconsistent ways. But the finding is now unambiguous: **the hours basis cannot support this fee at any band.** Either the fee is justified on something other than hours — the maintained runbook, the tier-1 floor, knowledge retention, none of which are hours-denominated — or it moves to the D12 per-MSP platform fee, or it drops by roughly 4×.
 
 **E3 is therefore no longer a price test. It is a *basis* test:** does an MSP owner pay for the library, or only for the hours? Ten conversations settle it, and no model can.
 
+## 4b · The all-in cost the buyer actually sees — added after critic round 2
+
+**D14 moved the node cost off our P&L and onto the customer's, and no willingness-to-pay artifact reflected it.** That is a hole, not a detail: a hosted node at `(assumption: $150–250/month)` is **$1,800–3,000/yr**, which is **+12–20% on our ~$14,930 steady-state revenue and +35–59% on year-1's ~$5,110.**
+
+| What the buyer pays, year 1 | Amount |
+|---|---|
+| Onboarding fees (4 chargeable environments at ~$1,005) | ~$4,020 |
+| Resolved tickets | ~$1,090 |
+| **Hosted node** | **$1,800–3,000** |
+| **All-in year 1** | **~$6,900–8,100** |
+
+**Two consequences the pack has to carry:**
+
+1. **Under the hours-defensible calibration the node opex alone exceeds the entire fee.** At ~$246 blended, six environments a year is ~$1,476 of fee against $1,800–3,000 of hosting. **If the value turns out to be hours-shaped, the hosted-node default is not viable and the MSP must own the hardware.**
+2. **E3 must show the all-in number in both arms.** Asking an owner to countersign an LOI at $1,005/environment for a product that also carries a mandatory hosting line they were never shown produces a signature that means nothing. E3 runs in month one and ten owners cannot be re-asked cheaply.
+
+**Open: is the node bundled or passed through?** Bundling it into the fee raises the headline price into territory §4 already shows is indefensible on hours. Passing it through keeps our margin but adds a procurement conversation. **This is a founder decision and it is not made here.**
+
 ## 5 · Willingness to pay, by persona
 
 | Persona | Pays for | Ceiling `(assumption, untested until E3)` |
 |---|---|---|
-| **Marcus** (owner) | Taking a client he cannot staff | Anchored on a technician's loaded cost, ~$95–120k — so a four-figure per-environment fee is small *if* the leverage story lands |
+| **Marcus** (owner) | Taking a client he cannot staff | Anchored on a technician's loaded cost, ~$95–120k — so a four-figure per-environment fee is small *if* the leverage story lands. **But the comparison he actually makes is all-in: ~$6,900–8,100 in year 1 including the node** (§4b) |
 | **Dana** (delivery manager) | A runbook that stays true | Would not authorise a purchase; would block one |
 | **Ray** (principal) | Nothing. He is not a buyer | — |
 
@@ -90,4 +118,4 @@
 
 Price should rise as the variance envelope thickens, because what the buyer receives at environment 20 is materially better than at environment 2. **But that argument is A8** — untested, and the whole pricing-power case collapses with it. There is no pricing-power claim in this pack that does not reduce to the transfer assumption.
 
-**Recommended next 3:** (1) run E3 before committing to any schedule — the fee has now failed two arithmetic checks and a tenth conversation is worth more than an eleventh model; (2) price the complex band at $1,500 pending E3 rather than defending $3,000; (3) build the ROI calculator on the *library* value as well as the hours, so that if option 2 becomes necessary the instrument survives the change.
+**Recommended next 3:** (1) run E3 before committing to any schedule — **the fee has now failed three arithmetic checks** and a tenth conversation is worth more than an eleventh model; (2) settle the per-client ticket cap (§1b) and model its revenue effect, since an uncapped variable line is the objection an MSP owner raises first; (3) decide whether the hosted node is bundled or passed through (§4b) — the buyer's all-in year-1 cost is ~$6,900–8,100, not the $5,110 the revenue model shows.

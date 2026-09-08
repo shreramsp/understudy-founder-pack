@@ -82,17 +82,17 @@
 
 | Arm | n | Sees | Asked for |
 |---|---|---|---|
-| **A** | 5 | The banded schedule **with the hours gap disclosed** — we charge $1,005 blended against ~$241 of displaced hours, and we say so | A countersigned design-partner LOI at the banded price |
-| **B** | 5 | The ~$241 hours-defensible schedule **only** | The same LOI at that price |
+| **A** | 5 | The banded schedule **with the hours gap disclosed** — we charge $1,005 blended against ~$246 of displaced hours — **and the all-in year-1 cost including the hosted node: ~$6,900–8,100** | A countersigned design-partner LOI at the banded price |
+| **B** | 5 | The ~$246 hours-defensible schedule **only**, with the same all-in disclosure | The same LOI at that price. **Note for arm B: at this schedule the node opex exceeds the fee**, so B also tests whether an MSP will supply its own hardware |
 
 **Acceptance has to cost the owner something.** A verbal reaction to a product twelve months from existing is not evidence. **The instrument is a countersigned design-partner LOI** — non-binding on delivery, binding on price and intent — because that is the cheapest signal that separates politeness from willingness.
 
-**Both arms are asked their onboarding hours by client size before any price is shown**, which also feeds `strategy/market_sizing.md` row 13 and E8.
+**Both arms see the all-in number, not just the fee.** Asking for a signature on a fee while withholding a mandatory hosting line produces a signature that means nothing. **Both arms are asked their onboarding hours by client size before any price is shown**, which also feeds `strategy/market_sizing.md` row 13 and E8.
 
 **Thresholds, with precedence stated so two branches cannot both fire:**
 
 1. **Arm A ≥3 of 5 sign** → the library has value independent of hours. The schedule stands; the ROI calculator is re-based on library value. *(This branch is checked first.)*
-2. **Arm A ≤1 signs and Arm B ≥3 sign** → the value is hours-shaped. Revenue per MSP falls to ~$10,350, SAM to ~$124M, and the model is rebuilt on the lower schedule.
+2. **Arm A ≤1 signs and Arm B ≥3 sign** → the value is hours-shaped. Revenue per MSP falls to ~$10,376, SAM to ~$124M, and the model is rebuilt on the lower schedule.
 3. **Neither arm reaches 3** → the per-environment fee has no basis at any price, and the **D12 per-MSP platform fee** becomes the model.
 4. *Ambiguous (Arm A = 2)* → inconclusive, and it is reported as inconclusive rather than resolved in whichever direction is convenient. Re-run with 10 more.
 

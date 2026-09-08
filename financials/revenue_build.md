@@ -2,7 +2,7 @@
 
 > **What this is** — the bottom-up path to scale: units × conversion × price per stage, the expansion layers, the milestone each jump depends on, and which GTM motion carries it.
 > **Why it exists** — a revenue build is where a pack either inherits its own corrected numbers or quietly reverts to the flattering ones. **This file also carries a cascade the pricing work created: the banded schedule `pricing.md` recommends lowers the blended fee from $1,500 to ~$1,005, which moves SAM, the CAC ceiling and every channel verdict.** That is surfaced here, not absorbed.
-> **How to read it** — §1 first: two scenarios, because the schedule is not yet decided. A skeptic should note that every row waits on E1.
+> **How to read it** — §1 first: the decided banded basis, then the hours-defensible downside modelled beside it. A skeptic should note that every row waits on E1, and that the downside case closes every acquisition channel.
 > **Depends on / feeds** — inherits [pricing.md](pricing.md), [../strategy/market_sizing.md](../strategy/market_sizing.md), [../strategy/gtm.md](../strategy/gtm.md); feeds [unit_economics.md](unit_economics.md), [use_of_funds.md](use_of_funds.md), `narrative/pitch_deck.md`.
 
 **Conditional on E1.** If cross-environment transfer lands below ~70%, M1 collapses, the onboarding fee loses its compression basis entirely, and every figure below is void. Nothing here is a forecast.
@@ -18,10 +18,28 @@ The banded schedule is **decided**, not undecided. The earlier version of this s
 | Year-1 revenue per MSP (5 environments, first waived per D9) | **~$5,110** |
 | Steady-state revenue per MSP | **~$14,930** |
 | 3-year revenue per MSP | **~$40,000** |
-| Fully loaded gross margin (bridged in `unit_economics.md` §3b) | **~76%** |
-| 3-year gross profit | **~$30,400** |
-| **CAC ceiling at 3:1** | **~$10,100** |
+| Fully loaded gross margin over the 3-year ramp (built by driver, `unit_economics.md` §3b) | **~77%**, range 68–80% |
+| 3-year gross profit | **~$30,600** (range $27,200–32,000) |
+| **CAC ceiling at 3:1** | **~$10,200**, range **$9,100–10,700** — and the top-end LTV:CAC straddles the 3:1 floor |
 | SAM (12,000 MSPs) | **~$179M** |
+
+### The second column that matters now — the hours-defensible case, modelled
+
+**D16 kept the ~$246 calibration visible; nobody had modelled it.** The layer deleted its old second column (flat vs banded) at exactly the moment a genuinely different second scenario became necessary. Here it is:
+
+| | **Charged (D11)** | **Hours-defensible** |
+|---|---|---|
+| Blended fee | $1,005 | **$246** |
+| Year 1 | $5,110 | **$2,074** |
+| 3-year revenue | $39,985 | **$17,974** |
+| 3-year gross profit (68–80%) | $27,190–31,988 | **$12,222–14,379** |
+| **CAC ceiling at 3:1** | $9,063–10,663 | **$4,074–4,793** |
+| Steady state / MSP | $14,930 | **$10,376** |
+| SAM | $179M | **$124M** |
+
+**At the hours-defensible ceiling of ~$4,100–4,800, the primary channel ($4,000–9,000) is at or above the ceiling across essentially its whole range, and no channel in `strategy/channel_plan.md` is viable.** Buying groups at $500–2,000 are the sole survivor, and they are the one channel whose access is gated rather than bought.
+
+**That is the pack's real downside case, it is one experiment away, and the fee it depends on is ~79% of year-1 revenue.** It also gives D12's platform-fee contingency a number rather than a name: at $10,376 of steady-state revenue with the onboarding half stripped out, a per-MSP subscription would have to clear roughly **$1,500/month** to reach the same place — which is a different sale to a different budget, and it should be priced before E3 rather than after.
 
 *Footnote — what the flat $1,500 schedule gave, for anyone reconciling against an earlier draft: $17,900 steady state, $7,100 year 1, $54,350 over three years, a $12,700 ceiling and a $215M SAM. D11 banded the complex tier down and the cascade moved every one of them.*
 
@@ -31,13 +49,13 @@ The banded schedule is **decided**, not undecided. The earlier version of this s
 
 | Stage | ARR | MSPs | Environments live | What has to be true | Motion |
 |---|---|---|---|---|---|
-| **First revenue** | ~$7k [~$5k] | 1 | 5 | E1 ≥70%; E3 accepts the fee; one MSP admits us | Design partner converted |
-| **$100k** | $100k | ~14 [~20] | ~70 [~100] | Channel admissibility confirmed (E4); the published time-to-first-verified-skill number exists | Peer/buying groups |
-| **$1M** | $1M | ~56 [~67] at steady state | ~2,300 [~2,750] | Expansion works without a sales conversation; security review ≤6 weeks median (E7) | Groups + newsletters |
-| **$10M** | $10M | ~560 [~670] | ~23,000 [~27,000] | **Marketplace listing live** — requires SOC 2, a shipping integration and references; 18–24 months minimum | RMM/PSA marketplace |
-| **$50M** | $50M | ~2,800 [~3,350] | — | **Exceeds the MSP wedge.** 2,800 MSPs is ~23% of the serviceable band — a share no early-stage company should assume. Requires internal IT, which this pack does not claim | Undefined, honestly |
+| **First revenue** | **~$5k** | 1 | 5 | E1 ≥70%; E3 accepts the fee; one MSP admits us | Design partner converted |
+| **$100k** | $100k | **~20** | **~100** | Channel admissibility confirmed (E4); the published time-to-first-verified-skill number exists | Peer/buying groups |
+| **$1M** | $1M | **~67** at steady state | **~2,750** | Expansion works without a sales conversation; security review ≤6 weeks median (E7) | Groups + newsletters |
+| **$10M** | $10M | **~670** | **~27,000** | **Marketplace listing live** — requires SOC 2, a shipping integration and references; 18–24 months minimum | RMM/PSA marketplace |
+| **$50M** | $50M | **~3,350** | — | **Exceeds the MSP wedge.** 3,350 MSPs is ~28% of the serviceable band — a share no early-stage company should assume. Requires internal IT, which this pack does not claim | Undefined, honestly |
 
-**The $50M row is where the pack stops claiming.** `market_sizing.md` puts SAM at ~$179M; $50M ARR is 23–28% of the entire serviceable market. **A build that runs to $100M without naming a new market is arithmetic laundering**, and this one names the wall instead.
+**The $50M row is where the pack stops claiming.** `market_sizing.md` puts SAM at ~$179M; $50M ARR is ~28% of the entire serviceable market. **A build that runs to $100M without naming a new market is arithmetic laundering**, and this one names the wall instead.
 
 ## 3 · Expansion layers, in order of confidence
 

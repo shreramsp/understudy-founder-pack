@@ -102,29 +102,37 @@ Two things worth recording precisely:
 
 The website phase has not been attempted. It is gated behind the audit by design, and behind four owed critic rounds.
 
-## 4 · Critic coverage — the other honest gap
+## 4 · Critic coverage — updated 2026-09-07
 
 | Phase | Rounds run | State |
 |---|---|---|
-| 2 · strategy | **3 — all three critics PASS** | **gate passed** |
-| 3 · product | 2 | revised; no fatals remain; **round 3 not run** |
-| 4 · tech | 1 | revised; **round 2 killed twice by session rate limits** |
-| 5 · narrative | **0** | **never critiqued** |
-| 6 · validation | **0** | **never critiqued** |
-| 7 · financials | **0** | **never critiqued** |
+| 2 · strategy | **3 — all three PASS** | **GATE PASSED** |
+| 3 · product | 2 | revised; no fatals remain; round 3 owed |
+| 4 · tech | 1 | revised (2 fatals fixed); **round 2 killed twice by rate limits** |
+| 5 · narrative | 1 | revised — **7 fatals**, the most of any layer |
+| 6 · validation | 1 | revised — 3 fatals |
+| 7 · financials | **2** | round 1: 5 fatals. Round 2: **all originals confirmed closed**, one new fatal (the downside case unmodelled) fixed. Round 3 owed |
 | 8 · visuals | **0** | **never critiqued** |
 
-**Only one phase has actually passed its gate.** The critic loop is where this pack found its real errors — five load-bearing claims survived authorship and did not survive scrutiny, recorded as K7–K11 in `validation/pivot_log.md`. **Four layers have never been through it, and the run should be read accordingly.**
+**One phase has passed its gate. Six have not.** The loop remains where this pack finds its real errors: **twelve claims have now survived authorship and failed scrutiny**, recorded as K7–K12 in `validation/pivot_log.md` plus the round-2 findings.
 
-## 5 · Priority draw order
+**The pattern worth recording for any future run of this pack.** In every layer, round 1 found errors of *substance* and round 2 found errors of *propagation* — corrections that reached the file where an argument is made and not the files where it is restated. Three separate cascades (D9, D11, D14) each left stale figures in files nobody thought to re-read. **A round 2 is not optional polish; it is where half the defects live.**
 
-What to do next, in order, with effort:
+## 5 · Remaining work — priority order, updated
 
-| # | Action | Effort | Why first |
+| # | Task | Status | Blocker |
 |---|---|---|---|
-| 1 | **Critic rounds on phases 5–7** | 9 agent runs | Narrative, validation and financials have never been reviewed, and the financials layer contains the numbers a reader checks first |
-| 2 | Critic round 2 on tech, round 3 on product | 6 agent runs | Both were interrupted, not completed |
-| 3 | Render the 46 image prompts | 1 session with a tool | Closes A52b |
-| 4 | `startup-website` | 1 phase | Gated on the above |
+| 1 | **Narrative round 2** | owed | — |
+| 2 | **Validation round 2** | owed | — |
+| 3 | **Tech round 2** | owed | killed twice by rate limits |
+| 4 | **Financials round 3** | owed | — |
+| 5 | **Visuals critic round 1** | **never run** | — |
+| 6 | Product round 3 | owed | lowest value — round 2 was clean |
+| 7 | Render 46 image prompts → closes **A52b** | **cannot do here** | no text-to-image tool |
+| 8 | `startup-website` — 5 pages + `pack.html` | not started | gated on the narrative rounds |
+| 9 | Publish to GitHub Pages | not started | **needs explicit founder go-ahead** — makes the repo public, and `origin` is not the founder's |
+| 10 | Re-run this audit | — | follows everything |
 
-**Recommended next 3:** (1) run the phase 5–7 critic loops before the site, because a site built from an uncritiqued narrative layer propagates whatever is wrong in it; (2) do not mark A52b closed by any route other than rendered, verified images; (3) re-run this audit after the critic rounds — a coverage audit taken before four layers have been reviewed measures presence, not quality, and this one says so.
+**Two rows stay open by decision, not by omission:** A52b (37 substantive artifacts with prompts but no rendered image) and A56–A57 (the site). Neither is closed by redefining what closure means.
+
+**Recommended next 3:** (1) run the four owed round-2s before the site, since a site built from an uncritiqued layer propagates whatever is wrong in it; (2) critique the visuals layer at least once — it is the only phase with zero rounds and it carries 20 rendered artifacts making numeric claims; (3) do not mark A52b closed by any route other than rendered, verified images.

@@ -21,7 +21,7 @@
 → *Component:* **X17 global stack layer** matched the ticket to a known procedure shape; **N9 variance envelope** supplied the two deviations specific to this tenant.
 → *Record:* a skill-match event, and which envelope variant was selected.
 
-**08:42 · She reads before she acts.** The skill opens with its goal and its success test — *Succeeds when: the user completes an MFA challenge from the new device* — then the steps, then a flagged line: *Brightwater has a Conditional Access policy requiring a compliant device for registration, which blocks enrolment from a new personal phone. Two engineers hit this; both resolved it with a **Temporary Access Pass**, not by weakening the policy.*
+**08:42 · She reads before she acts.** The skill opens with its goal and its success test — *Succeeds when: the user completes an MFA challenge from the new device* — then the steps, then a flagged line: *Brightwater's Conditional Access requires MFA for the **"Register security information"** user action — so a user who has lost their only factor cannot register a new one. The MFA-bootstrap deadlock. Two engineers hit this; both resolved it with a **Temporary Access Pass**, not by weakening the policy.*
 → *Component:* **F6 skill synthesis** (goal + success criterion), **N9** (the deviation), **N13 authorship attribution** — the note carries Ray's and a colleague's names.
 → *Record:* skill view, by whom, which version.
 **This beat is the product.** Nobody told Priya about Brightwater's conditional access. Two engineers hit it months apart, and the system kept what they did.
@@ -36,7 +36,9 @@
 
 **08:47 · The first mutating step stops for her.** *Issue a Temporary Access Pass for j.mbeki@ — single-use, valid 60 minutes. Approve?* With one line of effect: *this user only; expires on its own; does not alter any policy.*
 
-*A TAP is a real Entra primitive built for exactly this case — time-boxed, per-user, and it leaves the Conditional Access policy untouched. The first version invented an "auto-expiring conditional-access bypass", which does not exist in either Entra or Okta.*
+*A TAP is a real Entra primitive built for exactly this case — time-boxed, per-user, and it leaves the policy untouched.*
+
+*This paragraph has been corrected twice. The first version invented an "auto-expiring conditional-access bypass", which exists in neither Entra nor Okta. The second paired a TAP against a **device-compliance** grant — but **a TAP is an authentication method and carries no device state, so it cannot satisfy "require device to be marked as compliant"**; the user authenticates and is still blocked, especially on the unenrolled personal phone this journey names. TAP is the right primitive for the MFA-bootstrap block, which is what the scenario now describes.*
 → *Component:* **X5** classified it reversible-write; **X6** requires human approval at this ladder rung; **X8 reversible-write execution** has the undo path recorded before the action runs.
 → *Record:* approval by Priya, undo path stored.
 

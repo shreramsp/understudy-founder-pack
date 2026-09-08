@@ -19,6 +19,8 @@ That is a strange place for the industry's attention to be. The hard part was ne
 
 **The clustering problem is the company, and it is not an LLM problem.**
 
+*What is checkable about that claim, since a reference call needs something concrete: the evaluation harness design in `validation/experiment_board.md` E1 — unit of analysis, ≥30 scored pairs, a pre-registered dissimilarity metric, Wilson intervals, a held-out environment reserved from method selection — is the artifact I would point a technical reference at. It is the part of this I have actually built before, and it is deliberately the first thing this company builds.*
+
 The instinct — mine included, at first — is to hand a pile of recordings to a frontier model and ask it to produce a procedure. That works well enough to demo and badly enough to be unfalsifiable: when it fails you cannot tell whether the representation was wrong, the alignment was wrong, or the model simply had a bad day.
 
 So the design does the opposite. Actions are typed into a semantic representation; clustering runs on classical sequence alignment and profile HMMs — methods that are decades old, deterministic and debuggable. The model is used where it is genuinely better than an algorithm: understanding what a click *meant*, and synthesising readable prose. **That choice makes the core bet falsifiable, which is worth more to me than making it look impressive.**
@@ -29,7 +31,7 @@ The second thing: what accumulates is not the procedure. Any competent engineer 
 
 **I have not run a managed services business.** I have not felt the specific pain of onboarding a client at 2am because the contract starts Monday, and I am not going to pretend otherwise in a room with someone who has.
 
-That gap is real and it is the reason the plan starts with ten conversations and no product pitch, why the first hire is an MSP-side operator rather than an engineer, and why the design partners are being asked for their timesheets rather than their enthusiasm. The mechanism is my ground. The market is not yet, and the fastest way to make it so is to be corrected early and often by people who live in it.
+That gap is real and it is the reason the plan starts with ten conversations and no product pitch, why the first hire is an MSP-side operator rather than an engineer, and why design partners **will be asked** for their timesheets rather than their enthusiasm. None is signed yet, and the memo says so. The mechanism is my ground. The market is not yet, and the fastest way to make it so is to be corrected early and often by people who live in it.
 
 I would rather present a pack whose weakest assumption is labelled than one whose weakest assumption is load-bearing and hidden.
 

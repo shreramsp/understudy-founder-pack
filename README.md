@@ -1,85 +1,70 @@
-# Understudy — founder artifact pack
+# Understudy — a self-onboarding AI service desk for MSPs
 
-> **Masters coursework.** This founder-artifact pack was generated with the **startup-skills** pipeline ([dlmastery/startup-skills](https://github.com/dlmastery/startup-skills), MIT licensed) — the pipeline supplied the method; the idea, the 18 founder decisions and the resulting analysis are this project's own.
-> **Not a funded company.** No customers, no code, no traction. Every figure here is a declared target carrying its source or an `(assumption)` tag.
+> **Masters coursework.** The artifact pipeline that structured this pack is [dlmastery/startup-skills](https://github.com/dlmastery/startup-skills) (MIT). **The pipeline supplied the method. The idea, the 18 recorded decisions, the arithmetic, and everything the review process broke and rebuilt are this project's own.**
+> **This is not a company.** No customers, no code, no traction, no revenue. Every figure carries a source tag or an `(assumption)` tag, and the pack names the number that would falsify its central claim.
 
+**The idea in one line:** every AI service desk can resolve a ticket; none can *learn where it is*. Understudy records IT engineers working, clusters those recordings into a readable executable skill library, and takes over tier-1 work under supervision — sold to MSPs, for whom onboarding each new client environment is recurring cost of goods rather than a one-time setup.
 
-**Understudy is the AI service desk that learns each client environment by watching engineers work.** It records IT engineers doing real work, clusters those recordings into a readable, executable skill library, and takes over tier-1 tickets under supervision — for MSPs, where onboarding a new client environment is recurring cost of goods rather than a one-time project. Every AI service desk can resolve a ticket; none can learn where it is.
-
-**Status:** `PARTIAL` · generated 2026-09-04 · run slug `self-onboarding-desk` · **60/61 required artifacts · 20 HTML infographics · a 5-page site and a 70-document reader · 0 rendered images** · 103 files. Two manifest rows are open and **four of eight generated layers have never been through the critic loop** — see [Completeness](#completeness).
+**→ [Read the pack](https://shreramsp.github.io/understudy-founder-pack/pack.html)** · **[the site](https://shreramsp.github.io/understudy-founder-pack/)** · **[the visuals](https://shreramsp.github.io/understudy-founder-pack/visuals.html)**
 
 ---
 
-## Open this first
+## What this project actually demonstrates
 
-**[`pack.html`](pack.html)** — the whole pack as a browsable reader. All 70 documents, sidebar-navigable and searchable, Mermaid diagrams drawn, every cross-reference clickable. **Every document is embedded, so it opens from a double-click with no server.**
+Not that an idea can be written up at length. **That a structured adversarial process finds things the author cannot.**
 
-**[`index.html`](index.html)** — the five-page site built from the pack: [product](product.html), [evidence](evidence.html), [pricing](pricing.html), [about](about.html).
+Each layer was reviewed by three independent critics — a skeptical VC, a domain PhD, and an operator-founder — reading in isolation from the author. **Twelve load-bearing claims were written into this pack as settled fact and did not survive that review.** They are logged, with reasons, in [`validation/pivot_log.md`](validation/pivot_log.md):
 
-## Start here — 60 seconds
-
-1. **[narrative/one_pager.md](narrative/one_pager.md)** — the whole company on one page, including the three things it deliberately does not claim.
-2. **[narrative/pitch_deck.md](narrative/pitch_deck.md)** — fourteen slides. Slides 10, 11 and 12 are the limits, and they are not optional.
-3. **[tech/whitepaper.md](tech/whitepaper.md)** — where the leverage actually is, and why there is no 10×.
-
-## Reading paths by audience
-
-**Investor** — [one_pager](narrative/one_pager.md) → [vc_memo](narrative/vc_memo.md) (the risks section is the longest, deliberately) → [market_sizing](strategy/market_sizing.md) (the arithmetic, corrected three times, with the corrections kept visible) → [revenue_build](financials/revenue_build.md) (73% of three-year revenue is one-time) → [comps_exits](financials/comps_exits.md) (this is not a generational company on the wedge alone, and the file says so).
-
-**Engineer** — [whitepaper](tech/whitepaper.md) §5 (the RPA argument, corrected three times) → [deep_dives](tech/deep_dives.md) (DD1 is the only research bet) → [architecture/D06](tech/architecture/D06.md) (the privacy boundary the security review is about) → [not_vaporware](tech/not_vaporware.md) (what ships this quarter and what does not).
-
-**Operator** — [PRD](product/PRD.md) → [features_prioritized](product/features_prioritized.md) (the build math that does not close, stated) → [journeys/day_in_life](product/journeys/day_in_life.md) (an incident at 14:20 that verification cannot catch) → [ux_spec](product/ux_spec.md).
-
-**Practitioner / MSP** — [journeys/edge_low](product/journeys/edge_low.md) (a technician at a client she has never touched) → [journeys/beachhead](product/journeys/beachhead.md) (week 1 produces nothing, honestly) → [pricing](financials/pricing.md) (the first environment is free because it costs you more).
-
-**Skeptic** — [audit/COVERAGE.md](audit/COVERAGE.md) → [validation/pivot_log.md](validation/pivot_log.md) (five load-bearing claims that survived authorship and did not survive review) → [validation/riskiest_assumptions.md](validation/riskiest_assumptions.md) (every row untested).
-
-## Artifact map
-
-| Path | What it holds | Files | Owning skill |
-|---|---|---|---|
-| [BRIEF.md](BRIEF.md) · [ASSUMPTIONS.md](ASSUMPTIONS.md) | Founder brief · 13 decisions and 12 assumptions | 2 | grill-me |
-| [research/](research/) | Landscape, competitor teardown, capability table, dated survey, 36 sources | 5 | startup-research |
-| [strategy/](strategy/) | Market type, positioning, bottom-up sizing, personas, canvases, GTM, petal, channel economics, sales roadmap | 11 | startup-strategy |
-| [product/](product/) | PRD with nine first-principles, 20 flagship features, 61 prioritized, four journeys, thirteen-screen UX spec | 8 | startup-product |
-| [tech/](tech/) | Whitepaper, seven deep dives, 11 Mermaid architecture diagrams, 73 techniques, decision tree, technique×feature matrix, not-vaporware | 19 | startup-tech |
-| [narrative/](narrative/) | One-pager, technical VC memo, 14-slide deck, working-backwards press release, founder story, mission/vision | 6 | startup-narrative |
-| [validation/](validation/) | Riskiest assumptions, 8-experiment board, discovery guide, get/keep/grow, stage gate, metrics by stage, pivot log, dual MVP, decision-making unit | 9 | startup-validation |
-| [financials/](financials/) | Banded pricing, revenue build, unit economics (both node cases), use of funds, 12-row risk matrix, comps and exits | 6 | startup-financials |
-| [visuals/](visuals/) | 69-row manifest, 20 rendered HTML infographics, 46 image prompts | 2 md + 26 | startup-visuals |
-| [audit/](audit/) | Coverage audit against the manifest | 1 | startup-audit |
-
-## Visual index
-
-**No raster images are rendered** — no text-to-image tool existed in this run, so the 46 prompts in [visuals/image_prompts.md](visuals/image_prompts.md) are pending. The pack's visual layer is 20 self-contained HTML infographics, each carrying real figures from the artifact it cites:
-
-| | Takeaway |
+| Claim as written | Why it died |
 |---|---|
-| [V02 · Positioning map](visuals/infographics/V02_positioning-map.html) | Three quadrants are crowded; the fourth was empty for a reason that expired in 2024 |
-| [V09 · Bottom-up SAM](visuals/infographics/V09_sam-build.html) | A defended $179M SAM, with its two softest assumptions named |
-| [V10 · Evidence ledger](visuals/infographics/V10_evidence-ledger.html) | Every company-killing assumption untested; three of four cost under $2,000 |
-| [V11 · Hours per environment](visuals/infographics/V11_hours-per-environment.html) | The first environment costs more, not less. We do not charge for it |
-| [V14 · Use of funds](visuals/infographics/V14_use-of-funds.html) | 0.5% of the round can invalidate the other 99.5% |
-| [V15 · Risk matrix](visuals/infographics/V15_risk-matrix.html) | Four residuals stay high; one has no mitigation at all |
-| [V16 · Revenue quality](visuals/infographics/V16_revenue-quality.html) | 73% of three-year revenue is one-time |
-| [V18 · Banded pricing](visuals/infographics/V18_banded-pricing.html) | The fee's justification has failed arithmetic twice |
-| [V19 · Decision-making unit](visuals/infographics/V19_decision-unit.html) | A deal signed by the owner can still fail three times over |
-| [V20](visuals/infographics/V20_journey-edge-low.html) · [V21](visuals/infographics/V21_journey-beachhead.html) · [V22](visuals/infographics/V22_journey-edge-high.html) · [V23](visuals/infographics/V23_day-in-life.html) | The four journeys, component by component |
-| [V24 · Thirteen screens](visuals/infographics/V24_thirteen-screens.html) | Two screens decide adoption, and neither is a dashboard |
-| [V25 · Feature tiers](visuals/infographics/V25_feature-tiers.html) | The Now tier is the whole bet, and its floor is ~40 weeks |
-| [V26 · Technique matrix](visuals/infographics/V26_technique-matrix.html) | Two orphan techniques turned out to be missing safety features |
-| [V28](visuals/infographics/V28_experiment-board.html) · [V29](visuals/infographics/V29_stage-gate.html) · [V30](visuals/infographics/V30_metrics-by-stage.html) · [V31](visuals/infographics/V31_pivot-log.html) | Experiments, gate, metrics, and what has already been killed |
+| Clustering runs inside the **client's** boundary | Not implementable — capture originates on MSP workstations, and a 22-person SaaS client has no perimeter to host a node in |
+| The maintenance line delivers a **10×** | Its baseline was hours the pack itself calls "largely unperformed". A multiplier on hours nobody spends displaces no cost |
+| "RPA has **no success criterion**" | Falsifiable in one sentence by any practitioner. Corrected three times before it survived |
+| The privacy threshold counts **3 tenants** | One MSP brings ~41 tenants, so all three observations could sit inside one customer's book and identify them with certainty |
+| Hosted inference for action typing | Frames of a client's admin console reaching a third party breaks the architecture's central guarantee outright |
 
-Three further rows render live from their source: [D01](tech/architecture/D01.md), [D06](tech/architecture/D06.md) and the [decision tree](tech/techniques/decision_tree.md) ship Mermaid.
+**Three arithmetic errors were also caught, each in the direction that flattered the business:** a per-*endpoint* benchmark applied as per-*user* (2× inflation), revenue counted across a customer's whole client book and then given expansion on top (~40× on year-one value), and an annual figure compared against a monthly cost line (12×).
 
-## Top 5 sharpest claims
+## What it cost to be honest
 
-1. **The market split the problem in half and left the join manual.** Discovery tools record work and emit a diagram a human must implement; resolution tools execute but must be configured. Both halves are mature. [S5] [S8] [S10] — [research/landscape.md](research/landscape.md)
-2. **Deployment friction is the incumbent's revenue, not its defect.** ServiceNow implementation runs 3–5× the annual licence, so self-onboarding cannibalises the larger half of its own deal. [S20] — [research/competitors.md](research/competitors.md)
-3. **The first environment costs more than doing nothing** — 31–46 hours against a 25–40 baseline — so we waive it. Compression begins at environment 2. [S21] — [product/journeys/beachhead.md](product/journeys/beachhead.md)
-4. **There is no 10×.** The claim was withdrawn when its baseline turned out to be hours nobody spends. What survives is one ~1.4× multiplier, one negative, and three effects that are not multipliers. — [tech/whitepaper.md](tech/whitepaper.md)
-5. **The core mechanism has no benchmark and no named prior system**, and the falsifying number is declared in advance: below ~70% cross-environment transfer, the company is materially smaller and says so. — [research/capability_table.md](research/capability_table.md) row 5
+The pack states things a pitch would normally hide, and each one has a price recorded in the model:
 
-## Completeness
+- **The first client environment costs the customer *more* than doing nothing** — 31–46 engineer-hours against a 25–40 baseline. So it is given away free, which cut year-one revenue per customer from $8,600 to $5,110.
+- **There is no 10×.** One real multiplier (~1.4× on repeat onboarding), one negative, and three effects that are not multipliers at all.
+- **The pricing has no defensible basis on hours.** The fee is 99–466% of the time it saves. Both the charged schedule and the ~4× cheaper hours-justified one are published side by side, and the experiment that resolves it is designed as a split sample so it cannot be gamed.
+- **On tickets we are at or above the buyer's own marginal cost**, so the pitch is capacity, not savings.
+- **This is not a generational company** on the market it targets — ~$179M SAM — and the artifact says so instead of summing in an adjacent market it has not earned.
 
-`PARTIAL`. 60 of 61 required artifacts are present with no stubs, and property 0 passes on all 68 — after this audit found and fixed eleven failures. **One manifest row is open: dossier illustration coverage — 37 of 58 artifacts have prompts but no rendered image, because this run had no text-to-image tool.** The site has since been built and published. More importantly, **only one of eight generated layers has passed its critic gate**; narrative, validation, financials and visuals have never been reviewed at all. The critic loop is where this pack found its real errors — five load-bearing claims survived authorship and did not survive scrutiny — so the unreviewed layers should be read as drafts. Row-by-row status, the property-0 result and the priority draw order are in [audit/COVERAGE.md](audit/COVERAGE.md).
+## Reading paths
+
+**If you have five minutes** — [the one-pager](narrative/one_pager.md), then [what would falsify it](validation/riskiest_assumptions.md).
+
+**If you want the argument** — [landscape](research/landscape.md) (why the gap exists) → [positioning](strategy/positioning.md) (the two axes) → [whitepaper](tech/whitepaper.md) (where the leverage actually is) → [VC memo](narrative/vc_memo.md).
+
+**If you want the engineering** — [deep dives](tech/deep_dives.md) (seven systems, one genuine research bet) → [the privacy architecture](tech/architecture/D06.md) → [what ships and what does not](tech/not_vaporware.md).
+
+**If you are checking the work** — [the coverage audit](audit/COVERAGE.md) (what is still open, and why one row is deliberately not closed) → [the decision log](ASSUMPTIONS.md) (18 decisions, each with its cost) → [the pivot log](validation/pivot_log.md).
+
+## What is in here
+
+| | |
+|---|---|
+| [`research/`](research/) | Landscape, competitor teardown, capability table, a dated survey, 36 cited sources |
+| [`strategy/`](strategy/) | Market type, positioning, bottom-up sizing, personas, canvases, channel economics |
+| [`product/`](product/) | PRD on nine first-principles, 61 prioritised features, four journeys, 13 screens |
+| [`tech/`](tech/) | Whitepaper, seven deep dives, 11 architecture diagrams, 73 techniques |
+| [`narrative/`](narrative/) | One-pager, VC memo, 17-slide deck, working-backwards press release |
+| [`validation/`](validation/) | Ten experiments with thresholds declared before any data exists |
+| [`financials/`](financials/) | Banded pricing, revenue build, unit economics, risk matrix, exit landscape |
+| [`visuals/`](visuals/) | 20 rendered infographics, 46 further figures as prompts |
+| [`audit/`](audit/) | Row-by-row completeness against the pipeline's own manifest |
+
+**70 documents · 20 infographics · 30 commits · 60 of 61 required artifacts.**
+
+## What is not finished, stated plainly
+
+**One row is open and stays open.** 37 substantive documents have production-ready image prompts but no rendered image, because this run had no text-to-image tool. The audit records that rather than redefining coverage to make it disappear.
+
+**Four review rounds were owed and deliberately stopped.** They would have found propagation debt — corrections reaching the file where an argument is made but not the files where it is restated, which is where roughly half the defects in this pack lived. That matters for investment diligence. It does not matter for coursework, and stopping was a judgement call, recorded in [`audit/COVERAGE.md`](audit/COVERAGE.md) rather than left implicit.
+
+**No claim here has been tested against a real MSP.** Every row of the assumption board reads `untested`. Four of them would end the company, and three cost under $10,000 to check — which is the point the pack makes about its own sequencing.
